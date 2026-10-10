@@ -197,12 +197,20 @@ def encode_prompt(tokenizer, prompt: str, device: torch.device):
     """
     messages = [{"role": "user", "content": prompt}]
 
-    input_ids = tokenizer.apply_chat_template(
+    encoded = tokenizer.apply_chat_template(
         messages,
         tokenize=True,
         add_generation_prompt=True,
         return_tensors="pt",
     )
+
+    # Extracting the input_ids based on the type...
+    if hasattr(encoded, "input_ids"):
+        input_ids = encoded.input_ids
+    elif isinstance(encoded, dict):
+        input_ids = encoded["input_ids"]
+    else:
+        input_ids = encoded  # It is already a tensor
 
     return input_ids.to(device)
 
@@ -246,6 +254,7 @@ def extract_one_example(model, tokenizer, uid, prompt, answer, device):
     prompt_ids = encode_prompt(tokenizer, prompt, device)
     answer_ids = encode_saved_answer(tokenizer, answer, device)
 
+    # prompt_ids and answer_ids are BatchEncoding object .shape won't work so, modifying the encode_prompt()...
     prompt_length = prompt_ids.shape[1]
     answer_length = answer_ids.shape[1]
 
@@ -464,7 +473,7 @@ def main():
     model = AutoModelForCausalLM.from_pretrained(
         str(MODEL_DIR),
         local_files_only=True,
-        torch_dtype=model_dtype,
+        dtype=model_dtype, # torch_dtype is deprecated; used dtype instead...
         low_cpu_mem_usage=True,
     )
     model.to(device)

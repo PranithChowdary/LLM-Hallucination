@@ -1,0 +1,2284 @@
+Job Started at: Sat Oct 10 07:11:26 AM IST 2026
+
+Generation examples: 24,652
+Calibration examples: 24,652
+UID coverage and prompt alignment: PASSED
+Already checkpointed: 4,100
+Remaining examples: 20,552
+Using GPU: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition
+Loading tokenizer from models/Qwen2.5-0.5B-Instruct
+Loading model from models/Qwen2.5-0.5B-Instruct
+Progress: 4,110/24,652 examples; 980 token rows in current checkpoint.
+Progress: 4,120/24,652 examples; 2,141 token rows in current checkpoint.
+Progress: 4,130/24,652 examples; 3,105 token rows in current checkpoint.
+Progress: 4,140/24,652 examples; 3,905 token rows in current checkpoint.
+Progress: 4,150/24,652 examples; 4,603 token rows in current checkpoint.
+Progress: 4,160/24,652 examples; 5,572 token rows in current checkpoint.
+Progress: 4,170/24,652 examples; 6,541 token rows in current checkpoint.
+Progress: 4,180/24,652 examples; 7,494 token rows in current checkpoint.
+Progress: 4,190/24,652 examples; 8,328 token rows in current checkpoint.
+Progress: 4,200/24,652 examples; 9,344 token rows in current checkpoint.
+Saved data/a3/token_features/part_000042.parquet; checkpointed 4,200/24,652
+Progress: 4,310/24,652 examples; 1,011 token rows in current checkpoint.
+Progress: 4,320/24,652 examples; 1,993 token rows in current checkpoint.
+Progress: 4,330/24,652 examples; 3,211 token rows in current checkpoint.
+Progress: 4,340/24,652 examples; 4,097 token rows in current checkpoint.
+Progress: 4,350/24,652 examples; 5,039 token rows in current checkpoint.
+Progress: 4,360/24,652 examples; 6,237 token rows in current checkpoint.
+Progress: 4,370/24,652 examples; 7,167 token rows in current checkpoint.
+Progress: 4,380/24,652 examples; 7,904 token rows in current checkpoint.
+Progress: 4,390/24,652 examples; 9,087 token rows in current checkpoint.
+Progress: 4,400/24,652 examples; 10,093 token rows in current checkpoint.
+Saved data/a3/token_features/part_000043.parquet; checkpointed 4,300/24,652
+Progress: 4,510/24,652 examples; 1,074 token rows in current checkpoint.
+Progress: 4,520/24,652 examples; 2,260 token rows in current checkpoint.
+Progress: 4,530/24,652 examples; 3,409 token rows in current checkpoint.
+Progress: 4,540/24,652 examples; 4,461 token rows in current checkpoint.
+Progress: 4,550/24,652 examples; 5,616 token rows in current checkpoint.
+Progress: 4,560/24,652 examples; 6,683 token rows in current checkpoint.
+Progress: 4,570/24,652 examples; 7,827 token rows in current checkpoint.
+Progress: 4,580/24,652 examples; 8,813 token rows in current checkpoint.
+Progress: 4,590/24,652 examples; 9,991 token rows in current checkpoint.
+Progress: 4,600/24,652 examples; 10,968 token rows in current checkpoint.
+Saved data/a3/token_features/part_000044.parquet; checkpointed 4,400/24,652
+Progress: 4,710/24,652 examples; 988 token rows in current checkpoint.
+Progress: 4,720/24,652 examples; 1,878 token rows in current checkpoint.
+Progress: 4,730/24,652 examples; 2,882 token rows in current checkpoint.
+Progress: 4,740/24,652 examples; 3,800 token rows in current checkpoint.
+Progress: 4,750/24,652 examples; 4,947 token rows in current checkpoint.
+Progress: 4,760/24,652 examples; 5,755 token rows in current checkpoint.
+Progress: 4,770/24,652 examples; 6,680 token rows in current checkpoint.
+Progress: 4,780/24,652 examples; 7,601 token rows in current checkpoint.
+Progress: 4,790/24,652 examples; 8,617 token rows in current checkpoint.
+Progress: 4,800/24,652 examples; 9,487 token rows in current checkpoint.
+Saved data/a3/token_features/part_000045.parquet; checkpointed 4,500/24,652
+Progress: 4,910/24,652 examples; 882 token rows in current checkpoint.
+Progress: 4,920/24,652 examples; 1,871 token rows in current checkpoint.
+Progress: 4,930/24,652 examples; 2,792 token rows in current checkpoint.
+Progress: 4,940/24,652 examples; 3,671 token rows in current checkpoint.
+Progress: 4,950/24,652 examples; 4,693 token rows in current checkpoint.
+Progress: 4,960/24,652 examples; 5,625 token rows in current checkpoint.
+Progress: 4,970/24,652 examples; 6,605 token rows in current checkpoint.
+Progress: 4,980/24,652 examples; 7,662 token rows in current checkpoint.
+Progress: 4,990/24,652 examples; 8,783 token rows in current checkpoint.
+Progress: 5,000/24,652 examples; 9,863 token rows in current checkpoint.
+Saved data/a3/token_features/part_000046.parquet; checkpointed 4,600/24,652
+Progress: 5,110/24,652 examples; 880 token rows in current checkpoint.
+Progress: 5,120/24,652 examples; 1,674 token rows in current checkpoint.
+Progress: 5,130/24,652 examples; 2,626 token rows in current checkpoint.
+Progress: 5,140/24,652 examples; 3,639 token rows in current checkpoint.
+Progress: 5,150/24,652 examples; 4,700 token rows in current checkpoint.
+Progress: 5,160/24,652 examples; 5,777 token rows in current checkpoint.
+Progress: 5,170/24,652 examples; 6,733 token rows in current checkpoint.
+Progress: 5,180/24,652 examples; 7,748 token rows in current checkpoint.
+Progress: 5,190/24,652 examples; 8,737 token rows in current checkpoint.
+Progress: 5,200/24,652 examples; 9,683 token rows in current checkpoint.
+Saved data/a3/token_features/part_000047.parquet; checkpointed 4,700/24,652
+Progress: 5,310/24,652 examples; 1,053 token rows in current checkpoint.
+Progress: 5,320/24,652 examples; 2,204 token rows in current checkpoint.
+Progress: 5,330/24,652 examples; 3,252 token rows in current checkpoint.
+Progress: 5,340/24,652 examples; 4,201 token rows in current checkpoint.
+Progress: 5,350/24,652 examples; 5,141 token rows in current checkpoint.
+Progress: 5,360/24,652 examples; 5,976 token rows in current checkpoint.
+Progress: 5,370/24,652 examples; 6,858 token rows in current checkpoint.
+Progress: 5,380/24,652 examples; 7,630 token rows in current checkpoint.
+Progress: 5,390/24,652 examples; 8,600 token rows in current checkpoint.
+Progress: 5,400/24,652 examples; 9,600 token rows in current checkpoint.
+Saved data/a3/token_features/part_000048.parquet; checkpointed 4,800/24,652
+Progress: 5,510/24,652 examples; 1,097 token rows in current checkpoint.
+Progress: 5,520/24,652 examples; 2,159 token rows in current checkpoint.
+Progress: 5,530/24,652 examples; 3,222 token rows in current checkpoint.
+Progress: 5,540/24,652 examples; 4,370 token rows in current checkpoint.
+Progress: 5,550/24,652 examples; 5,499 token rows in current checkpoint.
+Progress: 5,560/24,652 examples; 6,608 token rows in current checkpoint.
+Progress: 5,570/24,652 examples; 7,564 token rows in current checkpoint.
+Progress: 5,580/24,652 examples; 8,503 token rows in current checkpoint.
+Progress: 5,590/24,652 examples; 9,583 token rows in current checkpoint.
+Progress: 5,600/24,652 examples; 10,609 token rows in current checkpoint.
+Saved data/a3/token_features/part_000049.parquet; checkpointed 4,900/24,652
+Progress: 5,710/24,652 examples; 1,042 token rows in current checkpoint.
+Progress: 5,720/24,652 examples; 1,929 token rows in current checkpoint.
+Progress: 5,730/24,652 examples; 2,973 token rows in current checkpoint.
+Progress: 5,740/24,652 examples; 4,069 token rows in current checkpoint.
+Progress: 5,750/24,652 examples; 5,212 token rows in current checkpoint.
+Progress: 5,760/24,652 examples; 5,970 token rows in current checkpoint.
+Progress: 5,770/24,652 examples; 6,937 token rows in current checkpoint.
+Progress: 5,780/24,652 examples; 7,854 token rows in current checkpoint.
+Progress: 5,790/24,652 examples; 9,014 token rows in current checkpoint.
+Progress: 5,800/24,652 examples; 10,113 token rows in current checkpoint.
+Saved data/a3/token_features/part_000050.parquet; checkpointed 5,000/24,652
+Progress: 5,910/24,652 examples; 797 token rows in current checkpoint.
+Progress: 5,920/24,652 examples; 1,699 token rows in current checkpoint.
+Progress: 5,930/24,652 examples; 2,597 token rows in current checkpoint.
+Progress: 5,940/24,652 examples; 3,726 token rows in current checkpoint.
+Progress: 5,950/24,652 examples; 4,720 token rows in current checkpoint.
+Progress: 5,960/24,652 examples; 5,847 token rows in current checkpoint.
+Progress: 5,970/24,652 examples; 6,998 token rows in current checkpoint.
+Progress: 5,980/24,652 examples; 8,140 token rows in current checkpoint.
+Progress: 5,990/24,652 examples; 9,023 token rows in current checkpoint.
+Progress: 6,000/24,652 examples; 10,046 token rows in current checkpoint.
+Saved data/a3/token_features/part_000051.parquet; checkpointed 5,100/24,652
+Progress: 6,110/24,652 examples; 1,095 token rows in current checkpoint.
+Progress: 6,120/24,652 examples; 2,024 token rows in current checkpoint.
+Progress: 6,130/24,652 examples; 3,087 token rows in current checkpoint.
+Progress: 6,140/24,652 examples; 3,964 token rows in current checkpoint.
+Progress: 6,150/24,652 examples; 4,862 token rows in current checkpoint.
+Progress: 6,160/24,652 examples; 5,848 token rows in current checkpoint.
+Progress: 6,170/24,652 examples; 6,991 token rows in current checkpoint.
+Progress: 6,180/24,652 examples; 7,665 token rows in current checkpoint.
+Progress: 6,190/24,652 examples; 8,582 token rows in current checkpoint.
+Progress: 6,200/24,652 examples; 9,555 token rows in current checkpoint.
+Saved data/a3/token_features/part_000052.parquet; checkpointed 5,200/24,652
+Progress: 6,310/24,652 examples; 1,017 token rows in current checkpoint.
+Progress: 6,320/24,652 examples; 2,009 token rows in current checkpoint.
+Progress: 6,330/24,652 examples; 3,140 token rows in current checkpoint.
+Progress: 6,340/24,652 examples; 4,400 token rows in current checkpoint.
+Progress: 6,350/24,652 examples; 5,488 token rows in current checkpoint.
+Progress: 6,360/24,652 examples; 6,490 token rows in current checkpoint.
+Progress: 6,370/24,652 examples; 7,384 token rows in current checkpoint.
+Progress: 6,380/24,652 examples; 8,385 token rows in current checkpoint.
+Progress: 6,390/24,652 examples; 9,460 token rows in current checkpoint.
+Progress: 6,400/24,652 examples; 10,438 token rows in current checkpoint.
+Saved data/a3/token_features/part_000053.parquet; checkpointed 5,300/24,652
+Progress: 6,510/24,652 examples; 741 token rows in current checkpoint.
+Progress: 6,520/24,652 examples; 1,728 token rows in current checkpoint.
+Progress: 6,530/24,652 examples; 2,460 token rows in current checkpoint.
+Progress: 6,540/24,652 examples; 3,678 token rows in current checkpoint.
+Progress: 6,550/24,652 examples; 4,548 token rows in current checkpoint.
+Progress: 6,560/24,652 examples; 5,654 token rows in current checkpoint.
+Progress: 6,570/24,652 examples; 6,569 token rows in current checkpoint.
+Progress: 6,580/24,652 examples; 7,626 token rows in current checkpoint.
+Progress: 6,590/24,652 examples; 8,755 token rows in current checkpoint.
+Progress: 6,600/24,652 examples; 9,679 token rows in current checkpoint.
+Saved data/a3/token_features/part_000054.parquet; checkpointed 5,400/24,652
+Progress: 6,710/24,652 examples; 986 token rows in current checkpoint.
+Progress: 6,720/24,652 examples; 1,925 token rows in current checkpoint.
+Progress: 6,730/24,652 examples; 2,987 token rows in current checkpoint.
+Progress: 6,740/24,652 examples; 4,052 token rows in current checkpoint.
+Progress: 6,750/24,652 examples; 5,221 token rows in current checkpoint.
+Progress: 6,760/24,652 examples; 6,425 token rows in current checkpoint.
+Progress: 6,770/24,652 examples; 7,552 token rows in current checkpoint.
+Progress: 6,780/24,652 examples; 8,614 token rows in current checkpoint.
+Progress: 6,790/24,652 examples; 9,743 token rows in current checkpoint.
+Progress: 6,800/24,652 examples; 10,828 token rows in current checkpoint.
+Saved data/a3/token_features/part_000055.parquet; checkpointed 5,500/24,652
+Progress: 6,910/24,652 examples; 1,133 token rows in current checkpoint.
+Progress: 6,920/24,652 examples; 2,179 token rows in current checkpoint.
+Progress: 6,930/24,652 examples; 3,192 token rows in current checkpoint.
+Progress: 6,940/24,652 examples; 4,270 token rows in current checkpoint.
+Progress: 6,950/24,652 examples; 5,396 token rows in current checkpoint.
+Progress: 6,960/24,652 examples; 6,250 token rows in current checkpoint.
+Progress: 6,970/24,652 examples; 7,189 token rows in current checkpoint.
+Progress: 6,980/24,652 examples; 8,339 token rows in current checkpoint.
+Progress: 6,990/24,652 examples; 9,410 token rows in current checkpoint.
+Progress: 7,000/24,652 examples; 10,407 token rows in current checkpoint.
+Saved data/a3/token_features/part_000056.parquet; checkpointed 5,600/24,652
+Progress: 7,110/24,652 examples; 826 token rows in current checkpoint.
+Progress: 7,120/24,652 examples; 1,825 token rows in current checkpoint.
+Progress: 7,130/24,652 examples; 2,737 token rows in current checkpoint.
+Progress: 7,140/24,652 examples; 3,741 token rows in current checkpoint.
+Progress: 7,150/24,652 examples; 4,839 token rows in current checkpoint.
+Progress: 7,160/24,652 examples; 5,583 token rows in current checkpoint.
+Progress: 7,170/24,652 examples; 6,520 token rows in current checkpoint.
+Progress: 7,180/24,652 examples; 7,484 token rows in current checkpoint.
+Progress: 7,190/24,652 examples; 8,338 token rows in current checkpoint.
+Progress: 7,200/24,652 examples; 9,450 token rows in current checkpoint.
+Saved data/a3/token_features/part_000057.parquet; checkpointed 5,700/24,652
+Progress: 7,310/24,652 examples; 855 token rows in current checkpoint.
+Progress: 7,320/24,652 examples; 1,580 token rows in current checkpoint.
+Progress: 7,330/24,652 examples; 2,459 token rows in current checkpoint.
+Progress: 7,340/24,652 examples; 3,465 token rows in current checkpoint.
+Progress: 7,350/24,652 examples; 4,483 token rows in current checkpoint.
+Progress: 7,360/24,652 examples; 5,370 token rows in current checkpoint.
+Progress: 7,370/24,652 examples; 6,164 token rows in current checkpoint.
+Progress: 7,380/24,652 examples; 7,017 token rows in current checkpoint.
+Progress: 7,390/24,652 examples; 7,986 token rows in current checkpoint.
+Progress: 7,400/24,652 examples; 9,071 token rows in current checkpoint.
+Saved data/a3/token_features/part_000058.parquet; checkpointed 5,800/24,652
+Progress: 7,510/24,652 examples; 1,092 token rows in current checkpoint.
+Progress: 7,520/24,652 examples; 2,195 token rows in current checkpoint.
+Progress: 7,530/24,652 examples; 3,259 token rows in current checkpoint.
+Progress: 7,540/24,652 examples; 4,257 token rows in current checkpoint.
+Progress: 7,550/24,652 examples; 5,228 token rows in current checkpoint.
+Progress: 7,560/24,652 examples; 6,083 token rows in current checkpoint.
+Progress: 7,570/24,652 examples; 7,158 token rows in current checkpoint.
+Progress: 7,580/24,652 examples; 7,966 token rows in current checkpoint.
+Progress: 7,590/24,652 examples; 8,884 token rows in current checkpoint.
+Progress: 7,600/24,652 examples; 10,014 token rows in current checkpoint.
+Saved data/a3/token_features/part_000059.parquet; checkpointed 5,900/24,652
+Progress: 7,710/24,652 examples; 980 token rows in current checkpoint.
+Progress: 7,720/24,652 examples; 1,972 token rows in current checkpoint.
+Progress: 7,730/24,652 examples; 3,003 token rows in current checkpoint.
+Progress: 7,740/24,652 examples; 3,793 token rows in current checkpoint.
+Progress: 7,750/24,652 examples; 4,855 token rows in current checkpoint.
+Progress: 7,760/24,652 examples; 5,571 token rows in current checkpoint.
+Progress: 7,770/24,652 examples; 6,726 token rows in current checkpoint.
+Progress: 7,780/24,652 examples; 7,776 token rows in current checkpoint.
+Progress: 7,790/24,652 examples; 8,625 token rows in current checkpoint.
+Progress: 7,800/24,652 examples; 9,814 token rows in current checkpoint.
+Saved data/a3/token_features/part_000060.parquet; checkpointed 6,000/24,652
+Progress: 7,910/24,652 examples; 1,028 token rows in current checkpoint.
+Progress: 7,920/24,652 examples; 2,071 token rows in current checkpoint.
+Progress: 7,930/24,652 examples; 3,056 token rows in current checkpoint.
+Progress: 7,940/24,652 examples; 4,225 token rows in current checkpoint.
+Progress: 7,950/24,652 examples; 5,394 token rows in current checkpoint.
+Progress: 7,960/24,652 examples; 6,289 token rows in current checkpoint.
+Progress: 7,970/24,652 examples; 7,315 token rows in current checkpoint.
+Progress: 7,980/24,652 examples; 8,211 token rows in current checkpoint.
+Progress: 7,990/24,652 examples; 9,238 token rows in current checkpoint.
+Progress: 8,000/24,652 examples; 10,089 token rows in current checkpoint.
+Saved data/a3/token_features/part_000061.parquet; checkpointed 6,100/24,652
+Progress: 8,110/24,652 examples; 1,072 token rows in current checkpoint.
+Progress: 8,120/24,652 examples; 2,136 token rows in current checkpoint.
+Progress: 8,130/24,652 examples; 3,122 token rows in current checkpoint.
+Progress: 8,140/24,652 examples; 4,225 token rows in current checkpoint.
+Progress: 8,150/24,652 examples; 5,156 token rows in current checkpoint.
+Progress: 8,160/24,652 examples; 6,060 token rows in current checkpoint.
+Progress: 8,170/24,652 examples; 7,024 token rows in current checkpoint.
+Progress: 8,180/24,652 examples; 7,813 token rows in current checkpoint.
+Progress: 8,190/24,652 examples; 8,822 token rows in current checkpoint.
+Progress: 8,200/24,652 examples; 9,955 token rows in current checkpoint.
+Saved data/a3/token_features/part_000062.parquet; checkpointed 6,200/24,652
+Progress: 8,310/24,652 examples; 1,053 token rows in current checkpoint.
+Progress: 8,320/24,652 examples; 2,008 token rows in current checkpoint.
+Progress: 8,330/24,652 examples; 2,894 token rows in current checkpoint.
+Progress: 8,340/24,652 examples; 3,973 token rows in current checkpoint.
+Progress: 8,350/24,652 examples; 4,959 token rows in current checkpoint.
+Progress: 8,360/24,652 examples; 6,009 token rows in current checkpoint.
+Progress: 8,370/24,652 examples; 6,753 token rows in current checkpoint.
+Progress: 8,380/24,652 examples; 7,761 token rows in current checkpoint.
+Progress: 8,390/24,652 examples; 8,724 token rows in current checkpoint.
+Progress: 8,400/24,652 examples; 9,718 token rows in current checkpoint.
+Saved data/a3/token_features/part_000063.parquet; checkpointed 6,300/24,652
+Progress: 8,510/24,652 examples; 1,019 token rows in current checkpoint.
+Progress: 8,520/24,652 examples; 2,085 token rows in current checkpoint.
+Progress: 8,530/24,652 examples; 3,176 token rows in current checkpoint.
+Progress: 8,540/24,652 examples; 4,220 token rows in current checkpoint.
+Progress: 8,550/24,652 examples; 5,133 token rows in current checkpoint.
+Progress: 8,560/24,652 examples; 6,074 token rows in current checkpoint.
+Progress: 8,570/24,652 examples; 6,871 token rows in current checkpoint.
+Progress: 8,580/24,652 examples; 7,878 token rows in current checkpoint.
+Progress: 8,590/24,652 examples; 9,011 token rows in current checkpoint.
+Progress: 8,600/24,652 examples; 9,940 token rows in current checkpoint.
+Saved data/a3/token_features/part_000064.parquet; checkpointed 6,400/24,652
+Progress: 8,710/24,652 examples; 1,101 token rows in current checkpoint.
+Progress: 8,720/24,652 examples; 1,942 token rows in current checkpoint.
+Progress: 8,730/24,652 examples; 2,825 token rows in current checkpoint.
+Progress: 8,740/24,652 examples; 3,735 token rows in current checkpoint.
+Progress: 8,750/24,652 examples; 4,651 token rows in current checkpoint.
+Progress: 8,760/24,652 examples; 5,534 token rows in current checkpoint.
+Progress: 8,770/24,652 examples; 6,563 token rows in current checkpoint.
+Progress: 8,780/24,652 examples; 7,531 token rows in current checkpoint.
+Progress: 8,790/24,652 examples; 8,636 token rows in current checkpoint.
+Progress: 8,800/24,652 examples; 9,673 token rows in current checkpoint.
+Saved data/a3/token_features/part_000065.parquet; checkpointed 6,500/24,652
+Progress: 8,910/24,652 examples; 955 token rows in current checkpoint.
+Progress: 8,920/24,652 examples; 1,985 token rows in current checkpoint.
+Progress: 8,930/24,652 examples; 3,022 token rows in current checkpoint.
+Progress: 8,940/24,652 examples; 4,143 token rows in current checkpoint.
+Progress: 8,950/24,652 examples; 5,240 token rows in current checkpoint.
+Progress: 8,960/24,652 examples; 6,280 token rows in current checkpoint.
+Progress: 8,970/24,652 examples; 7,306 token rows in current checkpoint.
+Progress: 8,980/24,652 examples; 8,140 token rows in current checkpoint.
+Progress: 8,990/24,652 examples; 9,018 token rows in current checkpoint.
+Progress: 9,000/24,652 examples; 10,044 token rows in current checkpoint.
+Saved data/a3/token_features/part_000066.parquet; checkpointed 6,600/24,652
+Progress: 9,110/24,652 examples; 869 token rows in current checkpoint.
+Progress: 9,120/24,652 examples; 1,946 token rows in current checkpoint.
+Progress: 9,130/24,652 examples; 2,825 token rows in current checkpoint.
+Progress: 9,140/24,652 examples; 3,838 token rows in current checkpoint.
+Progress: 9,150/24,652 examples; 4,889 token rows in current checkpoint.
+Progress: 9,160/24,652 examples; 5,760 token rows in current checkpoint.
+Progress: 9,170/24,652 examples; 6,905 token rows in current checkpoint.
+Progress: 9,180/24,652 examples; 7,858 token rows in current checkpoint.
+Progress: 9,190/24,652 examples; 9,025 token rows in current checkpoint.
+Progress: 9,200/24,652 examples; 9,894 token rows in current checkpoint.
+Saved data/a3/token_features/part_000067.parquet; checkpointed 6,700/24,652
+Progress: 9,310/24,652 examples; 1,001 token rows in current checkpoint.
+Progress: 9,320/24,652 examples; 1,872 token rows in current checkpoint.
+Progress: 9,330/24,652 examples; 2,755 token rows in current checkpoint.
+Progress: 9,340/24,652 examples; 3,691 token rows in current checkpoint.
+Progress: 9,350/24,652 examples; 4,631 token rows in current checkpoint.
+Progress: 9,360/24,652 examples; 5,688 token rows in current checkpoint.
+Progress: 9,370/24,652 examples; 6,577 token rows in current checkpoint.
+Progress: 9,380/24,652 examples; 7,427 token rows in current checkpoint.
+Progress: 9,390/24,652 examples; 8,404 token rows in current checkpoint.
+Progress: 9,400/24,652 examples; 9,300 token rows in current checkpoint.
+Saved data/a3/token_features/part_000068.parquet; checkpointed 6,800/24,652
+Progress: 9,510/24,652 examples; 1,156 token rows in current checkpoint.
+Progress: 9,520/24,652 examples; 2,139 token rows in current checkpoint.
+Progress: 9,530/24,652 examples; 2,985 token rows in current checkpoint.
+Progress: 9,540/24,652 examples; 3,941 token rows in current checkpoint.
+Progress: 9,550/24,652 examples; 4,845 token rows in current checkpoint.
+Progress: 9,560/24,652 examples; 5,832 token rows in current checkpoint.
+Progress: 9,570/24,652 examples; 6,643 token rows in current checkpoint.
+Progress: 9,580/24,652 examples; 7,681 token rows in current checkpoint.
+Progress: 9,590/24,652 examples; 8,953 token rows in current checkpoint.
+Progress: 9,600/24,652 examples; 9,820 token rows in current checkpoint.
+Saved data/a3/token_features/part_000069.parquet; checkpointed 6,900/24,652
+Progress: 9,710/24,652 examples; 941 token rows in current checkpoint.
+Progress: 9,720/24,652 examples; 1,949 token rows in current checkpoint.
+Progress: 9,730/24,652 examples; 2,905 token rows in current checkpoint.
+Progress: 9,740/24,652 examples; 4,004 token rows in current checkpoint.
+Progress: 9,750/24,652 examples; 4,907 token rows in current checkpoint.
+Progress: 9,760/24,652 examples; 6,152 token rows in current checkpoint.
+Progress: 9,770/24,652 examples; 7,113 token rows in current checkpoint.
+Progress: 9,780/24,652 examples; 8,236 token rows in current checkpoint.
+Progress: 9,790/24,652 examples; 9,134 token rows in current checkpoint.
+Progress: 9,800/24,652 examples; 10,350 token rows in current checkpoint.
+Saved data/a3/token_features/part_000070.parquet; checkpointed 7,000/24,652
+Progress: 9,910/24,652 examples; 1,065 token rows in current checkpoint.
+Progress: 9,920/24,652 examples; 1,896 token rows in current checkpoint.
+Progress: 9,930/24,652 examples; 2,949 token rows in current checkpoint.
+Progress: 9,940/24,652 examples; 3,903 token rows in current checkpoint.
+Progress: 9,950/24,652 examples; 4,865 token rows in current checkpoint.
+Progress: 9,960/24,652 examples; 6,062 token rows in current checkpoint.
+Progress: 9,970/24,652 examples; 6,936 token rows in current checkpoint.
+Progress: 9,980/24,652 examples; 7,981 token rows in current checkpoint.
+Progress: 9,990/24,652 examples; 8,980 token rows in current checkpoint.
+Progress: 10,000/24,652 examples; 9,925 token rows in current checkpoint.
+Saved data/a3/token_features/part_000071.parquet; checkpointed 7,100/24,652
+Progress: 10,110/24,652 examples; 1,053 token rows in current checkpoint.
+Progress: 10,120/24,652 examples; 2,019 token rows in current checkpoint.
+Progress: 10,130/24,652 examples; 3,187 token rows in current checkpoint.
+Progress: 10,140/24,652 examples; 4,165 token rows in current checkpoint.
+Progress: 10,150/24,652 examples; 4,684 token rows in current checkpoint.
+Progress: 10,160/24,652 examples; 5,725 token rows in current checkpoint.
+Progress: 10,170/24,652 examples; 6,691 token rows in current checkpoint.
+Progress: 10,180/24,652 examples; 7,478 token rows in current checkpoint.
+Progress: 10,190/24,652 examples; 8,438 token rows in current checkpoint.
+Progress: 10,200/24,652 examples; 9,525 token rows in current checkpoint.
+Saved data/a3/token_features/part_000072.parquet; checkpointed 7,200/24,652
+Progress: 10,310/24,652 examples; 1,085 token rows in current checkpoint.
+Progress: 10,320/24,652 examples; 1,912 token rows in current checkpoint.
+Progress: 10,330/24,652 examples; 2,969 token rows in current checkpoint.
+Progress: 10,340/24,652 examples; 4,086 token rows in current checkpoint.
+Progress: 10,350/24,652 examples; 5,078 token rows in current checkpoint.
+Progress: 10,360/24,652 examples; 6,011 token rows in current checkpoint.
+Progress: 10,370/24,652 examples; 6,842 token rows in current checkpoint.
+Progress: 10,380/24,652 examples; 7,888 token rows in current checkpoint.
+Progress: 10,390/24,652 examples; 8,590 token rows in current checkpoint.
+Progress: 10,400/24,652 examples; 9,444 token rows in current checkpoint.
+Saved data/a3/token_features/part_000073.parquet; checkpointed 7,300/24,652
+Progress: 10,510/24,652 examples; 973 token rows in current checkpoint.
+Progress: 10,520/24,652 examples; 2,005 token rows in current checkpoint.
+Progress: 10,530/24,652 examples; 2,929 token rows in current checkpoint.
+Progress: 10,540/24,652 examples; 3,986 token rows in current checkpoint.
+Progress: 10,550/24,652 examples; 5,105 token rows in current checkpoint.
+Progress: 10,560/24,652 examples; 6,073 token rows in current checkpoint.
+Progress: 10,570/24,652 examples; 7,022 token rows in current checkpoint.
+Progress: 10,580/24,652 examples; 8,041 token rows in current checkpoint.
+Progress: 10,590/24,652 examples; 8,887 token rows in current checkpoint.
+Progress: 10,600/24,652 examples; 9,994 token rows in current checkpoint.
+Saved data/a3/token_features/part_000074.parquet; checkpointed 7,400/24,652
+Progress: 10,710/24,652 examples; 1,036 token rows in current checkpoint.
+Progress: 10,720/24,652 examples; 1,907 token rows in current checkpoint.
+Progress: 10,730/24,652 examples; 2,850 token rows in current checkpoint.
+Progress: 10,740/24,652 examples; 3,769 token rows in current checkpoint.
+Progress: 10,750/24,652 examples; 4,738 token rows in current checkpoint.
+Progress: 10,760/24,652 examples; 5,837 token rows in current checkpoint.
+Progress: 10,770/24,652 examples; 6,843 token rows in current checkpoint.
+Progress: 10,780/24,652 examples; 7,958 token rows in current checkpoint.
+Progress: 10,790/24,652 examples; 8,905 token rows in current checkpoint.
+Progress: 10,800/24,652 examples; 9,881 token rows in current checkpoint.
+Saved data/a3/token_features/part_000075.parquet; checkpointed 7,500/24,652
+Progress: 10,910/24,652 examples; 1,044 token rows in current checkpoint.
+Progress: 10,920/24,652 examples; 2,122 token rows in current checkpoint.
+Progress: 10,930/24,652 examples; 3,267 token rows in current checkpoint.
+Progress: 10,940/24,652 examples; 4,168 token rows in current checkpoint.
+Progress: 10,950/24,652 examples; 5,209 token rows in current checkpoint.
+Progress: 10,960/24,652 examples; 6,224 token rows in current checkpoint.
+Progress: 10,970/24,652 examples; 7,090 token rows in current checkpoint.
+Progress: 10,980/24,652 examples; 8,065 token rows in current checkpoint.
+Progress: 10,990/24,652 examples; 9,043 token rows in current checkpoint.
+Progress: 11,000/24,652 examples; 9,868 token rows in current checkpoint.
+Saved data/a3/token_features/part_000076.parquet; checkpointed 7,600/24,652
+Progress: 11,110/24,652 examples; 800 token rows in current checkpoint.
+Progress: 11,120/24,652 examples; 1,679 token rows in current checkpoint.
+Progress: 11,130/24,652 examples; 2,813 token rows in current checkpoint.
+Progress: 11,140/24,652 examples; 3,770 token rows in current checkpoint.
+Progress: 11,150/24,652 examples; 4,841 token rows in current checkpoint.
+Progress: 11,160/24,652 examples; 5,930 token rows in current checkpoint.
+Progress: 11,170/24,652 examples; 7,008 token rows in current checkpoint.
+Progress: 11,180/24,652 examples; 7,813 token rows in current checkpoint.
+Progress: 11,190/24,652 examples; 8,741 token rows in current checkpoint.
+Progress: 11,200/24,652 examples; 9,536 token rows in current checkpoint.
+Saved data/a3/token_features/part_000077.parquet; checkpointed 7,700/24,652
+Progress: 11,310/24,652 examples; 1,037 token rows in current checkpoint.
+Progress: 11,320/24,652 examples; 2,095 token rows in current checkpoint.
+Progress: 11,330/24,652 examples; 3,164 token rows in current checkpoint.
+Progress: 11,340/24,652 examples; 4,005 token rows in current checkpoint.
+Progress: 11,350/24,652 examples; 4,902 token rows in current checkpoint.
+Progress: 11,360/24,652 examples; 5,692 token rows in current checkpoint.
+Progress: 11,370/24,652 examples; 6,545 token rows in current checkpoint.
+Progress: 11,380/24,652 examples; 7,588 token rows in current checkpoint.
+Progress: 11,390/24,652 examples; 8,442 token rows in current checkpoint.
+Progress: 11,400/24,652 examples; 9,625 token rows in current checkpoint.
+Saved data/a3/token_features/part_000078.parquet; checkpointed 7,800/24,652
+Progress: 11,510/24,652 examples; 881 token rows in current checkpoint.
+Progress: 11,520/24,652 examples; 1,672 token rows in current checkpoint.
+Progress: 11,530/24,652 examples; 2,628 token rows in current checkpoint.
+Progress: 11,540/24,652 examples; 3,516 token rows in current checkpoint.
+Progress: 11,550/24,652 examples; 4,389 token rows in current checkpoint.
+Progress: 11,560/24,652 examples; 5,426 token rows in current checkpoint.
+Progress: 11,570/24,652 examples; 6,388 token rows in current checkpoint.
+Progress: 11,580/24,652 examples; 7,379 token rows in current checkpoint.
+Progress: 11,590/24,652 examples; 8,394 token rows in current checkpoint.
+Progress: 11,600/24,652 examples; 9,358 token rows in current checkpoint.
+Saved data/a3/token_features/part_000079.parquet; checkpointed 7,900/24,652
+Progress: 11,710/24,652 examples; 896 token rows in current checkpoint.
+Progress: 11,720/24,652 examples; 1,893 token rows in current checkpoint.
+Progress: 11,730/24,652 examples; 2,757 token rows in current checkpoint.
+Progress: 11,740/24,652 examples; 3,697 token rows in current checkpoint.
+Progress: 11,750/24,652 examples; 4,901 token rows in current checkpoint.
+Progress: 11,760/24,652 examples; 5,856 token rows in current checkpoint.
+Progress: 11,770/24,652 examples; 6,748 token rows in current checkpoint.
+Progress: 11,780/24,652 examples; 7,626 token rows in current checkpoint.
+Progress: 11,790/24,652 examples; 8,501 token rows in current checkpoint.
+Progress: 11,800/24,652 examples; 9,438 token rows in current checkpoint.
+Saved data/a3/token_features/part_000080.parquet; checkpointed 8,000/24,652
+Progress: 11,910/24,652 examples; 1,111 token rows in current checkpoint.
+Progress: 11,920/24,652 examples; 2,041 token rows in current checkpoint.
+Progress: 11,930/24,652 examples; 3,280 token rows in current checkpoint.
+Progress: 11,940/24,652 examples; 4,384 token rows in current checkpoint.
+Progress: 11,950/24,652 examples; 5,549 token rows in current checkpoint.
+Progress: 11,960/24,652 examples; 6,657 token rows in current checkpoint.
+Progress: 11,970/24,652 examples; 7,633 token rows in current checkpoint.
+Progress: 11,980/24,652 examples; 8,777 token rows in current checkpoint.
+Progress: 11,990/24,652 examples; 9,825 token rows in current checkpoint.
+Progress: 12,000/24,652 examples; 10,911 token rows in current checkpoint.
+Saved data/a3/token_features/part_000081.parquet; checkpointed 8,100/24,652
+Progress: 12,110/24,652 examples; 1,006 token rows in current checkpoint.
+Progress: 12,120/24,652 examples; 1,957 token rows in current checkpoint.
+Progress: 12,130/24,652 examples; 2,963 token rows in current checkpoint.
+Progress: 12,140/24,652 examples; 4,057 token rows in current checkpoint.
+Progress: 12,150/24,652 examples; 5,047 token rows in current checkpoint.
+Progress: 12,160/24,652 examples; 6,177 token rows in current checkpoint.
+Progress: 12,170/24,652 examples; 7,134 token rows in current checkpoint.
+Progress: 12,180/24,652 examples; 8,029 token rows in current checkpoint.
+Progress: 12,190/24,652 examples; 9,001 token rows in current checkpoint.
+Progress: 12,200/24,652 examples; 10,089 token rows in current checkpoint.
+Saved data/a3/token_features/part_000082.parquet; checkpointed 8,200/24,652
+Progress: 12,310/24,652 examples; 825 token rows in current checkpoint.
+Progress: 12,320/24,652 examples; 1,770 token rows in current checkpoint.
+Progress: 12,330/24,652 examples; 2,566 token rows in current checkpoint.
+Progress: 12,340/24,652 examples; 3,769 token rows in current checkpoint.
+Progress: 12,350/24,652 examples; 4,726 token rows in current checkpoint.
+Progress: 12,360/24,652 examples; 5,660 token rows in current checkpoint.
+Progress: 12,370/24,652 examples; 6,663 token rows in current checkpoint.
+Progress: 12,380/24,652 examples; 7,549 token rows in current checkpoint.
+Progress: 12,390/24,652 examples; 8,702 token rows in current checkpoint.
+Progress: 12,400/24,652 examples; 9,677 token rows in current checkpoint.
+Saved data/a3/token_features/part_000083.parquet; checkpointed 8,300/24,652
+Progress: 12,510/24,652 examples; 1,173 token rows in current checkpoint.
+Progress: 12,520/24,652 examples; 2,197 token rows in current checkpoint.
+Progress: 12,530/24,652 examples; 3,129 token rows in current checkpoint.
+Progress: 12,540/24,652 examples; 4,076 token rows in current checkpoint.
+Progress: 12,550/24,652 examples; 5,109 token rows in current checkpoint.
+Progress: 12,560/24,652 examples; 6,151 token rows in current checkpoint.
+Progress: 12,570/24,652 examples; 7,229 token rows in current checkpoint.
+Progress: 12,580/24,652 examples; 8,028 token rows in current checkpoint.
+Progress: 12,590/24,652 examples; 9,024 token rows in current checkpoint.
+Progress: 12,600/24,652 examples; 10,022 token rows in current checkpoint.
+Saved data/a3/token_features/part_000084.parquet; checkpointed 8,400/24,652
+Progress: 12,710/24,652 examples; 1,020 token rows in current checkpoint.
+Progress: 12,720/24,652 examples; 2,072 token rows in current checkpoint.
+Progress: 12,730/24,652 examples; 3,077 token rows in current checkpoint.
+Progress: 12,740/24,652 examples; 4,268 token rows in current checkpoint.
+Progress: 12,750/24,652 examples; 5,501 token rows in current checkpoint.
+Progress: 12,760/24,652 examples; 6,479 token rows in current checkpoint.
+Progress: 12,770/24,652 examples; 7,409 token rows in current checkpoint.
+Progress: 12,780/24,652 examples; 8,456 token rows in current checkpoint.
+Progress: 12,790/24,652 examples; 9,601 token rows in current checkpoint.
+Progress: 12,800/24,652 examples; 10,784 token rows in current checkpoint.
+Saved data/a3/token_features/part_000085.parquet; checkpointed 8,500/24,652
+Progress: 12,910/24,652 examples; 1,054 token rows in current checkpoint.
+Progress: 12,920/24,652 examples; 1,993 token rows in current checkpoint.
+Progress: 12,930/24,652 examples; 2,779 token rows in current checkpoint.
+Progress: 12,940/24,652 examples; 3,715 token rows in current checkpoint.
+Progress: 12,950/24,652 examples; 4,715 token rows in current checkpoint.
+Progress: 12,960/24,652 examples; 5,830 token rows in current checkpoint.
+Progress: 12,970/24,652 examples; 6,579 token rows in current checkpoint.
+Progress: 12,980/24,652 examples; 7,746 token rows in current checkpoint.
+Progress: 12,990/24,652 examples; 8,955 token rows in current checkpoint.
+Progress: 13,000/24,652 examples; 9,975 token rows in current checkpoint.
+Saved data/a3/token_features/part_000086.parquet; checkpointed 8,600/24,652
+Progress: 13,110/24,652 examples; 1,158 token rows in current checkpoint.
+Progress: 13,120/24,652 examples; 2,050 token rows in current checkpoint.
+Progress: 13,130/24,652 examples; 2,895 token rows in current checkpoint.
+Progress: 13,140/24,652 examples; 3,794 token rows in current checkpoint.
+Progress: 13,150/24,652 examples; 4,721 token rows in current checkpoint.
+Progress: 13,160/24,652 examples; 5,729 token rows in current checkpoint.
+Progress: 13,170/24,652 examples; 6,917 token rows in current checkpoint.
+Progress: 13,180/24,652 examples; 7,878 token rows in current checkpoint.
+Progress: 13,190/24,652 examples; 8,913 token rows in current checkpoint.
+Progress: 13,200/24,652 examples; 10,049 token rows in current checkpoint.
+Saved data/a3/token_features/part_000087.parquet; checkpointed 8,700/24,652
+Progress: 13,310/24,652 examples; 676 token rows in current checkpoint.
+Progress: 13,320/24,652 examples; 1,955 token rows in current checkpoint.
+Progress: 13,330/24,652 examples; 3,067 token rows in current checkpoint.
+Progress: 13,340/24,652 examples; 4,087 token rows in current checkpoint.
+Progress: 13,350/24,652 examples; 4,986 token rows in current checkpoint.
+Progress: 13,360/24,652 examples; 5,873 token rows in current checkpoint.
+Progress: 13,370/24,652 examples; 6,893 token rows in current checkpoint.
+Progress: 13,380/24,652 examples; 7,918 token rows in current checkpoint.
+Progress: 13,390/24,652 examples; 9,088 token rows in current checkpoint.
+Progress: 13,400/24,652 examples; 10,229 token rows in current checkpoint.
+Saved data/a3/token_features/part_000088.parquet; checkpointed 8,800/24,652
+Progress: 13,510/24,652 examples; 945 token rows in current checkpoint.
+Progress: 13,520/24,652 examples; 2,072 token rows in current checkpoint.
+Progress: 13,530/24,652 examples; 3,096 token rows in current checkpoint.
+Progress: 13,540/24,652 examples; 4,159 token rows in current checkpoint.
+Progress: 13,550/24,652 examples; 5,213 token rows in current checkpoint.
+Progress: 13,560/24,652 examples; 6,369 token rows in current checkpoint.
+Progress: 13,570/24,652 examples; 7,316 token rows in current checkpoint.
+Progress: 13,580/24,652 examples; 8,285 token rows in current checkpoint.
+Progress: 13,590/24,652 examples; 9,325 token rows in current checkpoint.
+Progress: 13,600/24,652 examples; 10,385 token rows in current checkpoint.
+Saved data/a3/token_features/part_000089.parquet; checkpointed 8,900/24,652
+Progress: 13,710/24,652 examples; 1,165 token rows in current checkpoint.
+Progress: 13,720/24,652 examples; 1,920 token rows in current checkpoint.
+Progress: 13,730/24,652 examples; 2,854 token rows in current checkpoint.
+Progress: 13,740/24,652 examples; 3,931 token rows in current checkpoint.
+Progress: 13,750/24,652 examples; 4,877 token rows in current checkpoint.
+Progress: 13,760/24,652 examples; 5,697 token rows in current checkpoint.
+Progress: 13,770/24,652 examples; 6,858 token rows in current checkpoint.
+Progress: 13,780/24,652 examples; 8,034 token rows in current checkpoint.
+Progress: 13,790/24,652 examples; 9,192 token rows in current checkpoint.
+Progress: 13,800/24,652 examples; 10,264 token rows in current checkpoint.
+Saved data/a3/token_features/part_000090.parquet; checkpointed 9,000/24,652
+Progress: 13,910/24,652 examples; 1,017 token rows in current checkpoint.
+Progress: 13,920/24,652 examples; 1,745 token rows in current checkpoint.
+Progress: 13,930/24,652 examples; 2,917 token rows in current checkpoint.
+Progress: 13,940/24,652 examples; 4,119 token rows in current checkpoint.
+Progress: 13,950/24,652 examples; 5,121 token rows in current checkpoint.
+Progress: 13,960/24,652 examples; 6,067 token rows in current checkpoint.
+Progress: 13,970/24,652 examples; 7,073 token rows in current checkpoint.
+Progress: 13,980/24,652 examples; 8,215 token rows in current checkpoint.
+Progress: 13,990/24,652 examples; 9,404 token rows in current checkpoint.
+Progress: 14,000/24,652 examples; 10,528 token rows in current checkpoint.
+Saved data/a3/token_features/part_000091.parquet; checkpointed 9,100/24,652
+Progress: 14,110/24,652 examples; 815 token rows in current checkpoint.
+Progress: 14,120/24,652 examples; 1,779 token rows in current checkpoint.
+Progress: 14,130/24,652 examples; 2,838 token rows in current checkpoint.
+Progress: 14,140/24,652 examples; 3,992 token rows in current checkpoint.
+Progress: 14,150/24,652 examples; 5,183 token rows in current checkpoint.
+Progress: 14,160/24,652 examples; 6,211 token rows in current checkpoint.
+Progress: 14,170/24,652 examples; 7,182 token rows in current checkpoint.
+Progress: 14,180/24,652 examples; 8,263 token rows in current checkpoint.
+Progress: 14,190/24,652 examples; 9,218 token rows in current checkpoint.
+Progress: 14,200/24,652 examples; 10,335 token rows in current checkpoint.
+Saved data/a3/token_features/part_000092.parquet; checkpointed 9,200/24,652
+Progress: 14,310/24,652 examples; 1,158 token rows in current checkpoint.
+Progress: 14,320/24,652 examples; 2,120 token rows in current checkpoint.
+Progress: 14,330/24,652 examples; 3,177 token rows in current checkpoint.
+Progress: 14,340/24,652 examples; 4,287 token rows in current checkpoint.
+Progress: 14,350/24,652 examples; 5,376 token rows in current checkpoint.
+Progress: 14,360/24,652 examples; 6,396 token rows in current checkpoint.
+Progress: 14,370/24,652 examples; 7,353 token rows in current checkpoint.
+Progress: 14,380/24,652 examples; 8,080 token rows in current checkpoint.
+Progress: 14,390/24,652 examples; 9,045 token rows in current checkpoint.
+Progress: 14,400/24,652 examples; 10,103 token rows in current checkpoint.
+Saved data/a3/token_features/part_000093.parquet; checkpointed 9,300/24,652
+Progress: 14,510/24,652 examples; 1,096 token rows in current checkpoint.
+Progress: 14,520/24,652 examples; 2,239 token rows in current checkpoint.
+Progress: 14,530/24,652 examples; 3,274 token rows in current checkpoint.
+Progress: 14,540/24,652 examples; 4,396 token rows in current checkpoint.
+Progress: 14,550/24,652 examples; 5,256 token rows in current checkpoint.
+Progress: 14,560/24,652 examples; 6,258 token rows in current checkpoint.
+Progress: 14,570/24,652 examples; 7,375 token rows in current checkpoint.
+Progress: 14,580/24,652 examples; 8,370 token rows in current checkpoint.
+Progress: 14,590/24,652 examples; 9,458 token rows in current checkpoint.
+Progress: 14,600/24,652 examples; 10,331 token rows in current checkpoint.
+Saved data/a3/token_features/part_000094.parquet; checkpointed 9,400/24,652
+Progress: 14,710/24,652 examples; 907 token rows in current checkpoint.
+Progress: 14,720/24,652 examples; 1,877 token rows in current checkpoint.
+Progress: 14,730/24,652 examples; 2,782 token rows in current checkpoint.
+Progress: 14,740/24,652 examples; 3,708 token rows in current checkpoint.
+Progress: 14,750/24,652 examples; 4,738 token rows in current checkpoint.
+Progress: 14,760/24,652 examples; 5,909 token rows in current checkpoint.
+Progress: 14,770/24,652 examples; 6,947 token rows in current checkpoint.
+Progress: 14,780/24,652 examples; 8,154 token rows in current checkpoint.
+Progress: 14,790/24,652 examples; 9,311 token rows in current checkpoint.
+Progress: 14,800/24,652 examples; 10,388 token rows in current checkpoint.
+Saved data/a3/token_features/part_000095.parquet; checkpointed 9,500/24,652
+Progress: 14,910/24,652 examples; 1,032 token rows in current checkpoint.
+Progress: 14,920/24,652 examples; 2,289 token rows in current checkpoint.
+Progress: 14,930/24,652 examples; 3,141 token rows in current checkpoint.
+Progress: 14,940/24,652 examples; 4,193 token rows in current checkpoint.
+Progress: 14,950/24,652 examples; 5,209 token rows in current checkpoint.
+Progress: 14,960/24,652 examples; 6,204 token rows in current checkpoint.
+Progress: 14,970/24,652 examples; 6,957 token rows in current checkpoint.
+Progress: 14,980/24,652 examples; 7,854 token rows in current checkpoint.
+Progress: 14,990/24,652 examples; 8,758 token rows in current checkpoint.
+Progress: 15,000/24,652 examples; 9,761 token rows in current checkpoint.
+Saved data/a3/token_features/part_000096.parquet; checkpointed 9,600/24,652
+Progress: 15,110/24,652 examples; 1,202 token rows in current checkpoint.
+Progress: 15,120/24,652 examples; 2,171 token rows in current checkpoint.
+Progress: 15,130/24,652 examples; 3,162 token rows in current checkpoint.
+Progress: 15,140/24,652 examples; 4,300 token rows in current checkpoint.
+Progress: 15,150/24,652 examples; 5,410 token rows in current checkpoint.
+Progress: 15,160/24,652 examples; 6,529 token rows in current checkpoint.
+Progress: 15,170/24,652 examples; 7,551 token rows in current checkpoint.
+Progress: 15,180/24,652 examples; 8,616 token rows in current checkpoint.
+Progress: 15,190/24,652 examples; 9,536 token rows in current checkpoint.
+Progress: 15,200/24,652 examples; 10,490 token rows in current checkpoint.
+Saved data/a3/token_features/part_000097.parquet; checkpointed 9,700/24,652
+Progress: 15,310/24,652 examples; 1,151 token rows in current checkpoint.
+Progress: 15,320/24,652 examples; 1,898 token rows in current checkpoint.
+Progress: 15,330/24,652 examples; 2,896 token rows in current checkpoint.
+Progress: 15,340/24,652 examples; 3,890 token rows in current checkpoint.
+Progress: 15,350/24,652 examples; 4,973 token rows in current checkpoint.
+Progress: 15,360/24,652 examples; 6,010 token rows in current checkpoint.
+Progress: 15,370/24,652 examples; 7,166 token rows in current checkpoint.
+Progress: 15,380/24,652 examples; 7,912 token rows in current checkpoint.
+Progress: 15,390/24,652 examples; 8,852 token rows in current checkpoint.
+Progress: 15,400/24,652 examples; 9,946 token rows in current checkpoint.
+Saved data/a3/token_features/part_000098.parquet; checkpointed 9,800/24,652
+Progress: 15,510/24,652 examples; 933 token rows in current checkpoint.
+Progress: 15,520/24,652 examples; 2,069 token rows in current checkpoint.
+Progress: 15,530/24,652 examples; 3,192 token rows in current checkpoint.
+Progress: 15,540/24,652 examples; 4,194 token rows in current checkpoint.
+Progress: 15,550/24,652 examples; 5,058 token rows in current checkpoint.
+Progress: 15,560/24,652 examples; 5,960 token rows in current checkpoint.
+Progress: 15,570/24,652 examples; 6,943 token rows in current checkpoint.
+Progress: 15,580/24,652 examples; 7,966 token rows in current checkpoint.
+Progress: 15,590/24,652 examples; 8,974 token rows in current checkpoint.
+Progress: 15,600/24,652 examples; 10,045 token rows in current checkpoint.
+Saved data/a3/token_features/part_000099.parquet; checkpointed 9,900/24,652
+Progress: 15,710/24,652 examples; 1,120 token rows in current checkpoint.
+Progress: 15,720/24,652 examples; 2,104 token rows in current checkpoint.
+Progress: 15,730/24,652 examples; 3,196 token rows in current checkpoint.
+Progress: 15,740/24,652 examples; 4,155 token rows in current checkpoint.
+Progress: 15,750/24,652 examples; 5,170 token rows in current checkpoint.
+Progress: 15,760/24,652 examples; 6,328 token rows in current checkpoint.
+Progress: 15,770/24,652 examples; 7,293 token rows in current checkpoint.
+Progress: 15,780/24,652 examples; 8,290 token rows in current checkpoint.
+Progress: 15,790/24,652 examples; 9,429 token rows in current checkpoint.
+Progress: 15,800/24,652 examples; 10,643 token rows in current checkpoint.
+Saved data/a3/token_features/part_000100.parquet; checkpointed 10,000/24,652
+Progress: 15,910/24,652 examples; 991 token rows in current checkpoint.
+Progress: 15,920/24,652 examples; 2,029 token rows in current checkpoint.
+Progress: 15,930/24,652 examples; 3,181 token rows in current checkpoint.
+Progress: 15,940/24,652 examples; 4,105 token rows in current checkpoint.
+Progress: 15,950/24,652 examples; 5,244 token rows in current checkpoint.
+Progress: 15,960/24,652 examples; 6,077 token rows in current checkpoint.
+Progress: 15,970/24,652 examples; 6,934 token rows in current checkpoint.
+Progress: 15,980/24,652 examples; 7,990 token rows in current checkpoint.
+Progress: 15,990/24,652 examples; 9,201 token rows in current checkpoint.
+Progress: 16,000/24,652 examples; 10,273 token rows in current checkpoint.
+Saved data/a3/token_features/part_000101.parquet; checkpointed 10,100/24,652
+Progress: 16,110/24,652 examples; 1,119 token rows in current checkpoint.
+Progress: 16,120/24,652 examples; 2,146 token rows in current checkpoint.
+Progress: 16,130/24,652 examples; 3,190 token rows in current checkpoint.
+Progress: 16,140/24,652 examples; 4,187 token rows in current checkpoint.
+Progress: 16,150/24,652 examples; 5,249 token rows in current checkpoint.
+Progress: 16,160/24,652 examples; 6,217 token rows in current checkpoint.
+Progress: 16,170/24,652 examples; 7,271 token rows in current checkpoint.
+Progress: 16,180/24,652 examples; 8,172 token rows in current checkpoint.
+Progress: 16,190/24,652 examples; 9,169 token rows in current checkpoint.
+Progress: 16,200/24,652 examples; 10,146 token rows in current checkpoint.
+Saved data/a3/token_features/part_000102.parquet; checkpointed 10,200/24,652
+Progress: 16,310/24,652 examples; 1,007 token rows in current checkpoint.
+Progress: 16,320/24,652 examples; 1,995 token rows in current checkpoint.
+Progress: 16,330/24,652 examples; 2,952 token rows in current checkpoint.
+Progress: 16,340/24,652 examples; 3,956 token rows in current checkpoint.
+Progress: 16,350/24,652 examples; 4,897 token rows in current checkpoint.
+Progress: 16,360/24,652 examples; 5,927 token rows in current checkpoint.
+Progress: 16,370/24,652 examples; 6,911 token rows in current checkpoint.
+Progress: 16,380/24,652 examples; 8,049 token rows in current checkpoint.
+Progress: 16,390/24,652 examples; 9,079 token rows in current checkpoint.
+Progress: 16,400/24,652 examples; 10,065 token rows in current checkpoint.
+Saved data/a3/token_features/part_000103.parquet; checkpointed 10,300/24,652
+Progress: 16,510/24,652 examples; 1,014 token rows in current checkpoint.
+Progress: 16,520/24,652 examples; 1,941 token rows in current checkpoint.
+Progress: 16,530/24,652 examples; 3,094 token rows in current checkpoint.
+Progress: 16,540/24,652 examples; 4,200 token rows in current checkpoint.
+Progress: 16,550/24,652 examples; 5,184 token rows in current checkpoint.
+Progress: 16,560/24,652 examples; 6,126 token rows in current checkpoint.
+Progress: 16,570/24,652 examples; 7,178 token rows in current checkpoint.
+Progress: 16,580/24,652 examples; 8,221 token rows in current checkpoint.
+Progress: 16,590/24,652 examples; 9,401 token rows in current checkpoint.
+Progress: 16,600/24,652 examples; 10,546 token rows in current checkpoint.
+Saved data/a3/token_features/part_000104.parquet; checkpointed 10,400/24,652
+Progress: 16,710/24,652 examples; 1,058 token rows in current checkpoint.
+Progress: 16,720/24,652 examples; 2,144 token rows in current checkpoint.
+Progress: 16,730/24,652 examples; 3,278 token rows in current checkpoint.
+Progress: 16,740/24,652 examples; 4,364 token rows in current checkpoint.
+Progress: 16,750/24,652 examples; 5,416 token rows in current checkpoint.
+Progress: 16,760/24,652 examples; 6,386 token rows in current checkpoint.
+Progress: 16,770/24,652 examples; 7,496 token rows in current checkpoint.
+Progress: 16,780/24,652 examples; 8,586 token rows in current checkpoint.
+Progress: 16,790/24,652 examples; 9,591 token rows in current checkpoint.
+Progress: 16,800/24,652 examples; 10,660 token rows in current checkpoint.
+Saved data/a3/token_features/part_000105.parquet; checkpointed 10,500/24,652
+Progress: 16,910/24,652 examples; 984 token rows in current checkpoint.
+Progress: 16,920/24,652 examples; 1,815 token rows in current checkpoint.
+Progress: 16,930/24,652 examples; 2,822 token rows in current checkpoint.
+Progress: 16,940/24,652 examples; 3,835 token rows in current checkpoint.
+Progress: 16,950/24,652 examples; 4,905 token rows in current checkpoint.
+Progress: 16,960/24,652 examples; 5,877 token rows in current checkpoint.
+Progress: 16,970/24,652 examples; 6,844 token rows in current checkpoint.
+Progress: 16,980/24,652 examples; 7,850 token rows in current checkpoint.
+Progress: 16,990/24,652 examples; 8,814 token rows in current checkpoint.
+Progress: 17,000/24,652 examples; 9,937 token rows in current checkpoint.
+Saved data/a3/token_features/part_000106.parquet; checkpointed 10,600/24,652
+Progress: 17,110/24,652 examples; 869 token rows in current checkpoint.
+Progress: 17,120/24,652 examples; 1,851 token rows in current checkpoint.
+Progress: 17,130/24,652 examples; 2,941 token rows in current checkpoint.
+Progress: 17,140/24,652 examples; 4,049 token rows in current checkpoint.
+Progress: 17,150/24,652 examples; 5,100 token rows in current checkpoint.
+Progress: 17,160/24,652 examples; 6,183 token rows in current checkpoint.
+Progress: 17,170/24,652 examples; 7,164 token rows in current checkpoint.
+Progress: 17,180/24,652 examples; 8,156 token rows in current checkpoint.
+Progress: 17,190/24,652 examples; 9,394 token rows in current checkpoint.
+Progress: 17,200/24,652 examples; 10,542 token rows in current checkpoint.
+Saved data/a3/token_features/part_000107.parquet; checkpointed 10,700/24,652
+Progress: 17,310/24,652 examples; 1,012 token rows in current checkpoint.
+Progress: 17,320/24,652 examples; 1,824 token rows in current checkpoint.
+Progress: 17,330/24,652 examples; 2,949 token rows in current checkpoint.
+Progress: 17,340/24,652 examples; 3,931 token rows in current checkpoint.
+Progress: 17,350/24,652 examples; 4,922 token rows in current checkpoint.
+Progress: 17,360/24,652 examples; 5,837 token rows in current checkpoint.
+Progress: 17,370/24,652 examples; 6,622 token rows in current checkpoint.
+Progress: 17,380/24,652 examples; 7,324 token rows in current checkpoint.
+Progress: 17,390/24,652 examples; 8,417 token rows in current checkpoint.
+Progress: 17,400/24,652 examples; 9,565 token rows in current checkpoint.
+Saved data/a3/token_features/part_000108.parquet; checkpointed 10,800/24,652
+Progress: 17,510/24,652 examples; 926 token rows in current checkpoint.
+Progress: 17,520/24,652 examples; 1,830 token rows in current checkpoint.
+Progress: 17,530/24,652 examples; 2,733 token rows in current checkpoint.
+Progress: 17,540/24,652 examples; 3,701 token rows in current checkpoint.
+Progress: 17,550/24,652 examples; 4,689 token rows in current checkpoint.
+Progress: 17,560/24,652 examples; 5,618 token rows in current checkpoint.
+Progress: 17,570/24,652 examples; 6,639 token rows in current checkpoint.
+Progress: 17,580/24,652 examples; 7,722 token rows in current checkpoint.
+Progress: 17,590/24,652 examples; 8,701 token rows in current checkpoint.
+Progress: 17,600/24,652 examples; 9,732 token rows in current checkpoint.
+Saved data/a3/token_features/part_000109.parquet; checkpointed 10,900/24,652
+Progress: 17,710/24,652 examples; 1,033 token rows in current checkpoint.
+Progress: 17,720/24,652 examples; 2,179 token rows in current checkpoint.
+Progress: 17,730/24,652 examples; 3,257 token rows in current checkpoint.
+Progress: 17,740/24,652 examples; 4,364 token rows in current checkpoint.
+Progress: 17,750/24,652 examples; 5,408 token rows in current checkpoint.
+Progress: 17,760/24,652 examples; 6,370 token rows in current checkpoint.
+Progress: 17,770/24,652 examples; 7,384 token rows in current checkpoint.
+Progress: 17,780/24,652 examples; 8,477 token rows in current checkpoint.
+Progress: 17,790/24,652 examples; 9,484 token rows in current checkpoint.
+Progress: 17,800/24,652 examples; 10,509 token rows in current checkpoint.
+Saved data/a3/token_features/part_000110.parquet; checkpointed 11,000/24,652
+Progress: 17,910/24,652 examples; 1,027 token rows in current checkpoint.
+Progress: 17,920/24,652 examples; 2,174 token rows in current checkpoint.
+Progress: 17,930/24,652 examples; 3,342 token rows in current checkpoint.
+Progress: 17,940/24,652 examples; 4,546 token rows in current checkpoint.
+Progress: 17,950/24,652 examples; 5,528 token rows in current checkpoint.
+Progress: 17,960/24,652 examples; 6,612 token rows in current checkpoint.
+Progress: 17,970/24,652 examples; 7,565 token rows in current checkpoint.
+Progress: 17,980/24,652 examples; 8,494 token rows in current checkpoint.
+Progress: 17,990/24,652 examples; 9,560 token rows in current checkpoint.
+Progress: 18,000/24,652 examples; 10,545 token rows in current checkpoint.
+Saved data/a3/token_features/part_000111.parquet; checkpointed 11,100/24,652
+Progress: 18,110/24,652 examples; 984 token rows in current checkpoint.
+Progress: 18,120/24,652 examples; 2,082 token rows in current checkpoint.
+Progress: 18,130/24,652 examples; 2,932 token rows in current checkpoint.
+Progress: 18,140/24,652 examples; 3,999 token rows in current checkpoint.
+Progress: 18,150/24,652 examples; 4,993 token rows in current checkpoint.
+Progress: 18,160/24,652 examples; 6,160 token rows in current checkpoint.
+Progress: 18,170/24,652 examples; 7,290 token rows in current checkpoint.
+Progress: 18,180/24,652 examples; 8,185 token rows in current checkpoint.
+Progress: 18,190/24,652 examples; 9,269 token rows in current checkpoint.
+Progress: 18,200/24,652 examples; 10,349 token rows in current checkpoint.
+Saved data/a3/token_features/part_000112.parquet; checkpointed 11,200/24,652
+Progress: 18,310/24,652 examples; 887 token rows in current checkpoint.
+Progress: 18,320/24,652 examples; 2,091 token rows in current checkpoint.
+Progress: 18,330/24,652 examples; 3,291 token rows in current checkpoint.
+Progress: 18,340/24,652 examples; 4,241 token rows in current checkpoint.
+Progress: 18,350/24,652 examples; 5,405 token rows in current checkpoint.
+Progress: 18,360/24,652 examples; 6,509 token rows in current checkpoint.
+Progress: 18,370/24,652 examples; 7,522 token rows in current checkpoint.
+Progress: 18,380/24,652 examples; 8,568 token rows in current checkpoint.
+Progress: 18,390/24,652 examples; 9,259 token rows in current checkpoint.
+Progress: 18,400/24,652 examples; 10,325 token rows in current checkpoint.
+Saved data/a3/token_features/part_000113.parquet; checkpointed 11,300/24,652
+Progress: 18,510/24,652 examples; 877 token rows in current checkpoint.
+Progress: 18,520/24,652 examples; 1,895 token rows in current checkpoint.
+Progress: 18,530/24,652 examples; 2,981 token rows in current checkpoint.
+Progress: 18,540/24,652 examples; 4,055 token rows in current checkpoint.
+Progress: 18,550/24,652 examples; 5,094 token rows in current checkpoint.
+Progress: 18,560/24,652 examples; 6,095 token rows in current checkpoint.
+Progress: 18,570/24,652 examples; 7,101 token rows in current checkpoint.
+Progress: 18,580/24,652 examples; 8,127 token rows in current checkpoint.
+Progress: 18,590/24,652 examples; 9,211 token rows in current checkpoint.
+Progress: 18,600/24,652 examples; 10,268 token rows in current checkpoint.
+Saved data/a3/token_features/part_000114.parquet; checkpointed 11,400/24,652
+Progress: 18,710/24,652 examples; 968 token rows in current checkpoint.
+Progress: 18,720/24,652 examples; 1,849 token rows in current checkpoint.
+Progress: 18,730/24,652 examples; 2,731 token rows in current checkpoint.
+Progress: 18,740/24,652 examples; 3,851 token rows in current checkpoint.
+Progress: 18,750/24,652 examples; 5,038 token rows in current checkpoint.
+Progress: 18,760/24,652 examples; 5,967 token rows in current checkpoint.
+Progress: 18,770/24,652 examples; 7,070 token rows in current checkpoint.
+Progress: 18,780/24,652 examples; 7,931 token rows in current checkpoint.
+Progress: 18,790/24,652 examples; 8,911 token rows in current checkpoint.
+Progress: 18,800/24,652 examples; 9,902 token rows in current checkpoint.
+Saved data/a3/token_features/part_000115.parquet; checkpointed 11,500/24,652
+Progress: 18,910/24,652 examples; 877 token rows in current checkpoint.
+Progress: 18,920/24,652 examples; 1,893 token rows in current checkpoint.
+Progress: 18,930/24,652 examples; 3,085 token rows in current checkpoint.
+Progress: 18,940/24,652 examples; 4,142 token rows in current checkpoint.
+Progress: 18,950/24,652 examples; 5,152 token rows in current checkpoint.
+Progress: 18,960/24,652 examples; 5,851 token rows in current checkpoint.
+Progress: 18,970/24,652 examples; 6,806 token rows in current checkpoint.
+Progress: 18,980/24,652 examples; 7,660 token rows in current checkpoint.
+Progress: 18,990/24,652 examples; 8,628 token rows in current checkpoint.
+Progress: 19,000/24,652 examples; 9,730 token rows in current checkpoint.
+Saved data/a3/token_features/part_000116.parquet; checkpointed 11,600/24,652
+Progress: 19,110/24,652 examples; 1,050 token rows in current checkpoint.
+Progress: 19,120/24,652 examples; 1,958 token rows in current checkpoint.
+Progress: 19,130/24,652 examples; 2,898 token rows in current checkpoint.
+Progress: 19,140/24,652 examples; 3,750 token rows in current checkpoint.
+Progress: 19,150/24,652 examples; 4,570 token rows in current checkpoint.
+Progress: 19,160/24,652 examples; 5,654 token rows in current checkpoint.
+Progress: 19,170/24,652 examples; 6,769 token rows in current checkpoint.
+Progress: 19,180/24,652 examples; 7,966 token rows in current checkpoint.
+Progress: 19,190/24,652 examples; 9,179 token rows in current checkpoint.
+Progress: 19,200/24,652 examples; 10,399 token rows in current checkpoint.
+Saved data/a3/token_features/part_000117.parquet; checkpointed 11,700/24,652
+Progress: 19,310/24,652 examples; 995 token rows in current checkpoint.
+Progress: 19,320/24,652 examples; 1,656 token rows in current checkpoint.
+Progress: 19,330/24,652 examples; 2,584 token rows in current checkpoint.
+Progress: 19,340/24,652 examples; 3,727 token rows in current checkpoint.
+Progress: 19,350/24,652 examples; 4,839 token rows in current checkpoint.
+Progress: 19,360/24,652 examples; 5,573 token rows in current checkpoint.
+Progress: 19,370/24,652 examples; 6,472 token rows in current checkpoint.
+Progress: 19,380/24,652 examples; 7,479 token rows in current checkpoint.
+Progress: 19,390/24,652 examples; 8,527 token rows in current checkpoint.
+Progress: 19,400/24,652 examples; 9,480 token rows in current checkpoint.
+Saved data/a3/token_features/part_000118.parquet; checkpointed 11,800/24,652
+Progress: 19,510/24,652 examples; 935 token rows in current checkpoint.
+Progress: 19,520/24,652 examples; 2,105 token rows in current checkpoint.
+Progress: 19,530/24,652 examples; 3,015 token rows in current checkpoint.
+Progress: 19,540/24,652 examples; 4,076 token rows in current checkpoint.
+Progress: 19,550/24,652 examples; 5,134 token rows in current checkpoint.
+Progress: 19,560/24,652 examples; 5,919 token rows in current checkpoint.
+Progress: 19,570/24,652 examples; 7,068 token rows in current checkpoint.
+Progress: 19,580/24,652 examples; 8,067 token rows in current checkpoint.
+Progress: 19,590/24,652 examples; 9,050 token rows in current checkpoint.
+Progress: 19,600/24,652 examples; 10,123 token rows in current checkpoint.
+Saved data/a3/token_features/part_000119.parquet; checkpointed 11,900/24,652
+Progress: 19,710/24,652 examples; 1,096 token rows in current checkpoint.
+Progress: 19,720/24,652 examples; 1,957 token rows in current checkpoint.
+Progress: 19,730/24,652 examples; 3,028 token rows in current checkpoint.
+Progress: 19,740/24,652 examples; 4,065 token rows in current checkpoint.
+Progress: 19,750/24,652 examples; 4,983 token rows in current checkpoint.
+Progress: 19,760/24,652 examples; 5,868 token rows in current checkpoint.
+Progress: 19,770/24,652 examples; 7,012 token rows in current checkpoint.
+Progress: 19,780/24,652 examples; 8,084 token rows in current checkpoint.
+Progress: 19,790/24,652 examples; 9,070 token rows in current checkpoint.
+Progress: 19,800/24,652 examples; 10,117 token rows in current checkpoint.
+Saved data/a3/token_features/part_000120.parquet; checkpointed 12,000/24,652
+Progress: 19,910/24,652 examples; 956 token rows in current checkpoint.
+Progress: 19,920/24,652 examples; 2,067 token rows in current checkpoint.
+Progress: 19,930/24,652 examples; 3,036 token rows in current checkpoint.
+Progress: 19,940/24,652 examples; 4,233 token rows in current checkpoint.
+Progress: 19,950/24,652 examples; 5,021 token rows in current checkpoint.
+Progress: 19,960/24,652 examples; 6,077 token rows in current checkpoint.
+Progress: 19,970/24,652 examples; 7,088 token rows in current checkpoint.
+Progress: 19,980/24,652 examples; 8,220 token rows in current checkpoint.
+Progress: 19,990/24,652 examples; 9,383 token rows in current checkpoint.
+Progress: 20,000/24,652 examples; 10,460 token rows in current checkpoint.
+Saved data/a3/token_features/part_000121.parquet; checkpointed 12,100/24,652
+Progress: 20,110/24,652 examples; 986 token rows in current checkpoint.
+Progress: 20,120/24,652 examples; 1,953 token rows in current checkpoint.
+Progress: 20,130/24,652 examples; 2,852 token rows in current checkpoint.
+Progress: 20,140/24,652 examples; 4,021 token rows in current checkpoint.
+Progress: 20,150/24,652 examples; 5,018 token rows in current checkpoint.
+Progress: 20,160/24,652 examples; 5,833 token rows in current checkpoint.
+Progress: 20,170/24,652 examples; 6,810 token rows in current checkpoint.
+Progress: 20,180/24,652 examples; 7,839 token rows in current checkpoint.
+Progress: 20,190/24,652 examples; 8,830 token rows in current checkpoint.
+Progress: 20,200/24,652 examples; 9,824 token rows in current checkpoint.
+Saved data/a3/token_features/part_000122.parquet; checkpointed 12,200/24,652
+Progress: 20,310/24,652 examples; 1,088 token rows in current checkpoint.
+Progress: 20,320/24,652 examples; 2,209 token rows in current checkpoint.
+Progress: 20,330/24,652 examples; 3,236 token rows in current checkpoint.
+Progress: 20,340/24,652 examples; 4,132 token rows in current checkpoint.
+Progress: 20,350/24,652 examples; 5,241 token rows in current checkpoint.
+Progress: 20,360/24,652 examples; 6,308 token rows in current checkpoint.
+Progress: 20,370/24,652 examples; 7,415 token rows in current checkpoint.
+Progress: 20,380/24,652 examples; 8,332 token rows in current checkpoint.
+Progress: 20,390/24,652 examples; 9,342 token rows in current checkpoint.
+Progress: 20,400/24,652 examples; 10,316 token rows in current checkpoint.
+Saved data/a3/token_features/part_000123.parquet; checkpointed 12,300/24,652
+Progress: 20,510/24,652 examples; 1,114 token rows in current checkpoint.
+Progress: 20,520/24,652 examples; 2,101 token rows in current checkpoint.
+Progress: 20,530/24,652 examples; 3,135 token rows in current checkpoint.
+Progress: 20,540/24,652 examples; 4,110 token rows in current checkpoint.
+Progress: 20,550/24,652 examples; 5,322 token rows in current checkpoint.
+Progress: 20,560/24,652 examples; 6,297 token rows in current checkpoint.
+Progress: 20,570/24,652 examples; 7,444 token rows in current checkpoint.
+Progress: 20,580/24,652 examples; 8,613 token rows in current checkpoint.
+Progress: 20,590/24,652 examples; 9,690 token rows in current checkpoint.
+Progress: 20,600/24,652 examples; 10,581 token rows in current checkpoint.
+Saved data/a3/token_features/part_000124.parquet; checkpointed 12,400/24,652
+Progress: 20,710/24,652 examples; 850 token rows in current checkpoint.
+Progress: 20,720/24,652 examples; 1,832 token rows in current checkpoint.
+Progress: 20,730/24,652 examples; 2,881 token rows in current checkpoint.
+Progress: 20,740/24,652 examples; 3,990 token rows in current checkpoint.
+Progress: 20,750/24,652 examples; 4,888 token rows in current checkpoint.
+Progress: 20,760/24,652 examples; 5,964 token rows in current checkpoint.
+Progress: 20,770/24,652 examples; 7,073 token rows in current checkpoint.
+Progress: 20,780/24,652 examples; 8,194 token rows in current checkpoint.
+Progress: 20,790/24,652 examples; 9,067 token rows in current checkpoint.
+Progress: 20,800/24,652 examples; 10,169 token rows in current checkpoint.
+Saved data/a3/token_features/part_000125.parquet; checkpointed 12,500/24,652
+Progress: 20,910/24,652 examples; 921 token rows in current checkpoint.
+Progress: 20,920/24,652 examples; 2,041 token rows in current checkpoint.
+Progress: 20,930/24,652 examples; 3,156 token rows in current checkpoint.
+Progress: 20,940/24,652 examples; 3,788 token rows in current checkpoint.
+Progress: 20,950/24,652 examples; 4,842 token rows in current checkpoint.
+Progress: 20,960/24,652 examples; 5,829 token rows in current checkpoint.
+Progress: 20,970/24,652 examples; 7,037 token rows in current checkpoint.
+Progress: 20,980/24,652 examples; 7,965 token rows in current checkpoint.
+Progress: 20,990/24,652 examples; 8,949 token rows in current checkpoint.
+Progress: 21,000/24,652 examples; 9,982 token rows in current checkpoint.
+Saved data/a3/token_features/part_000126.parquet; checkpointed 12,600/24,652
+Progress: 21,110/24,652 examples; 1,165 token rows in current checkpoint.
+Progress: 21,120/24,652 examples; 2,193 token rows in current checkpoint.
+Progress: 21,130/24,652 examples; 3,339 token rows in current checkpoint.
+Progress: 21,140/24,652 examples; 4,384 token rows in current checkpoint.
+Progress: 21,150/24,652 examples; 5,329 token rows in current checkpoint.
+Progress: 21,160/24,652 examples; 6,474 token rows in current checkpoint.
+Progress: 21,170/24,652 examples; 7,467 token rows in current checkpoint.
+Progress: 21,180/24,652 examples; 8,465 token rows in current checkpoint.
+Progress: 21,190/24,652 examples; 9,566 token rows in current checkpoint.
+Progress: 21,200/24,652 examples; 10,680 token rows in current checkpoint.
+Saved data/a3/token_features/part_000127.parquet; checkpointed 12,700/24,652
+Progress: 21,310/24,652 examples; 1,000 token rows in current checkpoint.
+Progress: 21,320/24,652 examples; 2,087 token rows in current checkpoint.
+Progress: 21,330/24,652 examples; 2,946 token rows in current checkpoint.
+Progress: 21,340/24,652 examples; 3,862 token rows in current checkpoint.
+Progress: 21,350/24,652 examples; 4,855 token rows in current checkpoint.
+Progress: 21,360/24,652 examples; 6,015 token rows in current checkpoint.
+Progress: 21,370/24,652 examples; 7,088 token rows in current checkpoint.
+Progress: 21,380/24,652 examples; 8,080 token rows in current checkpoint.
+Progress: 21,390/24,652 examples; 9,160 token rows in current checkpoint.
+Progress: 21,400/24,652 examples; 10,314 token rows in current checkpoint.
+Saved data/a3/token_features/part_000128.parquet; checkpointed 12,800/24,652
+Progress: 21,510/24,652 examples; 909 token rows in current checkpoint.
+Progress: 21,520/24,652 examples; 1,868 token rows in current checkpoint.
+Progress: 21,530/24,652 examples; 2,834 token rows in current checkpoint.
+Progress: 21,540/24,652 examples; 3,633 token rows in current checkpoint.
+Progress: 21,550/24,652 examples; 4,651 token rows in current checkpoint.
+Progress: 21,560/24,652 examples; 5,594 token rows in current checkpoint.
+Progress: 21,570/24,652 examples; 6,580 token rows in current checkpoint.
+Progress: 21,580/24,652 examples; 7,651 token rows in current checkpoint.
+Progress: 21,590/24,652 examples; 8,776 token rows in current checkpoint.
+Progress: 21,600/24,652 examples; 9,818 token rows in current checkpoint.
+Saved data/a3/token_features/part_000129.parquet; checkpointed 12,900/24,652
+Progress: 21,710/24,652 examples; 1,072 token rows in current checkpoint.
+Progress: 21,720/24,652 examples; 2,189 token rows in current checkpoint.
+Progress: 21,730/24,652 examples; 3,222 token rows in current checkpoint.
+Progress: 21,740/24,652 examples; 4,245 token rows in current checkpoint.
+Progress: 21,750/24,652 examples; 5,317 token rows in current checkpoint.
+Progress: 21,760/24,652 examples; 6,484 token rows in current checkpoint.
+Progress: 21,770/24,652 examples; 7,424 token rows in current checkpoint.
+Progress: 21,780/24,652 examples; 8,545 token rows in current checkpoint.
+Progress: 21,790/24,652 examples; 9,500 token rows in current checkpoint.
+Progress: 21,800/24,652 examples; 10,494 token rows in current checkpoint.
+Saved data/a3/token_features/part_000130.parquet; checkpointed 13,000/24,652
+Progress: 21,910/24,652 examples; 999 token rows in current checkpoint.
+Progress: 21,920/24,652 examples; 1,905 token rows in current checkpoint.
+Progress: 21,930/24,652 examples; 2,918 token rows in current checkpoint.
+Progress: 21,940/24,652 examples; 4,061 token rows in current checkpoint.
+Progress: 21,950/24,652 examples; 5,161 token rows in current checkpoint.
+Progress: 21,960/24,652 examples; 6,049 token rows in current checkpoint.
+Progress: 21,970/24,652 examples; 7,118 token rows in current checkpoint.
+Progress: 21,980/24,652 examples; 8,197 token rows in current checkpoint.
+Progress: 21,990/24,652 examples; 9,063 token rows in current checkpoint.
+Progress: 22,000/24,652 examples; 10,099 token rows in current checkpoint.
+Saved data/a3/token_features/part_000131.parquet; checkpointed 13,100/24,652
+Progress: 22,110/24,652 examples; 955 token rows in current checkpoint.
+Progress: 22,120/24,652 examples; 2,094 token rows in current checkpoint.
+Progress: 22,130/24,652 examples; 3,182 token rows in current checkpoint.
+Progress: 22,140/24,652 examples; 4,272 token rows in current checkpoint.
+Progress: 22,150/24,652 examples; 5,237 token rows in current checkpoint.
+Progress: 22,160/24,652 examples; 6,295 token rows in current checkpoint.
+Progress: 22,170/24,652 examples; 7,330 token rows in current checkpoint.
+Progress: 22,180/24,652 examples; 8,441 token rows in current checkpoint.
+Progress: 22,190/24,652 examples; 9,475 token rows in current checkpoint.
+Progress: 22,200/24,652 examples; 10,496 token rows in current checkpoint.
+Saved data/a3/token_features/part_000132.parquet; checkpointed 13,200/24,652
+Progress: 22,310/24,652 examples; 1,066 token rows in current checkpoint.
+Progress: 22,320/24,652 examples; 2,078 token rows in current checkpoint.
+Progress: 22,330/24,652 examples; 2,965 token rows in current checkpoint.
+Progress: 22,340/24,652 examples; 4,024 token rows in current checkpoint.
+Progress: 22,350/24,652 examples; 4,833 token rows in current checkpoint.
+Progress: 22,360/24,652 examples; 5,681 token rows in current checkpoint.
+Progress: 22,370/24,652 examples; 6,684 token rows in current checkpoint.
+Progress: 22,380/24,652 examples; 7,825 token rows in current checkpoint.
+Progress: 22,390/24,652 examples; 8,735 token rows in current checkpoint.
+Progress: 22,400/24,652 examples; 9,754 token rows in current checkpoint.
+Saved data/a3/token_features/part_000133.parquet; checkpointed 13,300/24,652
+Progress: 22,510/24,652 examples; 1,081 token rows in current checkpoint.
+Progress: 22,520/24,652 examples; 1,980 token rows in current checkpoint.
+Progress: 22,530/24,652 examples; 3,014 token rows in current checkpoint.
+Progress: 22,540/24,652 examples; 4,292 token rows in current checkpoint.
+Progress: 22,550/24,652 examples; 5,218 token rows in current checkpoint.
+Progress: 22,560/24,652 examples; 6,344 token rows in current checkpoint.
+Progress: 22,570/24,652 examples; 7,482 token rows in current checkpoint.
+Progress: 22,580/24,652 examples; 8,514 token rows in current checkpoint.
+Progress: 22,590/24,652 examples; 9,441 token rows in current checkpoint.
+Progress: 22,600/24,652 examples; 10,322 token rows in current checkpoint.
+Saved data/a3/token_features/part_000134.parquet; checkpointed 13,400/24,652
+Progress: 22,710/24,652 examples; 1,007 token rows in current checkpoint.
+Progress: 22,720/24,652 examples; 2,125 token rows in current checkpoint.
+Progress: 22,730/24,652 examples; 3,210 token rows in current checkpoint.
+Progress: 22,740/24,652 examples; 4,093 token rows in current checkpoint.
+Progress: 22,750/24,652 examples; 5,145 token rows in current checkpoint.
+Progress: 22,760/24,652 examples; 6,197 token rows in current checkpoint.
+Progress: 22,770/24,652 examples; 7,292 token rows in current checkpoint.
+Progress: 22,780/24,652 examples; 8,247 token rows in current checkpoint.
+Progress: 22,790/24,652 examples; 9,369 token rows in current checkpoint.
+Progress: 22,800/24,652 examples; 10,357 token rows in current checkpoint.
+Saved data/a3/token_features/part_000135.parquet; checkpointed 13,500/24,652
+Progress: 22,910/24,652 examples; 1,036 token rows in current checkpoint.
+Progress: 22,920/24,652 examples; 2,109 token rows in current checkpoint.
+Progress: 22,930/24,652 examples; 3,172 token rows in current checkpoint.
+Progress: 22,940/24,652 examples; 4,063 token rows in current checkpoint.
+Progress: 22,950/24,652 examples; 5,120 token rows in current checkpoint.
+Progress: 22,960/24,652 examples; 6,164 token rows in current checkpoint.
+Progress: 22,970/24,652 examples; 7,287 token rows in current checkpoint.
+Progress: 22,980/24,652 examples; 8,409 token rows in current checkpoint.
+Progress: 22,990/24,652 examples; 9,527 token rows in current checkpoint.
+Progress: 23,000/24,652 examples; 10,285 token rows in current checkpoint.
+Saved data/a3/token_features/part_000136.parquet; checkpointed 13,600/24,652
+Progress: 23,110/24,652 examples; 956 token rows in current checkpoint.
+Progress: 23,120/24,652 examples; 1,862 token rows in current checkpoint.
+Progress: 23,130/24,652 examples; 2,943 token rows in current checkpoint.
+Progress: 23,140/24,652 examples; 3,959 token rows in current checkpoint.
+Progress: 23,150/24,652 examples; 4,940 token rows in current checkpoint.
+Progress: 23,160/24,652 examples; 6,118 token rows in current checkpoint.
+Progress: 23,170/24,652 examples; 7,283 token rows in current checkpoint.
+Progress: 23,180/24,652 examples; 8,294 token rows in current checkpoint.
+Progress: 23,190/24,652 examples; 9,404 token rows in current checkpoint.
+Progress: 23,200/24,652 examples; 10,468 token rows in current checkpoint.
+Saved data/a3/token_features/part_000137.parquet; checkpointed 13,700/24,652
+Progress: 23,310/24,652 examples; 934 token rows in current checkpoint.
+Progress: 23,320/24,652 examples; 2,147 token rows in current checkpoint.
+Progress: 23,330/24,652 examples; 3,108 token rows in current checkpoint.
+Progress: 23,340/24,652 examples; 3,894 token rows in current checkpoint.
+Progress: 23,350/24,652 examples; 4,875 token rows in current checkpoint.
+Progress: 23,360/24,652 examples; 5,951 token rows in current checkpoint.
+Progress: 23,370/24,652 examples; 7,097 token rows in current checkpoint.
+Progress: 23,380/24,652 examples; 7,985 token rows in current checkpoint.
+Progress: 23,390/24,652 examples; 9,101 token rows in current checkpoint.
+Progress: 23,400/24,652 examples; 10,374 token rows in current checkpoint.
+Saved data/a3/token_features/part_000138.parquet; checkpointed 13,800/24,652
+Progress: 23,510/24,652 examples; 875 token rows in current checkpoint.
+Progress: 23,520/24,652 examples; 1,855 token rows in current checkpoint.
+Progress: 23,530/24,652 examples; 2,568 token rows in current checkpoint.
+Progress: 23,540/24,652 examples; 3,412 token rows in current checkpoint.
+Progress: 23,550/24,652 examples; 4,309 token rows in current checkpoint.
+Progress: 23,560/24,652 examples; 5,353 token rows in current checkpoint.
+Progress: 23,570/24,652 examples; 6,405 token rows in current checkpoint.
+Progress: 23,580/24,652 examples; 7,406 token rows in current checkpoint.
+Progress: 23,590/24,652 examples; 8,506 token rows in current checkpoint.
+Progress: 23,600/24,652 examples; 9,452 token rows in current checkpoint.
+Saved data/a3/token_features/part_000139.parquet; checkpointed 13,900/24,652
+Progress: 23,710/24,652 examples; 1,104 token rows in current checkpoint.
+Progress: 23,720/24,652 examples; 2,288 token rows in current checkpoint.
+Progress: 23,730/24,652 examples; 3,101 token rows in current checkpoint.
+Progress: 23,740/24,652 examples; 4,046 token rows in current checkpoint.
+Progress: 23,750/24,652 examples; 5,147 token rows in current checkpoint.
+Progress: 23,760/24,652 examples; 6,168 token rows in current checkpoint.
+Progress: 23,770/24,652 examples; 7,156 token rows in current checkpoint.
+Progress: 23,780/24,652 examples; 8,225 token rows in current checkpoint.
+Progress: 23,790/24,652 examples; 9,296 token rows in current checkpoint.
+Progress: 23,800/24,652 examples; 10,072 token rows in current checkpoint.
+Saved data/a3/token_features/part_000140.parquet; checkpointed 14,000/24,652
+Progress: 23,910/24,652 examples; 1,000 token rows in current checkpoint.
+Progress: 23,920/24,652 examples; 2,133 token rows in current checkpoint.
+Progress: 23,930/24,652 examples; 3,180 token rows in current checkpoint.
+Progress: 23,940/24,652 examples; 4,264 token rows in current checkpoint.
+Progress: 23,950/24,652 examples; 5,432 token rows in current checkpoint.
+Progress: 23,960/24,652 examples; 6,344 token rows in current checkpoint.
+Progress: 23,970/24,652 examples; 7,147 token rows in current checkpoint.
+Progress: 23,980/24,652 examples; 8,089 token rows in current checkpoint.
+Progress: 23,990/24,652 examples; 9,168 token rows in current checkpoint.
+Progress: 24,000/24,652 examples; 10,350 token rows in current checkpoint.
+Saved data/a3/token_features/part_000141.parquet; checkpointed 14,100/24,652
+Progress: 24,110/24,652 examples; 1,000 token rows in current checkpoint.
+Progress: 24,120/24,652 examples; 1,868 token rows in current checkpoint.
+Progress: 24,130/24,652 examples; 2,891 token rows in current checkpoint.
+Progress: 24,140/24,652 examples; 3,820 token rows in current checkpoint.
+Progress: 24,150/24,652 examples; 4,907 token rows in current checkpoint.
+Progress: 24,160/24,652 examples; 5,996 token rows in current checkpoint.
+Progress: 24,170/24,652 examples; 7,148 token rows in current checkpoint.
+Progress: 24,180/24,652 examples; 8,224 token rows in current checkpoint.
+Progress: 24,190/24,652 examples; 9,218 token rows in current checkpoint.
+Progress: 24,200/24,652 examples; 10,166 token rows in current checkpoint.
+Saved data/a3/token_features/part_000142.parquet; checkpointed 14,200/24,652
+Progress: 24,310/24,652 examples; 964 token rows in current checkpoint.
+Progress: 24,320/24,652 examples; 1,944 token rows in current checkpoint.
+Progress: 24,330/24,652 examples; 3,066 token rows in current checkpoint.
+Progress: 24,340/24,652 examples; 3,935 token rows in current checkpoint.
+Progress: 24,350/24,652 examples; 4,968 token rows in current checkpoint.
+Progress: 24,360/24,652 examples; 5,934 token rows in current checkpoint.
+Progress: 24,370/24,652 examples; 7,100 token rows in current checkpoint.
+Progress: 24,380/24,652 examples; 8,202 token rows in current checkpoint.
+Progress: 24,390/24,652 examples; 9,154 token rows in current checkpoint.
+Progress: 24,400/24,652 examples; 10,213 token rows in current checkpoint.
+Saved data/a3/token_features/part_000143.parquet; checkpointed 14,300/24,652
+Progress: 24,510/24,652 examples; 1,091 token rows in current checkpoint.
+Progress: 24,520/24,652 examples; 2,011 token rows in current checkpoint.
+Progress: 24,530/24,652 examples; 2,905 token rows in current checkpoint.
+Progress: 24,540/24,652 examples; 3,949 token rows in current checkpoint.
+Progress: 24,550/24,652 examples; 4,934 token rows in current checkpoint.
+Progress: 24,560/24,652 examples; 5,932 token rows in current checkpoint.
+Progress: 24,570/24,652 examples; 7,059 token rows in current checkpoint.
+Progress: 24,580/24,652 examples; 8,257 token rows in current checkpoint.
+Progress: 24,590/24,652 examples; 9,330 token rows in current checkpoint.
+Progress: 24,600/24,652 examples; 10,201 token rows in current checkpoint.
+Saved data/a3/token_features/part_000144.parquet; checkpointed 14,400/24,652
+Progress: 24,710/24,652 examples; 982 token rows in current checkpoint.
+Progress: 24,720/24,652 examples; 2,045 token rows in current checkpoint.
+Progress: 24,730/24,652 examples; 3,112 token rows in current checkpoint.
+Progress: 24,740/24,652 examples; 4,167 token rows in current checkpoint.
+Progress: 24,750/24,652 examples; 5,236 token rows in current checkpoint.
+Progress: 24,760/24,652 examples; 6,166 token rows in current checkpoint.
+Progress: 24,770/24,652 examples; 7,197 token rows in current checkpoint.
+Progress: 24,780/24,652 examples; 7,987 token rows in current checkpoint.
+Progress: 24,790/24,652 examples; 9,069 token rows in current checkpoint.
+Progress: 24,800/24,652 examples; 10,075 token rows in current checkpoint.
+Saved data/a3/token_features/part_000145.parquet; checkpointed 14,500/24,652
+Progress: 24,910/24,652 examples; 1,075 token rows in current checkpoint.
+Progress: 24,920/24,652 examples; 2,037 token rows in current checkpoint.
+Progress: 24,930/24,652 examples; 3,011 token rows in current checkpoint.
+Progress: 24,940/24,652 examples; 3,965 token rows in current checkpoint.
+Progress: 24,950/24,652 examples; 4,999 token rows in current checkpoint.
+Progress: 24,960/24,652 examples; 6,009 token rows in current checkpoint.
+Progress: 24,970/24,652 examples; 6,887 token rows in current checkpoint.
+Progress: 24,980/24,652 examples; 7,768 token rows in current checkpoint.
+Progress: 24,990/24,652 examples; 8,826 token rows in current checkpoint.
+Progress: 25,000/24,652 examples; 9,986 token rows in current checkpoint.
+Saved data/a3/token_features/part_000146.parquet; checkpointed 14,600/24,652
+Progress: 25,110/24,652 examples; 848 token rows in current checkpoint.
+Progress: 25,120/24,652 examples; 1,775 token rows in current checkpoint.
+Progress: 25,130/24,652 examples; 2,721 token rows in current checkpoint.
+Progress: 25,140/24,652 examples; 3,789 token rows in current checkpoint.
+Progress: 25,150/24,652 examples; 4,747 token rows in current checkpoint.
+Progress: 25,160/24,652 examples; 5,688 token rows in current checkpoint.
+Progress: 25,170/24,652 examples; 6,613 token rows in current checkpoint.
+Progress: 25,180/24,652 examples; 7,709 token rows in current checkpoint.
+Progress: 25,190/24,652 examples; 8,877 token rows in current checkpoint.
+Progress: 25,200/24,652 examples; 10,039 token rows in current checkpoint.
+Saved data/a3/token_features/part_000147.parquet; checkpointed 14,700/24,652
+Progress: 25,310/24,652 examples; 1,084 token rows in current checkpoint.
+Progress: 25,320/24,652 examples; 1,883 token rows in current checkpoint.
+Progress: 25,330/24,652 examples; 2,914 token rows in current checkpoint.
+Progress: 25,340/24,652 examples; 3,889 token rows in current checkpoint.
+Progress: 25,350/24,652 examples; 4,996 token rows in current checkpoint.
+Progress: 25,360/24,652 examples; 5,844 token rows in current checkpoint.
+Progress: 25,370/24,652 examples; 6,778 token rows in current checkpoint.
+Progress: 25,380/24,652 examples; 7,825 token rows in current checkpoint.
+Progress: 25,390/24,652 examples; 9,105 token rows in current checkpoint.
+Progress: 25,400/24,652 examples; 9,969 token rows in current checkpoint.
+Saved data/a3/token_features/part_000148.parquet; checkpointed 14,800/24,652
+Progress: 25,510/24,652 examples; 1,059 token rows in current checkpoint.
+Progress: 25,520/24,652 examples; 2,302 token rows in current checkpoint.
+Progress: 25,530/24,652 examples; 3,433 token rows in current checkpoint.
+Progress: 25,540/24,652 examples; 4,383 token rows in current checkpoint.
+Progress: 25,550/24,652 examples; 5,412 token rows in current checkpoint.
+Progress: 25,560/24,652 examples; 6,415 token rows in current checkpoint.
+Progress: 25,570/24,652 examples; 7,460 token rows in current checkpoint.
+Progress: 25,580/24,652 examples; 8,495 token rows in current checkpoint.
+Progress: 25,590/24,652 examples; 9,520 token rows in current checkpoint.
+Progress: 25,600/24,652 examples; 10,559 token rows in current checkpoint.
+Saved data/a3/token_features/part_000149.parquet; checkpointed 14,900/24,652
+Progress: 25,710/24,652 examples; 1,139 token rows in current checkpoint.
+Progress: 25,720/24,652 examples; 2,193 token rows in current checkpoint.
+Progress: 25,730/24,652 examples; 3,324 token rows in current checkpoint.
+Progress: 25,740/24,652 examples; 4,227 token rows in current checkpoint.
+Progress: 25,750/24,652 examples; 5,236 token rows in current checkpoint.
+Progress: 25,760/24,652 examples; 6,335 token rows in current checkpoint.
+Progress: 25,770/24,652 examples; 7,338 token rows in current checkpoint.
+Progress: 25,780/24,652 examples; 8,551 token rows in current checkpoint.
+Progress: 25,790/24,652 examples; 9,554 token rows in current checkpoint.
+Progress: 25,800/24,652 examples; 10,572 token rows in current checkpoint.
+Saved data/a3/token_features/part_000150.parquet; checkpointed 15,000/24,652
+Progress: 25,910/24,652 examples; 1,144 token rows in current checkpoint.
+Progress: 25,920/24,652 examples; 2,227 token rows in current checkpoint.
+Progress: 25,930/24,652 examples; 3,340 token rows in current checkpoint.
+Progress: 25,940/24,652 examples; 4,447 token rows in current checkpoint.
+Progress: 25,950/24,652 examples; 5,363 token rows in current checkpoint.
+Progress: 25,960/24,652 examples; 6,297 token rows in current checkpoint.
+Progress: 25,970/24,652 examples; 7,162 token rows in current checkpoint.
+Progress: 25,980/24,652 examples; 8,214 token rows in current checkpoint.
+Progress: 25,990/24,652 examples; 9,415 token rows in current checkpoint.
+Progress: 26,000/24,652 examples; 10,584 token rows in current checkpoint.
+Saved data/a3/token_features/part_000151.parquet; checkpointed 15,100/24,652
+Progress: 26,110/24,652 examples; 1,041 token rows in current checkpoint.
+Progress: 26,120/24,652 examples; 2,059 token rows in current checkpoint.
+Progress: 26,130/24,652 examples; 3,171 token rows in current checkpoint.
+Progress: 26,140/24,652 examples; 4,126 token rows in current checkpoint.
+Progress: 26,150/24,652 examples; 5,136 token rows in current checkpoint.
+Progress: 26,160/24,652 examples; 6,189 token rows in current checkpoint.
+Progress: 26,170/24,652 examples; 7,367 token rows in current checkpoint.
+Progress: 26,180/24,652 examples; 8,593 token rows in current checkpoint.
+Progress: 26,190/24,652 examples; 9,402 token rows in current checkpoint.
+Progress: 26,200/24,652 examples; 10,478 token rows in current checkpoint.
+Saved data/a3/token_features/part_000152.parquet; checkpointed 15,200/24,652
+Progress: 26,310/24,652 examples; 858 token rows in current checkpoint.
+Progress: 26,320/24,652 examples; 1,859 token rows in current checkpoint.
+Progress: 26,330/24,652 examples; 3,051 token rows in current checkpoint.
+Progress: 26,340/24,652 examples; 4,159 token rows in current checkpoint.
+Progress: 26,350/24,652 examples; 4,989 token rows in current checkpoint.
+Progress: 26,360/24,652 examples; 5,996 token rows in current checkpoint.
+Progress: 26,370/24,652 examples; 7,014 token rows in current checkpoint.
+Progress: 26,380/24,652 examples; 8,087 token rows in current checkpoint.
+Progress: 26,390/24,652 examples; 9,260 token rows in current checkpoint.
+Progress: 26,400/24,652 examples; 10,534 token rows in current checkpoint.
+Saved data/a3/token_features/part_000153.parquet; checkpointed 15,300/24,652
+Progress: 26,510/24,652 examples; 1,172 token rows in current checkpoint.
+Progress: 26,520/24,652 examples; 2,008 token rows in current checkpoint.
+Progress: 26,530/24,652 examples; 2,867 token rows in current checkpoint.
+Progress: 26,540/24,652 examples; 3,987 token rows in current checkpoint.
+Progress: 26,550/24,652 examples; 5,065 token rows in current checkpoint.
+Progress: 26,560/24,652 examples; 6,209 token rows in current checkpoint.
+Progress: 26,570/24,652 examples; 7,173 token rows in current checkpoint.
+Progress: 26,580/24,652 examples; 8,283 token rows in current checkpoint.
+Progress: 26,590/24,652 examples; 9,334 token rows in current checkpoint.
+Progress: 26,600/24,652 examples; 10,246 token rows in current checkpoint.
+Saved data/a3/token_features/part_000154.parquet; checkpointed 15,400/24,652
+Progress: 26,710/24,652 examples; 949 token rows in current checkpoint.
+Progress: 26,720/24,652 examples; 1,976 token rows in current checkpoint.
+Progress: 26,730/24,652 examples; 2,923 token rows in current checkpoint.
+Progress: 26,740/24,652 examples; 4,011 token rows in current checkpoint.
+Progress: 26,750/24,652 examples; 5,031 token rows in current checkpoint.
+Progress: 26,760/24,652 examples; 6,104 token rows in current checkpoint.
+Progress: 26,770/24,652 examples; 7,219 token rows in current checkpoint.
+Progress: 26,780/24,652 examples; 8,205 token rows in current checkpoint.
+Progress: 26,790/24,652 examples; 9,211 token rows in current checkpoint.
+Progress: 26,800/24,652 examples; 10,254 token rows in current checkpoint.
+Saved data/a3/token_features/part_000155.parquet; checkpointed 15,500/24,652
+Progress: 26,910/24,652 examples; 908 token rows in current checkpoint.
+Progress: 26,920/24,652 examples; 1,795 token rows in current checkpoint.
+Progress: 26,930/24,652 examples; 2,847 token rows in current checkpoint.
+Progress: 26,940/24,652 examples; 4,045 token rows in current checkpoint.
+Progress: 26,950/24,652 examples; 5,209 token rows in current checkpoint.
+Progress: 26,960/24,652 examples; 6,284 token rows in current checkpoint.
+Progress: 26,970/24,652 examples; 7,403 token rows in current checkpoint.
+Progress: 26,980/24,652 examples; 8,450 token rows in current checkpoint.
+Progress: 26,990/24,652 examples; 9,659 token rows in current checkpoint.
+Progress: 27,000/24,652 examples; 10,615 token rows in current checkpoint.
+Saved data/a3/token_features/part_000156.parquet; checkpointed 15,600/24,652
+Progress: 27,110/24,652 examples; 1,010 token rows in current checkpoint.
+Progress: 27,120/24,652 examples; 2,024 token rows in current checkpoint.
+Progress: 27,130/24,652 examples; 3,062 token rows in current checkpoint.
+Progress: 27,140/24,652 examples; 4,187 token rows in current checkpoint.
+Progress: 27,150/24,652 examples; 5,229 token rows in current checkpoint.
+Progress: 27,160/24,652 examples; 6,394 token rows in current checkpoint.
+Progress: 27,170/24,652 examples; 7,558 token rows in current checkpoint.
+Progress: 27,180/24,652 examples; 8,731 token rows in current checkpoint.
+Progress: 27,190/24,652 examples; 9,685 token rows in current checkpoint.
+Progress: 27,200/24,652 examples; 10,618 token rows in current checkpoint.
+Saved data/a3/token_features/part_000157.parquet; checkpointed 15,700/24,652
+Progress: 27,310/24,652 examples; 867 token rows in current checkpoint.
+Progress: 27,320/24,652 examples; 2,001 token rows in current checkpoint.
+Progress: 27,330/24,652 examples; 2,990 token rows in current checkpoint.
+Progress: 27,340/24,652 examples; 4,125 token rows in current checkpoint.
+Progress: 27,350/24,652 examples; 5,043 token rows in current checkpoint.
+Progress: 27,360/24,652 examples; 6,198 token rows in current checkpoint.
+Progress: 27,370/24,652 examples; 7,256 token rows in current checkpoint.
+Progress: 27,380/24,652 examples; 8,457 token rows in current checkpoint.
+Progress: 27,390/24,652 examples; 9,406 token rows in current checkpoint.
+Progress: 27,400/24,652 examples; 10,400 token rows in current checkpoint.
+Saved data/a3/token_features/part_000158.parquet; checkpointed 15,800/24,652
+Progress: 27,510/24,652 examples; 1,056 token rows in current checkpoint.
+Progress: 27,520/24,652 examples; 1,853 token rows in current checkpoint.
+Progress: 27,530/24,652 examples; 2,889 token rows in current checkpoint.
+Progress: 27,540/24,652 examples; 3,789 token rows in current checkpoint.
+Progress: 27,550/24,652 examples; 4,864 token rows in current checkpoint.
+Progress: 27,560/24,652 examples; 5,966 token rows in current checkpoint.
+Progress: 27,570/24,652 examples; 7,069 token rows in current checkpoint.
+Progress: 27,580/24,652 examples; 7,994 token rows in current checkpoint.
+Progress: 27,590/24,652 examples; 9,034 token rows in current checkpoint.
+Progress: 27,600/24,652 examples; 9,944 token rows in current checkpoint.
+Saved data/a3/token_features/part_000159.parquet; checkpointed 15,900/24,652
+Progress: 27,710/24,652 examples; 1,153 token rows in current checkpoint.
+Progress: 27,720/24,652 examples; 2,038 token rows in current checkpoint.
+Progress: 27,730/24,652 examples; 3,031 token rows in current checkpoint.
+Progress: 27,740/24,652 examples; 3,894 token rows in current checkpoint.
+Progress: 27,750/24,652 examples; 4,824 token rows in current checkpoint.
+Progress: 27,760/24,652 examples; 5,983 token rows in current checkpoint.
+Progress: 27,770/24,652 examples; 7,130 token rows in current checkpoint.
+Progress: 27,780/24,652 examples; 8,162 token rows in current checkpoint.
+Progress: 27,790/24,652 examples; 9,209 token rows in current checkpoint.
+Progress: 27,800/24,652 examples; 10,088 token rows in current checkpoint.
+Saved data/a3/token_features/part_000160.parquet; checkpointed 16,000/24,652
+Progress: 27,910/24,652 examples; 372 token rows in current checkpoint.
+Progress: 27,920/24,652 examples; 756 token rows in current checkpoint.
+Progress: 27,930/24,652 examples; 1,096 token rows in current checkpoint.
+Progress: 27,940/24,652 examples; 1,552 token rows in current checkpoint.
+Progress: 27,950/24,652 examples; 1,909 token rows in current checkpoint.
+Progress: 27,960/24,652 examples; 2,402 token rows in current checkpoint.
+Progress: 27,970/24,652 examples; 2,798 token rows in current checkpoint.
+Progress: 27,980/24,652 examples; 3,166 token rows in current checkpoint.
+Progress: 27,990/24,652 examples; 3,613 token rows in current checkpoint.
+Progress: 28,000/24,652 examples; 3,998 token rows in current checkpoint.
+Saved data/a3/token_features/part_000161.parquet; checkpointed 16,100/24,652
+Progress: 28,110/24,652 examples; 425 token rows in current checkpoint.
+Progress: 28,120/24,652 examples; 850 token rows in current checkpoint.
+Progress: 28,130/24,652 examples; 1,335 token rows in current checkpoint.
+Progress: 28,140/24,652 examples; 1,812 token rows in current checkpoint.
+Progress: 28,150/24,652 examples; 2,252 token rows in current checkpoint.
+Progress: 28,160/24,652 examples; 2,579 token rows in current checkpoint.
+Progress: 28,170/24,652 examples; 2,959 token rows in current checkpoint.
+Progress: 28,180/24,652 examples; 3,402 token rows in current checkpoint.
+Progress: 28,190/24,652 examples; 3,784 token rows in current checkpoint.
+Progress: 28,200/24,652 examples; 4,212 token rows in current checkpoint.
+Saved data/a3/token_features/part_000162.parquet; checkpointed 16,200/24,652
+Progress: 28,310/24,652 examples; 459 token rows in current checkpoint.
+Progress: 28,320/24,652 examples; 979 token rows in current checkpoint.
+Progress: 28,330/24,652 examples; 1,359 token rows in current checkpoint.
+Progress: 28,340/24,652 examples; 1,905 token rows in current checkpoint.
+Progress: 28,350/24,652 examples; 2,351 token rows in current checkpoint.
+Progress: 28,360/24,652 examples; 2,777 token rows in current checkpoint.
+Progress: 28,370/24,652 examples; 3,172 token rows in current checkpoint.
+Progress: 28,380/24,652 examples; 3,570 token rows in current checkpoint.
+Progress: 28,390/24,652 examples; 4,003 token rows in current checkpoint.
+Progress: 28,400/24,652 examples; 4,423 token rows in current checkpoint.
+Saved data/a3/token_features/part_000163.parquet; checkpointed 16,300/24,652
+Progress: 28,510/24,652 examples; 387 token rows in current checkpoint.
+Progress: 28,520/24,652 examples; 804 token rows in current checkpoint.
+Progress: 28,530/24,652 examples; 1,126 token rows in current checkpoint.
+Progress: 28,540/24,652 examples; 1,558 token rows in current checkpoint.
+Progress: 28,550/24,652 examples; 1,897 token rows in current checkpoint.
+Progress: 28,560/24,652 examples; 2,274 token rows in current checkpoint.
+Progress: 28,570/24,652 examples; 2,684 token rows in current checkpoint.
+Progress: 28,580/24,652 examples; 3,175 token rows in current checkpoint.
+Progress: 28,590/24,652 examples; 3,700 token rows in current checkpoint.
+Progress: 28,600/24,652 examples; 4,158 token rows in current checkpoint.
+Saved data/a3/token_features/part_000164.parquet; checkpointed 16,400/24,652
+Progress: 28,710/24,652 examples; 484 token rows in current checkpoint.
+Progress: 28,720/24,652 examples; 904 token rows in current checkpoint.
+Progress: 28,730/24,652 examples; 1,293 token rows in current checkpoint.
+Progress: 28,740/24,652 examples; 1,719 token rows in current checkpoint.
+Progress: 28,750/24,652 examples; 2,149 token rows in current checkpoint.
+Progress: 28,760/24,652 examples; 2,600 token rows in current checkpoint.
+Progress: 28,770/24,652 examples; 3,001 token rows in current checkpoint.
+Progress: 28,780/24,652 examples; 3,422 token rows in current checkpoint.
+Progress: 28,790/24,652 examples; 3,907 token rows in current checkpoint.
+Progress: 28,800/24,652 examples; 4,244 token rows in current checkpoint.
+Saved data/a3/token_features/part_000165.parquet; checkpointed 16,500/24,652
+Progress: 28,910/24,652 examples; 391 token rows in current checkpoint.
+Progress: 28,920/24,652 examples; 753 token rows in current checkpoint.
+Progress: 28,930/24,652 examples; 1,153 token rows in current checkpoint.
+Progress: 28,940/24,652 examples; 1,718 token rows in current checkpoint.
+Progress: 28,950/24,652 examples; 2,102 token rows in current checkpoint.
+Progress: 28,960/24,652 examples; 2,604 token rows in current checkpoint.
+Progress: 28,970/24,652 examples; 3,004 token rows in current checkpoint.
+Progress: 28,980/24,652 examples; 3,422 token rows in current checkpoint.
+Progress: 28,990/24,652 examples; 3,863 token rows in current checkpoint.
+Progress: 29,000/24,652 examples; 4,323 token rows in current checkpoint.
+Saved data/a3/token_features/part_000166.parquet; checkpointed 16,600/24,652
+Progress: 29,110/24,652 examples; 418 token rows in current checkpoint.
+Progress: 29,120/24,652 examples; 774 token rows in current checkpoint.
+Progress: 29,130/24,652 examples; 1,176 token rows in current checkpoint.
+Progress: 29,140/24,652 examples; 1,681 token rows in current checkpoint.
+Progress: 29,150/24,652 examples; 2,186 token rows in current checkpoint.
+Progress: 29,160/24,652 examples; 2,546 token rows in current checkpoint.
+Progress: 29,170/24,652 examples; 2,992 token rows in current checkpoint.
+Progress: 29,180/24,652 examples; 3,426 token rows in current checkpoint.
+Progress: 29,190/24,652 examples; 3,878 token rows in current checkpoint.
+Progress: 29,200/24,652 examples; 4,275 token rows in current checkpoint.
+Saved data/a3/token_features/part_000167.parquet; checkpointed 16,700/24,652
+Progress: 29,310/24,652 examples; 401 token rows in current checkpoint.
+Progress: 29,320/24,652 examples; 822 token rows in current checkpoint.
+Progress: 29,330/24,652 examples; 1,267 token rows in current checkpoint.
+Progress: 29,340/24,652 examples; 1,645 token rows in current checkpoint.
+Progress: 29,350/24,652 examples; 2,136 token rows in current checkpoint.
+Progress: 29,360/24,652 examples; 2,550 token rows in current checkpoint.
+Progress: 29,370/24,652 examples; 2,970 token rows in current checkpoint.
+Progress: 29,380/24,652 examples; 3,381 token rows in current checkpoint.
+Progress: 29,390/24,652 examples; 3,856 token rows in current checkpoint.
+Progress: 29,400/24,652 examples; 4,188 token rows in current checkpoint.
+Saved data/a3/token_features/part_000168.parquet; checkpointed 16,800/24,652
+Progress: 29,510/24,652 examples; 399 token rows in current checkpoint.
+Progress: 29,520/24,652 examples; 825 token rows in current checkpoint.
+Progress: 29,530/24,652 examples; 1,273 token rows in current checkpoint.
+Progress: 29,540/24,652 examples; 1,758 token rows in current checkpoint.
+Progress: 29,550/24,652 examples; 2,120 token rows in current checkpoint.
+Progress: 29,560/24,652 examples; 2,532 token rows in current checkpoint.
+Progress: 29,570/24,652 examples; 2,906 token rows in current checkpoint.
+Progress: 29,580/24,652 examples; 3,303 token rows in current checkpoint.
+Progress: 29,590/24,652 examples; 3,755 token rows in current checkpoint.
+Progress: 29,600/24,652 examples; 4,235 token rows in current checkpoint.
+Saved data/a3/token_features/part_000169.parquet; checkpointed 16,900/24,652
+Progress: 29,710/24,652 examples; 575 token rows in current checkpoint.
+Progress: 29,720/24,652 examples; 1,101 token rows in current checkpoint.
+Progress: 29,730/24,652 examples; 1,546 token rows in current checkpoint.
+Progress: 29,740/24,652 examples; 1,945 token rows in current checkpoint.
+Progress: 29,750/24,652 examples; 2,386 token rows in current checkpoint.
+Progress: 29,760/24,652 examples; 2,782 token rows in current checkpoint.
+Progress: 29,770/24,652 examples; 3,201 token rows in current checkpoint.
+Progress: 29,780/24,652 examples; 3,620 token rows in current checkpoint.
+Progress: 29,790/24,652 examples; 4,024 token rows in current checkpoint.
+Progress: 29,800/24,652 examples; 4,482 token rows in current checkpoint.
+Saved data/a3/token_features/part_000170.parquet; checkpointed 17,000/24,652
+Progress: 29,910/24,652 examples; 382 token rows in current checkpoint.
+Progress: 29,920/24,652 examples; 828 token rows in current checkpoint.
+Progress: 29,930/24,652 examples; 1,201 token rows in current checkpoint.
+Progress: 29,940/24,652 examples; 1,584 token rows in current checkpoint.
+Progress: 29,950/24,652 examples; 2,078 token rows in current checkpoint.
+Progress: 29,960/24,652 examples; 2,523 token rows in current checkpoint.
+Progress: 29,970/24,652 examples; 2,897 token rows in current checkpoint.
+Progress: 29,980/24,652 examples; 3,279 token rows in current checkpoint.
+Progress: 29,990/24,652 examples; 3,646 token rows in current checkpoint.
+Progress: 30,000/24,652 examples; 4,050 token rows in current checkpoint.
+Saved data/a3/token_features/part_000171.parquet; checkpointed 17,100/24,652
+Progress: 30,110/24,652 examples; 459 token rows in current checkpoint.
+Progress: 30,120/24,652 examples; 880 token rows in current checkpoint.
+Progress: 30,130/24,652 examples; 1,275 token rows in current checkpoint.
+Progress: 30,140/24,652 examples; 1,690 token rows in current checkpoint.
+Progress: 30,150/24,652 examples; 2,073 token rows in current checkpoint.
+Progress: 30,160/24,652 examples; 2,460 token rows in current checkpoint.
+Progress: 30,170/24,652 examples; 2,911 token rows in current checkpoint.
+Progress: 30,180/24,652 examples; 3,399 token rows in current checkpoint.
+Progress: 30,190/24,652 examples; 3,852 token rows in current checkpoint.
+Progress: 30,200/24,652 examples; 4,243 token rows in current checkpoint.
+Saved data/a3/token_features/part_000172.parquet; checkpointed 17,200/24,652
+Progress: 30,310/24,652 examples; 351 token rows in current checkpoint.
+Progress: 30,320/24,652 examples; 752 token rows in current checkpoint.
+Progress: 30,330/24,652 examples; 1,133 token rows in current checkpoint.
+Progress: 30,340/24,652 examples; 1,639 token rows in current checkpoint.
+Progress: 30,350/24,652 examples; 2,059 token rows in current checkpoint.
+Progress: 30,360/24,652 examples; 2,544 token rows in current checkpoint.
+Progress: 30,370/24,652 examples; 2,948 token rows in current checkpoint.
+Progress: 30,380/24,652 examples; 3,371 token rows in current checkpoint.
+Progress: 30,390/24,652 examples; 3,776 token rows in current checkpoint.
+Progress: 30,400/24,652 examples; 4,191 token rows in current checkpoint.
+Saved data/a3/token_features/part_000173.parquet; checkpointed 17,300/24,652
+Progress: 30,510/24,652 examples; 513 token rows in current checkpoint.
+Progress: 30,520/24,652 examples; 969 token rows in current checkpoint.
+Progress: 30,530/24,652 examples; 1,389 token rows in current checkpoint.
+Progress: 30,540/24,652 examples; 1,749 token rows in current checkpoint.
+Progress: 30,550/24,652 examples; 2,196 token rows in current checkpoint.
+Progress: 30,560/24,652 examples; 2,668 token rows in current checkpoint.
+Progress: 30,570/24,652 examples; 3,062 token rows in current checkpoint.
+Progress: 30,580/24,652 examples; 3,496 token rows in current checkpoint.
+Progress: 30,590/24,652 examples; 3,882 token rows in current checkpoint.
+Progress: 30,600/24,652 examples; 4,370 token rows in current checkpoint.
+Saved data/a3/token_features/part_000174.parquet; checkpointed 17,400/24,652
+Progress: 30,710/24,652 examples; 403 token rows in current checkpoint.
+Progress: 30,720/24,652 examples; 790 token rows in current checkpoint.
+Progress: 30,730/24,652 examples; 1,344 token rows in current checkpoint.
+Progress: 30,740/24,652 examples; 1,746 token rows in current checkpoint.
+Progress: 30,750/24,652 examples; 2,191 token rows in current checkpoint.
+Progress: 30,760/24,652 examples; 2,591 token rows in current checkpoint.
+Progress: 30,770/24,652 examples; 2,977 token rows in current checkpoint.
+Progress: 30,780/24,652 examples; 3,331 token rows in current checkpoint.
+Progress: 30,790/24,652 examples; 3,773 token rows in current checkpoint.
+Progress: 30,800/24,652 examples; 4,233 token rows in current checkpoint.
+Saved data/a3/token_features/part_000175.parquet; checkpointed 17,500/24,652
+Progress: 30,910/24,652 examples; 379 token rows in current checkpoint.
+Progress: 30,920/24,652 examples; 756 token rows in current checkpoint.
+Progress: 30,930/24,652 examples; 1,181 token rows in current checkpoint.
+Progress: 30,940/24,652 examples; 1,596 token rows in current checkpoint.
+Progress: 30,950/24,652 examples; 1,980 token rows in current checkpoint.
+Progress: 30,960/24,652 examples; 2,429 token rows in current checkpoint.
+Progress: 30,970/24,652 examples; 2,822 token rows in current checkpoint.
+Progress: 30,980/24,652 examples; 3,284 token rows in current checkpoint.
+Progress: 30,990/24,652 examples; 3,678 token rows in current checkpoint.
+Progress: 31,000/24,652 examples; 4,100 token rows in current checkpoint.
+Saved data/a3/token_features/part_000176.parquet; checkpointed 17,600/24,652
+Progress: 31,110/24,652 examples; 376 token rows in current checkpoint.
+Progress: 31,120/24,652 examples; 840 token rows in current checkpoint.
+Progress: 31,130/24,652 examples; 1,231 token rows in current checkpoint.
+Progress: 31,140/24,652 examples; 1,747 token rows in current checkpoint.
+Progress: 31,150/24,652 examples; 2,139 token rows in current checkpoint.
+Progress: 31,160/24,652 examples; 2,575 token rows in current checkpoint.
+Progress: 31,170/24,652 examples; 3,116 token rows in current checkpoint.
+Progress: 31,180/24,652 examples; 3,585 token rows in current checkpoint.
+Progress: 31,190/24,652 examples; 4,010 token rows in current checkpoint.
+Progress: 31,200/24,652 examples; 4,369 token rows in current checkpoint.
+Saved data/a3/token_features/part_000177.parquet; checkpointed 17,700/24,652
+Progress: 31,310/24,652 examples; 383 token rows in current checkpoint.
+Progress: 31,320/24,652 examples; 802 token rows in current checkpoint.
+Progress: 31,330/24,652 examples; 1,206 token rows in current checkpoint.
+Progress: 31,340/24,652 examples; 1,584 token rows in current checkpoint.
+Progress: 31,350/24,652 examples; 2,082 token rows in current checkpoint.
+Progress: 31,360/24,652 examples; 2,600 token rows in current checkpoint.
+Progress: 31,370/24,652 examples; 3,011 token rows in current checkpoint.
+Progress: 31,380/24,652 examples; 3,489 token rows in current checkpoint.
+Progress: 31,390/24,652 examples; 3,867 token rows in current checkpoint.
+Progress: 31,400/24,652 examples; 4,422 token rows in current checkpoint.
+Saved data/a3/token_features/part_000178.parquet; checkpointed 17,800/24,652
+Progress: 31,510/24,652 examples; 388 token rows in current checkpoint.
+Progress: 31,520/24,652 examples; 701 token rows in current checkpoint.
+Progress: 31,530/24,652 examples; 1,154 token rows in current checkpoint.
+Progress: 31,540/24,652 examples; 1,558 token rows in current checkpoint.
+Progress: 31,550/24,652 examples; 1,990 token rows in current checkpoint.
+Progress: 31,560/24,652 examples; 2,415 token rows in current checkpoint.
+Progress: 31,570/24,652 examples; 2,806 token rows in current checkpoint.
+Progress: 31,580/24,652 examples; 3,180 token rows in current checkpoint.
+Progress: 31,590/24,652 examples; 3,608 token rows in current checkpoint.
+Progress: 31,600/24,652 examples; 3,989 token rows in current checkpoint.
+Saved data/a3/token_features/part_000179.parquet; checkpointed 17,900/24,652
+Progress: 31,710/24,652 examples; 420 token rows in current checkpoint.
+Progress: 31,720/24,652 examples; 898 token rows in current checkpoint.
+Progress: 31,730/24,652 examples; 1,391 token rows in current checkpoint.
+Progress: 31,740/24,652 examples; 1,747 token rows in current checkpoint.
+Progress: 31,750/24,652 examples; 2,195 token rows in current checkpoint.
+Progress: 31,760/24,652 examples; 2,569 token rows in current checkpoint.
+Progress: 31,770/24,652 examples; 2,957 token rows in current checkpoint.
+Progress: 31,780/24,652 examples; 3,418 token rows in current checkpoint.
+Progress: 31,790/24,652 examples; 3,938 token rows in current checkpoint.
+Progress: 31,800/24,652 examples; 4,311 token rows in current checkpoint.
+Saved data/a3/token_features/part_000180.parquet; checkpointed 18,000/24,652
+Progress: 31,910/24,652 examples; 416 token rows in current checkpoint.
+Progress: 31,920/24,652 examples; 801 token rows in current checkpoint.
+Progress: 31,930/24,652 examples; 1,169 token rows in current checkpoint.
+Progress: 31,940/24,652 examples; 1,579 token rows in current checkpoint.
+Progress: 31,950/24,652 examples; 1,995 token rows in current checkpoint.
+Progress: 31,960/24,652 examples; 2,441 token rows in current checkpoint.
+Progress: 31,970/24,652 examples; 2,840 token rows in current checkpoint.
+Progress: 31,980/24,652 examples; 3,254 token rows in current checkpoint.
+Progress: 31,990/24,652 examples; 3,714 token rows in current checkpoint.
+Progress: 32,000/24,652 examples; 4,150 token rows in current checkpoint.
+Saved data/a3/token_features/part_000181.parquet; checkpointed 18,100/24,652
+Progress: 32,110/24,652 examples; 433 token rows in current checkpoint.
+Progress: 32,120/24,652 examples; 868 token rows in current checkpoint.
+Progress: 32,130/24,652 examples; 1,309 token rows in current checkpoint.
+Progress: 32,140/24,652 examples; 1,765 token rows in current checkpoint.
+Progress: 32,150/24,652 examples; 2,198 token rows in current checkpoint.
+Progress: 32,160/24,652 examples; 2,551 token rows in current checkpoint.
+Progress: 32,170/24,652 examples; 3,005 token rows in current checkpoint.
+Progress: 32,180/24,652 examples; 3,362 token rows in current checkpoint.
+Progress: 32,190/24,652 examples; 3,800 token rows in current checkpoint.
+Progress: 32,200/24,652 examples; 4,202 token rows in current checkpoint.
+Saved data/a3/token_features/part_000182.parquet; checkpointed 18,200/24,652
+Progress: 32,310/24,652 examples; 393 token rows in current checkpoint.
+Progress: 32,320/24,652 examples; 794 token rows in current checkpoint.
+Progress: 32,330/24,652 examples; 1,292 token rows in current checkpoint.
+Progress: 32,340/24,652 examples; 1,707 token rows in current checkpoint.
+Progress: 32,350/24,652 examples; 2,255 token rows in current checkpoint.
+Progress: 32,360/24,652 examples; 2,718 token rows in current checkpoint.
+Progress: 32,370/24,652 examples; 3,043 token rows in current checkpoint.
+Progress: 32,380/24,652 examples; 3,495 token rows in current checkpoint.
+Progress: 32,390/24,652 examples; 4,022 token rows in current checkpoint.
+Progress: 32,400/24,652 examples; 4,377 token rows in current checkpoint.
+Saved data/a3/token_features/part_000183.parquet; checkpointed 18,300/24,652
+Progress: 32,510/24,652 examples; 458 token rows in current checkpoint.
+Progress: 32,520/24,652 examples; 876 token rows in current checkpoint.
+Progress: 32,530/24,652 examples; 1,292 token rows in current checkpoint.
+Progress: 32,540/24,652 examples; 1,681 token rows in current checkpoint.
+Progress: 32,550/24,652 examples; 2,156 token rows in current checkpoint.
+Progress: 32,560/24,652 examples; 2,638 token rows in current checkpoint.
+Progress: 32,570/24,652 examples; 3,087 token rows in current checkpoint.
+Progress: 32,580/24,652 examples; 3,496 token rows in current checkpoint.
+Progress: 32,590/24,652 examples; 3,908 token rows in current checkpoint.
+Progress: 32,600/24,652 examples; 4,392 token rows in current checkpoint.
+Saved data/a3/token_features/part_000184.parquet; checkpointed 18,400/24,652
+Progress: 32,710/24,652 examples; 469 token rows in current checkpoint.
+Progress: 32,720/24,652 examples; 899 token rows in current checkpoint.
+Progress: 32,730/24,652 examples; 1,276 token rows in current checkpoint.
+Progress: 32,740/24,652 examples; 1,686 token rows in current checkpoint.
+Progress: 32,750/24,652 examples; 2,115 token rows in current checkpoint.
+Progress: 32,760/24,652 examples; 2,524 token rows in current checkpoint.
+Progress: 32,770/24,652 examples; 2,932 token rows in current checkpoint.
+Progress: 32,780/24,652 examples; 3,322 token rows in current checkpoint.
+Progress: 32,790/24,652 examples; 3,738 token rows in current checkpoint.
+Progress: 32,800/24,652 examples; 4,208 token rows in current checkpoint.
+Saved data/a3/token_features/part_000185.parquet; checkpointed 18,500/24,652
+Progress: 32,910/24,652 examples; 407 token rows in current checkpoint.
+Progress: 32,920/24,652 examples; 828 token rows in current checkpoint.
+Progress: 32,930/24,652 examples; 1,233 token rows in current checkpoint.
+Progress: 32,940/24,652 examples; 1,644 token rows in current checkpoint.
+Progress: 32,950/24,652 examples; 2,087 token rows in current checkpoint.
+Progress: 32,960/24,652 examples; 2,538 token rows in current checkpoint.
+Progress: 32,970/24,652 examples; 2,891 token rows in current checkpoint.
+Progress: 32,980/24,652 examples; 3,326 token rows in current checkpoint.
+Progress: 32,990/24,652 examples; 3,693 token rows in current checkpoint.
+Progress: 33,000/24,652 examples; 4,095 token rows in current checkpoint.
+Saved data/a3/token_features/part_000186.parquet; checkpointed 18,600/24,652
+Progress: 33,110/24,652 examples; 565 token rows in current checkpoint.
+Progress: 33,120/24,652 examples; 995 token rows in current checkpoint.
+Progress: 33,130/24,652 examples; 1,496 token rows in current checkpoint.
+Progress: 33,140/24,652 examples; 1,912 token rows in current checkpoint.
+Progress: 33,150/24,652 examples; 2,251 token rows in current checkpoint.
+Progress: 33,160/24,652 examples; 2,741 token rows in current checkpoint.
+Progress: 33,170/24,652 examples; 3,107 token rows in current checkpoint.
+Progress: 33,180/24,652 examples; 3,539 token rows in current checkpoint.
+Progress: 33,190/24,652 examples; 3,868 token rows in current checkpoint.
+Progress: 33,200/24,652 examples; 4,326 token rows in current checkpoint.
+Saved data/a3/token_features/part_000187.parquet; checkpointed 18,700/24,652
+Progress: 33,310/24,652 examples; 386 token rows in current checkpoint.
+Progress: 33,320/24,652 examples; 845 token rows in current checkpoint.
+Progress: 33,330/24,652 examples; 1,257 token rows in current checkpoint.
+Progress: 33,340/24,652 examples; 1,677 token rows in current checkpoint.
+Progress: 33,350/24,652 examples; 2,080 token rows in current checkpoint.
+Progress: 33,360/24,652 examples; 2,436 token rows in current checkpoint.
+Progress: 33,370/24,652 examples; 2,861 token rows in current checkpoint.
+Progress: 33,380/24,652 examples; 3,315 token rows in current checkpoint.
+Progress: 33,390/24,652 examples; 3,729 token rows in current checkpoint.
+Progress: 33,400/24,652 examples; 4,142 token rows in current checkpoint.
+Saved data/a3/token_features/part_000188.parquet; checkpointed 18,800/24,652
+Progress: 33,510/24,652 examples; 424 token rows in current checkpoint.
+Progress: 33,520/24,652 examples; 885 token rows in current checkpoint.
+Progress: 33,530/24,652 examples; 1,295 token rows in current checkpoint.
+Progress: 33,540/24,652 examples; 1,733 token rows in current checkpoint.
+Progress: 33,550/24,652 examples; 2,152 token rows in current checkpoint.
+Progress: 33,560/24,652 examples; 2,512 token rows in current checkpoint.
+Progress: 33,570/24,652 examples; 2,963 token rows in current checkpoint.
+Progress: 33,580/24,652 examples; 3,419 token rows in current checkpoint.
+Progress: 33,590/24,652 examples; 3,856 token rows in current checkpoint.
+Progress: 33,600/24,652 examples; 4,306 token rows in current checkpoint.
+Saved data/a3/token_features/part_000189.parquet; checkpointed 18,900/24,652
+Progress: 33,710/24,652 examples; 360 token rows in current checkpoint.
+Progress: 33,720/24,652 examples; 787 token rows in current checkpoint.
+Progress: 33,730/24,652 examples; 1,174 token rows in current checkpoint.
+Progress: 33,740/24,652 examples; 1,629 token rows in current checkpoint.
+Progress: 33,750/24,652 examples; 2,081 token rows in current checkpoint.
+Progress: 33,760/24,652 examples; 2,585 token rows in current checkpoint.
+Progress: 33,770/24,652 examples; 2,989 token rows in current checkpoint.
+Progress: 33,780/24,652 examples; 3,412 token rows in current checkpoint.
+Progress: 33,790/24,652 examples; 3,800 token rows in current checkpoint.
+Progress: 33,800/24,652 examples; 4,237 token rows in current checkpoint.
+Saved data/a3/token_features/part_000190.parquet; checkpointed 19,000/24,652
+Progress: 33,910/24,652 examples; 380 token rows in current checkpoint.
+Progress: 33,920/24,652 examples; 779 token rows in current checkpoint.
+Progress: 33,930/24,652 examples; 1,166 token rows in current checkpoint.
+Progress: 33,940/24,652 examples; 1,516 token rows in current checkpoint.
+Progress: 33,950/24,652 examples; 1,945 token rows in current checkpoint.
+Progress: 33,960/24,652 examples; 2,329 token rows in current checkpoint.
+Progress: 33,970/24,652 examples; 2,824 token rows in current checkpoint.
+Progress: 33,980/24,652 examples; 3,296 token rows in current checkpoint.
+Progress: 33,990/24,652 examples; 3,643 token rows in current checkpoint.
+Progress: 34,000/24,652 examples; 4,080 token rows in current checkpoint.
+Saved data/a3/token_features/part_000191.parquet; checkpointed 19,100/24,652
+Progress: 34,110/24,652 examples; 354 token rows in current checkpoint.
+Progress: 34,120/24,652 examples; 787 token rows in current checkpoint.
+Progress: 34,130/24,652 examples; 1,245 token rows in current checkpoint.
+Progress: 34,140/24,652 examples; 1,647 token rows in current checkpoint.
+Progress: 34,150/24,652 examples; 2,017 token rows in current checkpoint.
+Progress: 34,160/24,652 examples; 2,530 token rows in current checkpoint.
+Progress: 34,170/24,652 examples; 2,946 token rows in current checkpoint.
+Progress: 34,180/24,652 examples; 3,339 token rows in current checkpoint.
+Progress: 34,190/24,652 examples; 3,751 token rows in current checkpoint.
+Progress: 34,200/24,652 examples; 4,091 token rows in current checkpoint.
+Saved data/a3/token_features/part_000192.parquet; checkpointed 19,200/24,652
+Progress: 34,310/24,652 examples; 455 token rows in current checkpoint.
+Progress: 34,320/24,652 examples; 806 token rows in current checkpoint.
+Progress: 34,330/24,652 examples; 1,227 token rows in current checkpoint.
+Progress: 34,340/24,652 examples; 1,699 token rows in current checkpoint.
+Progress: 34,350/24,652 examples; 2,151 token rows in current checkpoint.
+Progress: 34,360/24,652 examples; 2,600 token rows in current checkpoint.
+Progress: 34,370/24,652 examples; 2,979 token rows in current checkpoint.
+Progress: 34,380/24,652 examples; 3,321 token rows in current checkpoint.
+Progress: 34,390/24,652 examples; 3,678 token rows in current checkpoint.
+Progress: 34,400/24,652 examples; 4,156 token rows in current checkpoint.
+Saved data/a3/token_features/part_000193.parquet; checkpointed 19,300/24,652
+Progress: 34,510/24,652 examples; 425 token rows in current checkpoint.
+Progress: 34,520/24,652 examples; 833 token rows in current checkpoint.
+Progress: 34,530/24,652 examples; 1,251 token rows in current checkpoint.
+Progress: 34,540/24,652 examples; 1,680 token rows in current checkpoint.
+Progress: 34,550/24,652 examples; 2,157 token rows in current checkpoint.
+Progress: 34,560/24,652 examples; 2,551 token rows in current checkpoint.
+Progress: 34,570/24,652 examples; 2,936 token rows in current checkpoint.
+Progress: 34,580/24,652 examples; 3,393 token rows in current checkpoint.
+Progress: 34,590/24,652 examples; 3,798 token rows in current checkpoint.
+Progress: 34,600/24,652 examples; 4,188 token rows in current checkpoint.
+Saved data/a3/token_features/part_000194.parquet; checkpointed 19,400/24,652
+Progress: 34,710/24,652 examples; 397 token rows in current checkpoint.
+Progress: 34,720/24,652 examples; 807 token rows in current checkpoint.
+Progress: 34,730/24,652 examples; 1,224 token rows in current checkpoint.
+Progress: 34,740/24,652 examples; 1,664 token rows in current checkpoint.
+Progress: 34,750/24,652 examples; 2,032 token rows in current checkpoint.
+Progress: 34,760/24,652 examples; 2,469 token rows in current checkpoint.
+Progress: 34,770/24,652 examples; 2,970 token rows in current checkpoint.
+Progress: 34,780/24,652 examples; 3,384 token rows in current checkpoint.
+Progress: 34,790/24,652 examples; 3,831 token rows in current checkpoint.
+Progress: 34,800/24,652 examples; 4,220 token rows in current checkpoint.
+Saved data/a3/token_features/part_000195.parquet; checkpointed 19,500/24,652
+Progress: 34,910/24,652 examples; 401 token rows in current checkpoint.
+Progress: 34,920/24,652 examples; 791 token rows in current checkpoint.
+Progress: 34,930/24,652 examples; 1,211 token rows in current checkpoint.
+Progress: 34,940/24,652 examples; 1,607 token rows in current checkpoint.
+Progress: 34,950/24,652 examples; 2,022 token rows in current checkpoint.
+Progress: 34,960/24,652 examples; 2,508 token rows in current checkpoint.
+Progress: 34,970/24,652 examples; 3,024 token rows in current checkpoint.
+Progress: 34,980/24,652 examples; 3,439 token rows in current checkpoint.
+Progress: 34,990/24,652 examples; 3,835 token rows in current checkpoint.
+Progress: 35,000/24,652 examples; 4,266 token rows in current checkpoint.
+Saved data/a3/token_features/part_000196.parquet; checkpointed 19,600/24,652
+Progress: 35,110/24,652 examples; 446 token rows in current checkpoint.
+Progress: 35,120/24,652 examples; 986 token rows in current checkpoint.
+Progress: 35,130/24,652 examples; 1,384 token rows in current checkpoint.
+Progress: 35,140/24,652 examples; 1,749 token rows in current checkpoint.
+Progress: 35,150/24,652 examples; 2,170 token rows in current checkpoint.
+Progress: 35,160/24,652 examples; 2,591 token rows in current checkpoint.
+Progress: 35,170/24,652 examples; 2,978 token rows in current checkpoint.
+Progress: 35,180/24,652 examples; 3,475 token rows in current checkpoint.
+Progress: 35,190/24,652 examples; 3,848 token rows in current checkpoint.
+Progress: 35,200/24,652 examples; 4,236 token rows in current checkpoint.
+Saved data/a3/token_features/part_000197.parquet; checkpointed 19,700/24,652
+Progress: 35,310/24,652 examples; 438 token rows in current checkpoint.
+Progress: 35,320/24,652 examples; 921 token rows in current checkpoint.
+Progress: 35,330/24,652 examples; 1,293 token rows in current checkpoint.
+Progress: 35,340/24,652 examples; 1,683 token rows in current checkpoint.
+Progress: 35,350/24,652 examples; 2,106 token rows in current checkpoint.
+Progress: 35,360/24,652 examples; 2,486 token rows in current checkpoint.
+Progress: 35,370/24,652 examples; 2,972 token rows in current checkpoint.
+Progress: 35,380/24,652 examples; 3,351 token rows in current checkpoint.
+Progress: 35,390/24,652 examples; 3,743 token rows in current checkpoint.
+Progress: 35,400/24,652 examples; 4,215 token rows in current checkpoint.
+Saved data/a3/token_features/part_000198.parquet; checkpointed 19,800/24,652
+Progress: 35,510/24,652 examples; 467 token rows in current checkpoint.
+Progress: 35,520/24,652 examples; 877 token rows in current checkpoint.
+Progress: 35,530/24,652 examples; 1,225 token rows in current checkpoint.
+Progress: 35,540/24,652 examples; 1,605 token rows in current checkpoint.
+Progress: 35,550/24,652 examples; 1,998 token rows in current checkpoint.
+Progress: 35,560/24,652 examples; 2,437 token rows in current checkpoint.
+Progress: 35,570/24,652 examples; 2,774 token rows in current checkpoint.
+Progress: 35,580/24,652 examples; 3,191 token rows in current checkpoint.
+Progress: 35,590/24,652 examples; 3,622 token rows in current checkpoint.
+Progress: 35,600/24,652 examples; 4,022 token rows in current checkpoint.
+Saved data/a3/token_features/part_000199.parquet; checkpointed 19,900/24,652
+Progress: 35,710/24,652 examples; 397 token rows in current checkpoint.
+Progress: 35,720/24,652 examples; 795 token rows in current checkpoint.
+Progress: 35,730/24,652 examples; 1,139 token rows in current checkpoint.
+Progress: 35,740/24,652 examples; 1,598 token rows in current checkpoint.
+Progress: 35,750/24,652 examples; 2,026 token rows in current checkpoint.
+Progress: 35,760/24,652 examples; 2,444 token rows in current checkpoint.
+Progress: 35,770/24,652 examples; 2,812 token rows in current checkpoint.
+Progress: 35,780/24,652 examples; 3,188 token rows in current checkpoint.
+Progress: 35,790/24,652 examples; 3,636 token rows in current checkpoint.
+Progress: 35,800/24,652 examples; 3,975 token rows in current checkpoint.
+Saved data/a3/token_features/part_000200.parquet; checkpointed 20,000/24,652
+Progress: 35,910/24,652 examples; 433 token rows in current checkpoint.
+Progress: 35,920/24,652 examples; 865 token rows in current checkpoint.
+Progress: 35,930/24,652 examples; 1,243 token rows in current checkpoint.
+Progress: 35,940/24,652 examples; 1,687 token rows in current checkpoint.
+Progress: 35,950/24,652 examples; 2,082 token rows in current checkpoint.
+Progress: 35,960/24,652 examples; 2,473 token rows in current checkpoint.
+Progress: 35,970/24,652 examples; 2,892 token rows in current checkpoint.
+Progress: 35,980/24,652 examples; 3,334 token rows in current checkpoint.
+Progress: 35,990/24,652 examples; 3,685 token rows in current checkpoint.
+Progress: 36,000/24,652 examples; 4,185 token rows in current checkpoint.
+Saved data/a3/token_features/part_000201.parquet; checkpointed 20,100/24,652
+Progress: 36,110/24,652 examples; 405 token rows in current checkpoint.
+Progress: 36,120/24,652 examples; 939 token rows in current checkpoint.
+Progress: 36,130/24,652 examples; 1,286 token rows in current checkpoint.
+Progress: 36,140/24,652 examples; 1,731 token rows in current checkpoint.
+Progress: 36,150/24,652 examples; 2,247 token rows in current checkpoint.
+Progress: 36,160/24,652 examples; 2,620 token rows in current checkpoint.
+Progress: 36,170/24,652 examples; 2,959 token rows in current checkpoint.
+Progress: 36,180/24,652 examples; 3,439 token rows in current checkpoint.
+Progress: 36,190/24,652 examples; 3,783 token rows in current checkpoint.
+Progress: 36,200/24,652 examples; 4,153 token rows in current checkpoint.
+Saved data/a3/token_features/part_000202.parquet; checkpointed 20,200/24,652
+Progress: 36,310/24,652 examples; 455 token rows in current checkpoint.
+Progress: 36,320/24,652 examples; 932 token rows in current checkpoint.
+Progress: 36,330/24,652 examples; 1,394 token rows in current checkpoint.
+Progress: 36,340/24,652 examples; 1,790 token rows in current checkpoint.
+Progress: 36,350/24,652 examples; 2,237 token rows in current checkpoint.
+Progress: 36,360/24,652 examples; 2,629 token rows in current checkpoint.
+Progress: 36,370/24,652 examples; 3,016 token rows in current checkpoint.
+Progress: 36,380/24,652 examples; 3,457 token rows in current checkpoint.
+Progress: 36,390/24,652 examples; 3,811 token rows in current checkpoint.
+Progress: 36,400/24,652 examples; 4,205 token rows in current checkpoint.
+Saved data/a3/token_features/part_000203.parquet; checkpointed 20,300/24,652
+Progress: 36,510/24,652 examples; 460 token rows in current checkpoint.
+Progress: 36,520/24,652 examples; 926 token rows in current checkpoint.
+Progress: 36,530/24,652 examples; 1,531 token rows in current checkpoint.
+Progress: 36,540/24,652 examples; 1,998 token rows in current checkpoint.
+Progress: 36,550/24,652 examples; 2,394 token rows in current checkpoint.
+Progress: 36,560/24,652 examples; 2,883 token rows in current checkpoint.
+Progress: 36,570/24,652 examples; 3,370 token rows in current checkpoint.
+Progress: 36,580/24,652 examples; 3,741 token rows in current checkpoint.
+Progress: 36,590/24,652 examples; 4,077 token rows in current checkpoint.
+Progress: 36,600/24,652 examples; 4,502 token rows in current checkpoint.
+Saved data/a3/token_features/part_000204.parquet; checkpointed 20,400/24,652
+Progress: 36,710/24,652 examples; 387 token rows in current checkpoint.
+Progress: 36,720/24,652 examples; 843 token rows in current checkpoint.
+Progress: 36,730/24,652 examples; 1,303 token rows in current checkpoint.
+Progress: 36,740/24,652 examples; 1,714 token rows in current checkpoint.
+Progress: 36,750/24,652 examples; 2,207 token rows in current checkpoint.
+Progress: 36,760/24,652 examples; 2,597 token rows in current checkpoint.
+Progress: 36,770/24,652 examples; 2,994 token rows in current checkpoint.
+Progress: 36,780/24,652 examples; 3,366 token rows in current checkpoint.
+Progress: 36,790/24,652 examples; 3,750 token rows in current checkpoint.
+Progress: 36,800/24,652 examples; 4,259 token rows in current checkpoint.
+Saved data/a3/token_features/part_000205.parquet; checkpointed 20,500/24,652
+Progress: 36,910/24,652 examples; 402 token rows in current checkpoint.
+Progress: 36,920/24,652 examples; 813 token rows in current checkpoint.
+Progress: 36,930/24,652 examples; 1,279 token rows in current checkpoint.
+Progress: 36,940/24,652 examples; 1,729 token rows in current checkpoint.
+Progress: 36,950/24,652 examples; 2,138 token rows in current checkpoint.
+Progress: 36,960/24,652 examples; 2,593 token rows in current checkpoint.
+Progress: 36,970/24,652 examples; 3,021 token rows in current checkpoint.
+Progress: 36,980/24,652 examples; 3,528 token rows in current checkpoint.
+Progress: 36,990/24,652 examples; 4,024 token rows in current checkpoint.
+Progress: 37,000/24,652 examples; 4,433 token rows in current checkpoint.
+Saved data/a3/token_features/part_000206.parquet; checkpointed 20,600/24,652
+Progress: 37,110/24,652 examples; 386 token rows in current checkpoint.
+Progress: 37,120/24,652 examples; 820 token rows in current checkpoint.
+Progress: 37,130/24,652 examples; 1,287 token rows in current checkpoint.
+Progress: 37,140/24,652 examples; 1,678 token rows in current checkpoint.
+Progress: 37,150/24,652 examples; 2,096 token rows in current checkpoint.
+Progress: 37,160/24,652 examples; 2,600 token rows in current checkpoint.
+Progress: 37,170/24,652 examples; 2,975 token rows in current checkpoint.
+Progress: 37,180/24,652 examples; 3,372 token rows in current checkpoint.
+Progress: 37,190/24,652 examples; 3,734 token rows in current checkpoint.
+Progress: 37,200/24,652 examples; 4,172 token rows in current checkpoint.
+Saved data/a3/token_features/part_000207.parquet; checkpointed 20,700/24,652
+Progress: 37,310/24,652 examples; 466 token rows in current checkpoint.
+Progress: 37,320/24,652 examples; 976 token rows in current checkpoint.
+Progress: 37,330/24,652 examples; 1,377 token rows in current checkpoint.
+Progress: 37,340/24,652 examples; 1,775 token rows in current checkpoint.
+Progress: 37,350/24,652 examples; 2,101 token rows in current checkpoint.
+Progress: 37,360/24,652 examples; 2,524 token rows in current checkpoint.
+Progress: 37,370/24,652 examples; 2,886 token rows in current checkpoint.
+Progress: 37,380/24,652 examples; 3,321 token rows in current checkpoint.
+Progress: 37,390/24,652 examples; 3,775 token rows in current checkpoint.
+Progress: 37,400/24,652 examples; 4,161 token rows in current checkpoint.
+Saved data/a3/token_features/part_000208.parquet; checkpointed 20,800/24,652
+Progress: 37,510/24,652 examples; 341 token rows in current checkpoint.
+Progress: 37,520/24,652 examples; 772 token rows in current checkpoint.
+Progress: 37,530/24,652 examples; 1,182 token rows in current checkpoint.
+Progress: 37,540/24,652 examples; 1,575 token rows in current checkpoint.
+Progress: 37,550/24,652 examples; 1,926 token rows in current checkpoint.
+Progress: 37,560/24,652 examples; 2,353 token rows in current checkpoint.
+Progress: 37,570/24,652 examples; 2,777 token rows in current checkpoint.
+Progress: 37,580/24,652 examples; 3,249 token rows in current checkpoint.
+Progress: 37,590/24,652 examples; 3,674 token rows in current checkpoint.
+Progress: 37,600/24,652 examples; 4,028 token rows in current checkpoint.
+Saved data/a3/token_features/part_000209.parquet; checkpointed 20,900/24,652
+Progress: 37,710/24,652 examples; 384 token rows in current checkpoint.
+Progress: 37,720/24,652 examples; 752 token rows in current checkpoint.
+Progress: 37,730/24,652 examples; 1,170 token rows in current checkpoint.
+Progress: 37,740/24,652 examples; 1,636 token rows in current checkpoint.
+Progress: 37,750/24,652 examples; 2,011 token rows in current checkpoint.
+Progress: 37,760/24,652 examples; 2,370 token rows in current checkpoint.
+Progress: 37,770/24,652 examples; 2,699 token rows in current checkpoint.
+Progress: 37,780/24,652 examples; 3,036 token rows in current checkpoint.
+Progress: 37,790/24,652 examples; 3,452 token rows in current checkpoint.
+Progress: 37,800/24,652 examples; 3,819 token rows in current checkpoint.
+Saved data/a3/token_features/part_000210.parquet; checkpointed 21,000/24,652
+Progress: 37,910/24,652 examples; 429 token rows in current checkpoint.
+Progress: 37,920/24,652 examples; 843 token rows in current checkpoint.
+Progress: 37,930/24,652 examples; 1,261 token rows in current checkpoint.
+Progress: 37,940/24,652 examples; 1,656 token rows in current checkpoint.
+Progress: 37,950/24,652 examples; 2,091 token rows in current checkpoint.
+Progress: 37,960/24,652 examples; 2,464 token rows in current checkpoint.
+Progress: 37,970/24,652 examples; 2,890 token rows in current checkpoint.
+Progress: 37,980/24,652 examples; 3,309 token rows in current checkpoint.
+Progress: 37,990/24,652 examples; 3,820 token rows in current checkpoint.
+Progress: 38,000/24,652 examples; 4,237 token rows in current checkpoint.
+Saved data/a3/token_features/part_000211.parquet; checkpointed 21,100/24,652
+Progress: 38,110/24,652 examples; 446 token rows in current checkpoint.
+Progress: 38,120/24,652 examples; 891 token rows in current checkpoint.
+Progress: 38,130/24,652 examples; 1,271 token rows in current checkpoint.
+Progress: 38,140/24,652 examples; 1,780 token rows in current checkpoint.
+Progress: 38,150/24,652 examples; 2,177 token rows in current checkpoint.
+Progress: 38,160/24,652 examples; 2,560 token rows in current checkpoint.
+Progress: 38,170/24,652 examples; 3,016 token rows in current checkpoint.
+Progress: 38,180/24,652 examples; 3,436 token rows in current checkpoint.
+Progress: 38,190/24,652 examples; 3,841 token rows in current checkpoint.
+Progress: 38,200/24,652 examples; 4,273 token rows in current checkpoint.
+Saved data/a3/token_features/part_000212.parquet; checkpointed 21,200/24,652
+Progress: 38,310/24,652 examples; 491 token rows in current checkpoint.
+Progress: 38,320/24,652 examples; 963 token rows in current checkpoint.
+Progress: 38,330/24,652 examples; 1,386 token rows in current checkpoint.
+Progress: 38,340/24,652 examples; 1,807 token rows in current checkpoint.
+Progress: 38,350/24,652 examples; 2,214 token rows in current checkpoint.
+Progress: 38,360/24,652 examples; 2,649 token rows in current checkpoint.
+Progress: 38,370/24,652 examples; 3,062 token rows in current checkpoint.
+Progress: 38,380/24,652 examples; 3,477 token rows in current checkpoint.
+Progress: 38,390/24,652 examples; 3,838 token rows in current checkpoint.
+Progress: 38,400/24,652 examples; 4,225 token rows in current checkpoint.
+Saved data/a3/token_features/part_000213.parquet; checkpointed 21,300/24,652
+Progress: 38,510/24,652 examples; 416 token rows in current checkpoint.
+Progress: 38,520/24,652 examples; 841 token rows in current checkpoint.
+Progress: 38,530/24,652 examples; 1,262 token rows in current checkpoint.
+Progress: 38,540/24,652 examples; 1,717 token rows in current checkpoint.
+Progress: 38,550/24,652 examples; 2,169 token rows in current checkpoint.
+Progress: 38,560/24,652 examples; 2,571 token rows in current checkpoint.
+Progress: 38,570/24,652 examples; 3,024 token rows in current checkpoint.
+Progress: 38,580/24,652 examples; 3,522 token rows in current checkpoint.
+Progress: 38,590/24,652 examples; 3,979 token rows in current checkpoint.
+Progress: 38,600/24,652 examples; 4,400 token rows in current checkpoint.
+Saved data/a3/token_features/part_000214.parquet; checkpointed 21,400/24,652
+Progress: 38,710/24,652 examples; 357 token rows in current checkpoint.
+Progress: 38,720/24,652 examples; 740 token rows in current checkpoint.
+Progress: 38,730/24,652 examples; 1,145 token rows in current checkpoint.
+Progress: 38,740/24,652 examples; 1,552 token rows in current checkpoint.
+Progress: 38,750/24,652 examples; 1,942 token rows in current checkpoint.
+Progress: 38,760/24,652 examples; 2,389 token rows in current checkpoint.
+Progress: 38,770/24,652 examples; 2,784 token rows in current checkpoint.
+Progress: 38,780/24,652 examples; 3,262 token rows in current checkpoint.
+Progress: 38,790/24,652 examples; 3,691 token rows in current checkpoint.
+Progress: 38,800/24,652 examples; 4,166 token rows in current checkpoint.
+Saved data/a3/token_features/part_000215.parquet; checkpointed 21,500/24,652
+Progress: 38,910/24,652 examples; 387 token rows in current checkpoint.
+Progress: 38,920/24,652 examples; 850 token rows in current checkpoint.
+Progress: 38,930/24,652 examples; 1,197 token rows in current checkpoint.
+Progress: 38,940/24,652 examples; 1,611 token rows in current checkpoint.
+Progress: 38,950/24,652 examples; 1,992 token rows in current checkpoint.
+Progress: 38,960/24,652 examples; 2,424 token rows in current checkpoint.
+Progress: 38,970/24,652 examples; 2,790 token rows in current checkpoint.
+Progress: 38,980/24,652 examples; 3,147 token rows in current checkpoint.
+Progress: 38,990/24,652 examples; 3,555 token rows in current checkpoint.
+Progress: 39,000/24,652 examples; 4,033 token rows in current checkpoint.
+Saved data/a3/token_features/part_000216.parquet; checkpointed 21,600/24,652
+Progress: 39,110/24,652 examples; 517 token rows in current checkpoint.
+Progress: 39,120/24,652 examples; 929 token rows in current checkpoint.
+Progress: 39,130/24,652 examples; 1,367 token rows in current checkpoint.
+Progress: 39,140/24,652 examples; 1,747 token rows in current checkpoint.
+Progress: 39,150/24,652 examples; 2,095 token rows in current checkpoint.
+Progress: 39,160/24,652 examples; 2,429 token rows in current checkpoint.
+Progress: 39,170/24,652 examples; 2,886 token rows in current checkpoint.
+Progress: 39,180/24,652 examples; 3,314 token rows in current checkpoint.
+Progress: 39,190/24,652 examples; 3,768 token rows in current checkpoint.
+Progress: 39,200/24,652 examples; 4,108 token rows in current checkpoint.
+Saved data/a3/token_features/part_000217.parquet; checkpointed 21,700/24,652
+Progress: 39,310/24,652 examples; 503 token rows in current checkpoint.
+Progress: 39,320/24,652 examples; 930 token rows in current checkpoint.
+Progress: 39,330/24,652 examples; 1,284 token rows in current checkpoint.
+Progress: 39,340/24,652 examples; 1,650 token rows in current checkpoint.
+Progress: 39,350/24,652 examples; 2,086 token rows in current checkpoint.
+Progress: 39,360/24,652 examples; 2,513 token rows in current checkpoint.
+Progress: 39,370/24,652 examples; 2,905 token rows in current checkpoint.
+Progress: 39,380/24,652 examples; 3,349 token rows in current checkpoint.
+Progress: 39,390/24,652 examples; 3,773 token rows in current checkpoint.
+Progress: 39,400/24,652 examples; 4,258 token rows in current checkpoint.
+Saved data/a3/token_features/part_000218.parquet; checkpointed 21,800/24,652
+Progress: 39,510/24,652 examples; 445 token rows in current checkpoint.
+Progress: 39,520/24,652 examples; 875 token rows in current checkpoint.
+Progress: 39,530/24,652 examples; 1,232 token rows in current checkpoint.
+Progress: 39,540/24,652 examples; 1,596 token rows in current checkpoint.
+Progress: 39,550/24,652 examples; 2,029 token rows in current checkpoint.
+Progress: 39,560/24,652 examples; 2,452 token rows in current checkpoint.
+Progress: 39,570/24,652 examples; 2,819 token rows in current checkpoint.
+Progress: 39,580/24,652 examples; 3,233 token rows in current checkpoint.
+Progress: 39,590/24,652 examples; 3,603 token rows in current checkpoint.
+Progress: 39,600/24,652 examples; 3,988 token rows in current checkpoint.
+Saved data/a3/token_features/part_000219.parquet; checkpointed 21,900/24,652
+Progress: 39,710/24,652 examples; 360 token rows in current checkpoint.
+Progress: 39,720/24,652 examples; 765 token rows in current checkpoint.
+Progress: 39,730/24,652 examples; 1,160 token rows in current checkpoint.
+Progress: 39,740/24,652 examples; 1,640 token rows in current checkpoint.
+Progress: 39,750/24,652 examples; 2,021 token rows in current checkpoint.
+Progress: 39,760/24,652 examples; 2,379 token rows in current checkpoint.
+Progress: 39,770/24,652 examples; 2,812 token rows in current checkpoint.
+Progress: 39,780/24,652 examples; 3,380 token rows in current checkpoint.
+Progress: 39,790/24,652 examples; 3,807 token rows in current checkpoint.
+Progress: 39,800/24,652 examples; 4,356 token rows in current checkpoint.
+Saved data/a3/token_features/part_000220.parquet; checkpointed 22,000/24,652
+Progress: 39,910/24,652 examples; 407 token rows in current checkpoint.
+Progress: 39,920/24,652 examples; 877 token rows in current checkpoint.
+Progress: 39,930/24,652 examples; 1,327 token rows in current checkpoint.
+Progress: 39,940/24,652 examples; 1,735 token rows in current checkpoint.
+Progress: 39,950/24,652 examples; 2,147 token rows in current checkpoint.
+Progress: 39,960/24,652 examples; 2,465 token rows in current checkpoint.
+Progress: 39,970/24,652 examples; 2,919 token rows in current checkpoint.
+Progress: 39,980/24,652 examples; 3,373 token rows in current checkpoint.
+Progress: 39,990/24,652 examples; 3,807 token rows in current checkpoint.
+Progress: 40,000/24,652 examples; 4,241 token rows in current checkpoint.
+Saved data/a3/token_features/part_000221.parquet; checkpointed 22,100/24,652
+Progress: 40,110/24,652 examples; 430 token rows in current checkpoint.
+Progress: 40,120/24,652 examples; 943 token rows in current checkpoint.
+Progress: 40,130/24,652 examples; 1,256 token rows in current checkpoint.
+Progress: 40,140/24,652 examples; 1,666 token rows in current checkpoint.
+Progress: 40,150/24,652 examples; 2,136 token rows in current checkpoint.
+Progress: 40,160/24,652 examples; 2,553 token rows in current checkpoint.
+Progress: 40,170/24,652 examples; 3,026 token rows in current checkpoint.
+Progress: 40,180/24,652 examples; 3,396 token rows in current checkpoint.
+Progress: 40,190/24,652 examples; 3,802 token rows in current checkpoint.
+Progress: 40,200/24,652 examples; 4,200 token rows in current checkpoint.
+Saved data/a3/token_features/part_000222.parquet; checkpointed 22,200/24,652
+Progress: 40,310/24,652 examples; 334 token rows in current checkpoint.
+Progress: 40,320/24,652 examples; 724 token rows in current checkpoint.
+Progress: 40,330/24,652 examples; 1,102 token rows in current checkpoint.
+Progress: 40,340/24,652 examples; 1,495 token rows in current checkpoint.
+Progress: 40,350/24,652 examples; 1,882 token rows in current checkpoint.
+Progress: 40,360/24,652 examples; 2,333 token rows in current checkpoint.
+Progress: 40,370/24,652 examples; 2,682 token rows in current checkpoint.
+Progress: 40,380/24,652 examples; 3,176 token rows in current checkpoint.
+Progress: 40,390/24,652 examples; 3,601 token rows in current checkpoint.
+Progress: 40,400/24,652 examples; 4,118 token rows in current checkpoint.
+Saved data/a3/token_features/part_000223.parquet; checkpointed 22,300/24,652
+Progress: 40,510/24,652 examples; 361 token rows in current checkpoint.
+Progress: 40,520/24,652 examples; 753 token rows in current checkpoint.
+Progress: 40,530/24,652 examples; 1,124 token rows in current checkpoint.
+Progress: 40,540/24,652 examples; 1,572 token rows in current checkpoint.
+Progress: 40,550/24,652 examples; 1,927 token rows in current checkpoint.
+Progress: 40,560/24,652 examples; 2,373 token rows in current checkpoint.
+Progress: 40,570/24,652 examples; 2,831 token rows in current checkpoint.
+Progress: 40,580/24,652 examples; 3,277 token rows in current checkpoint.
+Progress: 40,590/24,652 examples; 3,789 token rows in current checkpoint.
+Progress: 40,600/24,652 examples; 4,209 token rows in current checkpoint.
+Saved data/a3/token_features/part_000224.parquet; checkpointed 22,400/24,652
+Progress: 40,710/24,652 examples; 429 token rows in current checkpoint.
+Progress: 40,720/24,652 examples; 815 token rows in current checkpoint.
+Progress: 40,730/24,652 examples; 1,203 token rows in current checkpoint.
+Progress: 40,740/24,652 examples; 1,556 token rows in current checkpoint.
+Progress: 40,750/24,652 examples; 2,034 token rows in current checkpoint.
+Progress: 40,760/24,652 examples; 2,491 token rows in current checkpoint.
+Progress: 40,770/24,652 examples; 2,989 token rows in current checkpoint.
+Progress: 40,780/24,652 examples; 3,368 token rows in current checkpoint.
+Progress: 40,790/24,652 examples; 3,838 token rows in current checkpoint.
+Progress: 40,800/24,652 examples; 4,240 token rows in current checkpoint.
+Saved data/a3/token_features/part_000225.parquet; checkpointed 22,500/24,652
+Progress: 40,910/24,652 examples; 482 token rows in current checkpoint.
+Progress: 40,920/24,652 examples; 889 token rows in current checkpoint.
+Progress: 40,930/24,652 examples; 1,287 token rows in current checkpoint.
+Progress: 40,940/24,652 examples; 1,711 token rows in current checkpoint.
+Progress: 40,950/24,652 examples; 2,088 token rows in current checkpoint.
+Progress: 40,960/24,652 examples; 2,514 token rows in current checkpoint.
+Progress: 40,970/24,652 examples; 2,864 token rows in current checkpoint.
+Progress: 40,980/24,652 examples; 3,296 token rows in current checkpoint.
+Progress: 40,990/24,652 examples; 3,638 token rows in current checkpoint.
+Progress: 41,000/24,652 examples; 4,180 token rows in current checkpoint.
+Saved data/a3/token_features/part_000226.parquet; checkpointed 22,600/24,652
+Progress: 41,110/24,652 examples; 409 token rows in current checkpoint.
+Progress: 41,120/24,652 examples; 909 token rows in current checkpoint.
+Progress: 41,130/24,652 examples; 1,355 token rows in current checkpoint.
+Progress: 41,140/24,652 examples; 1,831 token rows in current checkpoint.
+Progress: 41,150/24,652 examples; 2,286 token rows in current checkpoint.
+Progress: 41,160/24,652 examples; 2,720 token rows in current checkpoint.
+Progress: 41,170/24,652 examples; 3,175 token rows in current checkpoint.
+Progress: 41,180/24,652 examples; 3,649 token rows in current checkpoint.
+Progress: 41,190/24,652 examples; 4,084 token rows in current checkpoint.
+Progress: 41,200/24,652 examples; 4,440 token rows in current checkpoint.
+Saved data/a3/token_features/part_000227.parquet; checkpointed 22,700/24,652
+Progress: 41,310/24,652 examples; 358 token rows in current checkpoint.
+Progress: 41,320/24,652 examples; 777 token rows in current checkpoint.
+Progress: 41,330/24,652 examples; 1,307 token rows in current checkpoint.
+Progress: 41,340/24,652 examples; 1,702 token rows in current checkpoint.
+Progress: 41,350/24,652 examples; 2,070 token rows in current checkpoint.
+Progress: 41,360/24,652 examples; 2,423 token rows in current checkpoint.
+Progress: 41,370/24,652 examples; 2,892 token rows in current checkpoint.
+Progress: 41,380/24,652 examples; 3,371 token rows in current checkpoint.
+Progress: 41,390/24,652 examples; 3,716 token rows in current checkpoint.
+Progress: 41,400/24,652 examples; 4,105 token rows in current checkpoint.
+Saved data/a3/token_features/part_000228.parquet; checkpointed 22,800/24,652
+Progress: 41,510/24,652 examples; 408 token rows in current checkpoint.
+Progress: 41,520/24,652 examples; 809 token rows in current checkpoint.
+Progress: 41,530/24,652 examples; 1,267 token rows in current checkpoint.
+Progress: 41,540/24,652 examples; 1,674 token rows in current checkpoint.
+Progress: 41,550/24,652 examples; 2,128 token rows in current checkpoint.
+Progress: 41,560/24,652 examples; 2,480 token rows in current checkpoint.
+Progress: 41,570/24,652 examples; 2,938 token rows in current checkpoint.
+Progress: 41,580/24,652 examples; 3,334 token rows in current checkpoint.
+Progress: 41,590/24,652 examples; 3,650 token rows in current checkpoint.
+Progress: 41,600/24,652 examples; 4,057 token rows in current checkpoint.
+Saved data/a3/token_features/part_000229.parquet; checkpointed 22,900/24,652
+Progress: 41,710/24,652 examples; 412 token rows in current checkpoint.
+Progress: 41,720/24,652 examples; 850 token rows in current checkpoint.
+Progress: 41,730/24,652 examples; 1,357 token rows in current checkpoint.
+Progress: 41,740/24,652 examples; 1,768 token rows in current checkpoint.
+Progress: 41,750/24,652 examples; 2,178 token rows in current checkpoint.
+Progress: 41,760/24,652 examples; 2,527 token rows in current checkpoint.
+Progress: 41,770/24,652 examples; 2,939 token rows in current checkpoint.
+Progress: 41,780/24,652 examples; 3,309 token rows in current checkpoint.
+Progress: 41,790/24,652 examples; 3,707 token rows in current checkpoint.
+Progress: 41,800/24,652 examples; 4,080 token rows in current checkpoint.
+Saved data/a3/token_features/part_000230.parquet; checkpointed 23,000/24,652
+Progress: 41,910/24,652 examples; 452 token rows in current checkpoint.
+Progress: 41,920/24,652 examples; 841 token rows in current checkpoint.
+Progress: 41,930/24,652 examples; 1,251 token rows in current checkpoint.
+Progress: 41,940/24,652 examples; 1,695 token rows in current checkpoint.
+Progress: 41,950/24,652 examples; 2,181 token rows in current checkpoint.
+Progress: 41,960/24,652 examples; 2,551 token rows in current checkpoint.
+Progress: 41,970/24,652 examples; 3,020 token rows in current checkpoint.
+Progress: 41,980/24,652 examples; 3,424 token rows in current checkpoint.
+Progress: 41,990/24,652 examples; 3,882 token rows in current checkpoint.
+Progress: 42,000/24,652 examples; 4,301 token rows in current checkpoint.
+Saved data/a3/token_features/part_000231.parquet; checkpointed 23,100/24,652
+Progress: 42,110/24,652 examples; 413 token rows in current checkpoint.
+Progress: 42,120/24,652 examples; 850 token rows in current checkpoint.
+Progress: 42,130/24,652 examples; 1,249 token rows in current checkpoint.
+Progress: 42,140/24,652 examples; 1,657 token rows in current checkpoint.
+Progress: 42,150/24,652 examples; 2,107 token rows in current checkpoint.
+Progress: 42,160/24,652 examples; 2,522 token rows in current checkpoint.
+Progress: 42,170/24,652 examples; 2,929 token rows in current checkpoint.
+Progress: 42,180/24,652 examples; 3,347 token rows in current checkpoint.
+Progress: 42,190/24,652 examples; 3,725 token rows in current checkpoint.
+Progress: 42,200/24,652 examples; 4,187 token rows in current checkpoint.
+Saved data/a3/token_features/part_000232.parquet; checkpointed 23,200/24,652
+Progress: 42,310/24,652 examples; 364 token rows in current checkpoint.
+Progress: 42,320/24,652 examples; 749 token rows in current checkpoint.
+Progress: 42,330/24,652 examples; 1,208 token rows in current checkpoint.
+Progress: 42,340/24,652 examples; 1,670 token rows in current checkpoint.
+Progress: 42,350/24,652 examples; 2,066 token rows in current checkpoint.
+Progress: 42,360/24,652 examples; 2,399 token rows in current checkpoint.
+Progress: 42,370/24,652 examples; 2,894 token rows in current checkpoint.
+Progress: 42,380/24,652 examples; 3,322 token rows in current checkpoint.
+Progress: 42,390/24,652 examples; 3,791 token rows in current checkpoint.
+Progress: 42,400/24,652 examples; 4,243 token rows in current checkpoint.
+Saved data/a3/token_features/part_000233.parquet; checkpointed 23,300/24,652
+Progress: 42,510/24,652 examples; 461 token rows in current checkpoint.
+Progress: 42,520/24,652 examples; 941 token rows in current checkpoint.
+Progress: 42,530/24,652 examples; 1,362 token rows in current checkpoint.
+Progress: 42,540/24,652 examples; 1,898 token rows in current checkpoint.
+Progress: 42,550/24,652 examples; 2,311 token rows in current checkpoint.
+Progress: 42,560/24,652 examples; 2,712 token rows in current checkpoint.
+Progress: 42,570/24,652 examples; 3,085 token rows in current checkpoint.
+Progress: 42,580/24,652 examples; 3,530 token rows in current checkpoint.
+Progress: 42,590/24,652 examples; 3,966 token rows in current checkpoint.
+Progress: 42,600/24,652 examples; 4,403 token rows in current checkpoint.
+Saved data/a3/token_features/part_000234.parquet; checkpointed 23,400/24,652
+Progress: 42,710/24,652 examples; 535 token rows in current checkpoint.
+Progress: 42,720/24,652 examples; 923 token rows in current checkpoint.
+Progress: 42,730/24,652 examples; 1,288 token rows in current checkpoint.
+Progress: 42,740/24,652 examples; 1,774 token rows in current checkpoint.
+Progress: 42,750/24,652 examples; 2,147 token rows in current checkpoint.
+Progress: 42,760/24,652 examples; 2,578 token rows in current checkpoint.
+Progress: 42,770/24,652 examples; 3,067 token rows in current checkpoint.
+Progress: 42,780/24,652 examples; 3,494 token rows in current checkpoint.
+Progress: 42,790/24,652 examples; 3,872 token rows in current checkpoint.
+Progress: 42,800/24,652 examples; 4,222 token rows in current checkpoint.
+Saved data/a3/token_features/part_000235.parquet; checkpointed 23,500/24,652
+Progress: 42,910/24,652 examples; 469 token rows in current checkpoint.
+Progress: 42,920/24,652 examples; 837 token rows in current checkpoint.
+Progress: 42,930/24,652 examples; 1,234 token rows in current checkpoint.
+Progress: 42,940/24,652 examples; 1,664 token rows in current checkpoint.
+Progress: 42,950/24,652 examples; 2,041 token rows in current checkpoint.
+Progress: 42,960/24,652 examples; 2,468 token rows in current checkpoint.
+Progress: 42,970/24,652 examples; 2,815 token rows in current checkpoint.
+Progress: 42,980/24,652 examples; 3,195 token rows in current checkpoint.
+Progress: 42,990/24,652 examples; 3,660 token rows in current checkpoint.
+Progress: 43,000/24,652 examples; 4,028 token rows in current checkpoint.
+Saved data/a3/token_features/part_000236.parquet; checkpointed 23,600/24,652
+Progress: 43,110/24,652 examples; 418 token rows in current checkpoint.
+Progress: 43,120/24,652 examples; 786 token rows in current checkpoint.
+Progress: 43,130/24,652 examples; 1,151 token rows in current checkpoint.
+Progress: 43,140/24,652 examples; 1,561 token rows in current checkpoint.
+Progress: 43,150/24,652 examples; 1,949 token rows in current checkpoint.
+Progress: 43,160/24,652 examples; 2,327 token rows in current checkpoint.
+Progress: 43,170/24,652 examples; 2,761 token rows in current checkpoint.
+Progress: 43,180/24,652 examples; 3,107 token rows in current checkpoint.
+Progress: 43,190/24,652 examples; 3,546 token rows in current checkpoint.
+Progress: 43,200/24,652 examples; 3,958 token rows in current checkpoint.
+Saved data/a3/token_features/part_000237.parquet; checkpointed 23,700/24,652
+Progress: 43,310/24,652 examples; 459 token rows in current checkpoint.
+Progress: 43,320/24,652 examples; 858 token rows in current checkpoint.
+Progress: 43,330/24,652 examples; 1,240 token rows in current checkpoint.
+Progress: 43,340/24,652 examples; 1,636 token rows in current checkpoint.
+Progress: 43,350/24,652 examples; 2,046 token rows in current checkpoint.
+Progress: 43,360/24,652 examples; 2,440 token rows in current checkpoint.
+Progress: 43,370/24,652 examples; 2,846 token rows in current checkpoint.
+Progress: 43,380/24,652 examples; 3,344 token rows in current checkpoint.
+Progress: 43,390/24,652 examples; 3,738 token rows in current checkpoint.
+Progress: 43,400/24,652 examples; 4,179 token rows in current checkpoint.
+Saved data/a3/token_features/part_000238.parquet; checkpointed 23,800/24,652
+Progress: 43,510/24,652 examples; 523 token rows in current checkpoint.
+Progress: 43,520/24,652 examples; 967 token rows in current checkpoint.
+Progress: 43,530/24,652 examples; 1,425 token rows in current checkpoint.
+Progress: 43,540/24,652 examples; 1,809 token rows in current checkpoint.
+Progress: 43,550/24,652 examples; 2,222 token rows in current checkpoint.
+Progress: 43,560/24,652 examples; 2,717 token rows in current checkpoint.
+Progress: 43,570/24,652 examples; 3,068 token rows in current checkpoint.
+Progress: 43,580/24,652 examples; 3,473 token rows in current checkpoint.
+Progress: 43,590/24,652 examples; 3,854 token rows in current checkpoint.
+Progress: 43,600/24,652 examples; 4,291 token rows in current checkpoint.
+Saved data/a3/token_features/part_000239.parquet; checkpointed 23,900/24,652
+Progress: 43,710/24,652 examples; 473 token rows in current checkpoint.
+Progress: 43,720/24,652 examples; 966 token rows in current checkpoint.
+Progress: 43,730/24,652 examples; 1,343 token rows in current checkpoint.
+Progress: 43,740/24,652 examples; 1,725 token rows in current checkpoint.
+Progress: 43,750/24,652 examples; 2,150 token rows in current checkpoint.
+Progress: 43,760/24,652 examples; 2,616 token rows in current checkpoint.
+Progress: 43,770/24,652 examples; 3,178 token rows in current checkpoint.
+Progress: 43,780/24,652 examples; 3,575 token rows in current checkpoint.
+Progress: 43,790/24,652 examples; 3,993 token rows in current checkpoint.
+Progress: 43,800/24,652 examples; 4,564 token rows in current checkpoint.
+Saved data/a3/token_features/part_000240.parquet; checkpointed 24,000/24,652
+Progress: 43,910/24,652 examples; 1,151 token rows in current checkpoint.
+Progress: 43,920/24,652 examples; 2,242 token rows in current checkpoint.
+Progress: 43,930/24,652 examples; 3,233 token rows in current checkpoint.
+Progress: 43,940/24,652 examples; 4,363 token rows in current checkpoint.
+Progress: 43,950/24,652 examples; 5,462 token rows in current checkpoint.
+Progress: 43,960/24,652 examples; 6,626 token rows in current checkpoint.
+Progress: 43,970/24,652 examples; 7,648 token rows in current checkpoint.
+Progress: 43,980/24,652 examples; 8,470 token rows in current checkpoint.
+Progress: 43,990/24,652 examples; 9,390 token rows in current checkpoint.
+Progress: 44,000/24,652 examples; 10,497 token rows in current checkpoint.
+Saved data/a3/token_features/part_000241.parquet; checkpointed 24,100/24,652
+Progress: 44,110/24,652 examples; 1,076 token rows in current checkpoint.
+Progress: 44,120/24,652 examples; 2,079 token rows in current checkpoint.
+Progress: 44,130/24,652 examples; 3,318 token rows in current checkpoint.
+Progress: 44,140/24,652 examples; 4,420 token rows in current checkpoint.
+Progress: 44,150/24,652 examples; 5,580 token rows in current checkpoint.
+Progress: 44,160/24,652 examples; 6,735 token rows in current checkpoint.
+Progress: 44,170/24,652 examples; 7,944 token rows in current checkpoint.
+Progress: 44,180/24,652 examples; 8,928 token rows in current checkpoint.
+Progress: 44,190/24,652 examples; 10,180 token rows in current checkpoint.
+Progress: 44,200/24,652 examples; 11,460 token rows in current checkpoint.
+Saved data/a3/token_features/part_000242.parquet; checkpointed 24,200/24,652
+Progress: 44,310/24,652 examples; 1,025 token rows in current checkpoint.
+Progress: 44,320/24,652 examples; 1,844 token rows in current checkpoint.
+Progress: 44,330/24,652 examples; 3,079 token rows in current checkpoint.
+Progress: 44,340/24,652 examples; 4,270 token rows in current checkpoint.
+Progress: 44,350/24,652 examples; 5,550 token rows in current checkpoint.
+Progress: 44,360/24,652 examples; 6,830 token rows in current checkpoint.
+Progress: 44,370/24,652 examples; 7,755 token rows in current checkpoint.
+Progress: 44,380/24,652 examples; 8,867 token rows in current checkpoint.
+Progress: 44,390/24,652 examples; 9,708 token rows in current checkpoint.
+Progress: 44,400/24,652 examples; 10,835 token rows in current checkpoint.
+Saved data/a3/token_features/part_000243.parquet; checkpointed 24,300/24,652
+Progress: 44,510/24,652 examples; 1,059 token rows in current checkpoint.
+Progress: 44,520/24,652 examples; 2,195 token rows in current checkpoint.
+Progress: 44,530/24,652 examples; 3,286 token rows in current checkpoint.
+Progress: 44,540/24,652 examples; 4,107 token rows in current checkpoint.
+Progress: 44,550/24,652 examples; 5,184 token rows in current checkpoint.
+Progress: 44,560/24,652 examples; 5,606 token rows in current checkpoint.
+Progress: 44,570/24,652 examples; 6,794 token rows in current checkpoint.
+Progress: 44,580/24,652 examples; 8,007 token rows in current checkpoint.
+Progress: 44,590/24,652 examples; 9,171 token rows in current checkpoint.
+Progress: 44,600/24,652 examples; 10,197 token rows in current checkpoint.
+Saved data/a3/token_features/part_000244.parquet; checkpointed 24,400/24,652
+Progress: 44,710/24,652 examples; 954 token rows in current checkpoint.
+Progress: 44,720/24,652 examples; 1,947 token rows in current checkpoint.
+Progress: 44,730/24,652 examples; 2,913 token rows in current checkpoint.
+Progress: 44,740/24,652 examples; 3,991 token rows in current checkpoint.
+Progress: 44,750/24,652 examples; 5,127 token rows in current checkpoint.
+Progress: 44,760/24,652 examples; 6,249 token rows in current checkpoint.
+Progress: 44,770/24,652 examples; 7,426 token rows in current checkpoint.
+Progress: 44,780/24,652 examples; 8,682 token rows in current checkpoint.
+Progress: 44,790/24,652 examples; 9,873 token rows in current checkpoint.
+Progress: 44,800/24,652 examples; 10,667 token rows in current checkpoint.
+Saved data/a3/token_features/part_000245.parquet; checkpointed 24,500/24,652
+Progress: 44,910/24,652 examples; 959 token rows in current checkpoint.
+Progress: 44,920/24,652 examples; 2,216 token rows in current checkpoint.
+Progress: 44,930/24,652 examples; 3,176 token rows in current checkpoint.
+Progress: 44,940/24,652 examples; 4,223 token rows in current checkpoint.
+Progress: 44,950/24,652 examples; 5,264 token rows in current checkpoint.
+Progress: 44,960/24,652 examples; 6,408 token rows in current checkpoint.
+Progress: 44,970/24,652 examples; 7,687 token rows in current checkpoint.
+Progress: 44,980/24,652 examples; 8,706 token rows in current checkpoint.
+Progress: 44,990/24,652 examples; 9,822 token rows in current checkpoint.
+Progress: 45,000/24,652 examples; 11,086 token rows in current checkpoint.
+Saved data/a3/token_features/part_000246.parquet; checkpointed 24,600/24,652
+Progress: 45,110/24,652 examples; 1,237 token rows in current checkpoint.
+Progress: 45,120/24,652 examples; 2,262 token rows in current checkpoint.
+Progress: 45,130/24,652 examples; 3,492 token rows in current checkpoint.
+Progress: 45,140/24,652 examples; 4,691 token rows in current checkpoint.
+Progress: 45,150/24,652 examples; 5,854 token rows in current checkpoint.
+Saved final partial shard: data/a3/token_features/part_000247.parquet
+Extraction finished writing outputs.
+Next step: python scripts/finalize_a3.py
+Feature extraction completed at: Sat Oct 10 07:15:19 AM IST 2026
+
+A3 final validation PASSED
+Examples: 24,652
+Token-feature rows: 2,016,270
+Feature shards: 247
+Hidden-state files: 24,652
+Manifest written to: data/a3/a3_manifest.json
+Report written to: a3_extraction_report.md
+
+Job Ended at: Sat Oct 10 07:16:28 AM IST 2026
