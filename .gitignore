@@ -33,6 +33,5 @@ Thumbs.db
 *.log
 
 # Generated datasets and execution logs
-/data/*.parquet
 /logs/*.out
 /logs/*.err
