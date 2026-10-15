@@ -3,31 +3,21 @@ import re
 import pandas as pd
 
 
-# ============================================================
-# 1. FILE PATHS
-# ============================================================
-
+# file paths
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 INPUT_FILE = PROJECT_ROOT / "data" / "generation_qwen_calibration.parquet"
 OUTPUT_FILE = PROJECT_ROOT / "data" / "a3" / "linguistic_features.parquet"
 
 
-# ============================================================
-# 2. REGULAR EXPRESSIONS
-# ============================================================
-
-WORD_PATTERN = re.compile(r"\b[\w'-]+\b")
+WORD_PATTERN = re.compile(r"\b[\w'-]+\b") # for regular expression
 
 NUMBER_PATTERN = re.compile(
     r"(?<!\w)[+-]?\d+(?:,\d{3})*(?:\.\d+)?%?(?!\w)"
 )
 
 
-# ============================================================
-# 3. FEATURE 1: HEDGING FREQUENCY
-# ============================================================
-
+# FEATURE 1: HEDGING FREQUENCY
 HEDGING_WORDS = {
     "maybe",
     "perhaps",
@@ -159,10 +149,7 @@ def calculate_hedging(text):
     return hedge_count, hedge_rate
 
 
-# ============================================================
-# 4. FEATURE 2: ENTITY / NUMERAL DENSITY
-# ============================================================
-
+# Function to calculate ENTITY / NUMERAL DENSITY
 def calculate_entity_numeral_density(text):
     """
     Estimate named entities using capitalization rules and
@@ -206,9 +193,7 @@ def calculate_entity_numeral_density(text):
     )
 
 
-# ============================================================
-# 5. FEATURE 3: ASSERTION DENSITY
-# ============================================================
+# FEATURE 3: ASSERTION DENSITY
 
 ASSERTION_CUES = {
     "is",
@@ -273,9 +258,8 @@ def calculate_assertion_density(text):
     return assertion_sentence_count, assertion_density
 
 
-# ============================================================
-# 6. FEATURE 4: REPETITION
-# ============================================================
+
+# FEATURE 4: REPETITION
 
 def calculate_repetition(text):
     """
@@ -305,9 +289,7 @@ def calculate_repetition(text):
     return repeated_word_count, repetition_rate
 
 
-# ============================================================
-# 7. EXTRACT ALL FOUR FEATURE GROUPS
-# ============================================================
+# EXTRACT ALL FOUR FEATURE GROUPS
 
 def extract_features(text):
     """
@@ -354,10 +336,6 @@ def extract_features(text):
         "repetition_rate": repetition_rate,
     }
 
-
-# ============================================================
-# 8. MAIN PIPELINE
-# ============================================================
 
 def main():
 
@@ -483,10 +461,6 @@ def main():
     print("\nMissing values per column:")
     print(output_df.isna().sum())
 
-
-# ============================================================
-# 9. RUN SCRIPT
-# ============================================================
 
 if __name__ == "__main__":
     main()
