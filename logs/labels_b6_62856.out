@@ -1,0 +1,41 @@
+==================================================================
+Job:        labels_b6 (62856)
+Node:       mangala
+Started:    Sun Oct 25 10:39:19 PM IST 2026
+Project:    /users/staff/pranith/LLM_Hallucinations
+Git commit: 6debefb
+Python:     /users/staff/pranith/miniconda3/bin/python
+Limit:      none (full run)
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+==================================================================
+== labels started at Sun Oct 25 10:39:19 PM IST 2026
+                  n  refusal_rate  hallucination_rate  labeled
+subset                                                        
+dialogue       8000      0.131875            0.978690     6945
+qa             8000      0.126125            0.813618     6991
+summarization  7998      0.692923            0.864007     2456
+truthfulqa      654      0.212538            0.788350      515
+[SUCCESS] Labels -> /users/staff/pranith/LLM_Hallucinations/data/processed/generation_labels.parquet
+== labels finished at Sun Oct 25 10:46:58 PM IST 2026
+== B6 started at Sun Oct 25 10:46:58 PM IST 2026
+[INFO] Scores for 24,652 answers -> /users/staff/pranith/LLM_Hallucinations/data/b6/scores.parquet
+subset            score     n  frac_hallucinated    auroc  auroc_ci_low  auroc_ci_high    auprc    aurac
+   all logprob_neg_mean 16907           0.887975 0.580959      0.568032       0.593036 0.917488 0.130899
+   all  logprob_neg_min 16907           0.887975 0.504772      0.490534       0.519333 0.888210 0.116932
+   all  logprob_neg_sum 16907           0.887975 0.511763      0.498454       0.525287 0.899601 0.115792
+
+Held-out threshold results (mean over folds):
+       rule  threshold_mean  recall_mean  precision_mean  fpr_mean  flag_rate_mean
+recall@0.90        0.525154     0.900089        0.887903  0.900484        0.900160
+recall@0.95        0.429116     0.950114        0.887615  0.953523        0.950494
+     youden        1.018804     0.407978        0.924250  0.265465        0.391967
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b6/figures/roc_pr.png
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b6/figures/auroc_by_subset.png
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b6/figures/score_by_label.png
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b6/figures/threshold_tradeoff.png
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b6/figures/rejection_accuracy.png
+[SUCCESS] B6 outputs in /users/staff/pranith/LLM_Hallucinations/data/b6
+== B6 finished at Sun Oct 25 10:47:16 PM IST 2026
+==================================================================
+Finished:   Sun Oct 25 10:47:16 PM IST 2026
+==================================================================

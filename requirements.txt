@@ -19,3 +19,10 @@ transformers>=4.46,<6.0
 accelerate>=1.0,<2.0
 safetensors>=0.4
 sentencepiece>=0.2
+# B3-B6: detectors, figures, notebook execution
+matplotlib>=3.8
+bert-score>=0.3.13
+protobuf          # DeBERTa-v3 tokenizer conversion
+jupyter
+nbconvert
+ipykernel

@@ -1,0 +1,13 @@
+==================================================================
+Job:        b4_semantic_entropy (62854)
+Node:       mangala
+Started:    Sun Oct 25 10:37:22 PM IST 2026
+Project:    /users/staff/pranith/LLM_Hallucinations
+Git commit: 6debefb
+Python:     /users/staff/pranith/miniconda3/bin/python
+Limit:      50
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+==================================================================
+[INFO] Prompts with samples: 52
+[INFO] Already done: 0  remaining: 52

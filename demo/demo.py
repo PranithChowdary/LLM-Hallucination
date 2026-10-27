@@ -269,7 +269,7 @@ if run:
         if not records:
             st.error(
                 "No saved result was found for this prompt. "
-                "Run `generate_pre_saved_results.py` once to create "
+                "Run `python pre_save.py` once to create "
                 "`pre_saved_results.json`."
             )
             st.stop()

@@ -1,0 +1,13 @@
+==================================================================
+Job:        demo_circuits (63150)
+Node:       mangala
+Started:    Tue Oct 27 12:27:48 PM IST 2026
+Project:    /users/staff/pranith/LLM_Hallucinations
+Git commit: 6debefb
+Python:     /users/staff/pranith/miniconda3/bin/python
+Limit:      none (full run)
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+==================================================================
+[INFO] 10 examples: ['halueval-qa-00070', 'halueval-qa-07808', 'halueval-qa-09088', 'halueval-qa-02398', 'halueval-qa-03664', 'halueval-qa-05072', 'halueval-dialogue-07364', 'halueval-dialogue-06583', 'halueval-dialogue-06018', 'halueval-dialogue-02699']
+[INFO] halueval-qa-00070 (detected hallucination)

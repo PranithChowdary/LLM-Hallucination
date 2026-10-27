@@ -1,0 +1,52 @@
+==================================================================
+Job:        check_nli (63043)
+Node:       mangala
+Started:    Mon Oct 26 11:18:48 PM IST 2026
+Project:    /users/staff/pranith/LLM_Hallucinations
+Git commit: 6debefb
+Python:     /users/staff/pranith/miniconda3/bin/python
+Limit:      none (full run)
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+==================================================================
+========================================================================
+deberta-v2-xlarge-mnli
+label indices: entail 2  contra 0  neutral 1
+
+  text:      Arthur's Magazine (1844-1846) was an American literary periodical.
+  tokens:    ['▁Arthur', "'", 's', '▁Magazine', '▁(', '1844', '-18', '46)', '▁was', '▁an', '▁American', '▁literary', '▁periodical', '.']
+  roundtrip: OK
+
+  text:      I'm sorry, but I can't summarize the document—there's none provided!
+  tokens:    ['▁I', "'", 'm', '▁sorry', ',', '▁but', '▁I', '▁can', "'", 't', '▁summarize', '▁the', '▁document', '—']
+  roundtrip: OK
+
+  [OK ] expected entailment    got entailment    (c=0.00 n=0.03 e=0.97)  A man is performing music.
+  [OK ] expected contradiction got contradiction (c=1.00 n=0.00 e=0.00)  Nobody is playing an instrument.
+  [OK ] expected contradiction got contradiction (c=1.00 n=0.00 e=0.00)  Berlin is the capital of France.
+  [BAD] expected entailment    got neutral       (c=0.01 n=0.92 e=0.07)  Summarize the following document. I cannot summarize because
+  [OK ] expected entailment    got entailment    (c=0.00 n=0.00 e=1.00)  Who wrote Hamlet? William Shakespeare is the author of Hamle
+
+  4/5 as expected
+========================================================================
+deberta-v3-large-mnli
+label indices: entail 0  contra 1  neutral None
+
+  text:      Arthur's Magazine (1844-1846) was an American literary periodical.
+  tokens:    ['▁Arthur', "'", 's', '▁Magazine', '▁(', '1844', '-', '1846', ')', '▁was', '▁an', '▁American', '▁literary', '▁periodical']
+  roundtrip: OK
+
+  text:      I'm sorry, but I can't summarize the document—there's none provided!
+  tokens:    ['▁I', "'", 'm', '▁sorry', ',', '▁but', '▁I', '▁can', "'", 't', '▁summarize', '▁the', '▁document', '—']
+  roundtrip: OK
+
+  [OK ] expected entailment    got entailment    (c=0.45 n=0.00 e=0.55)  A man is performing music.
+  [OK ] expected contradiction got contradiction (c=1.00 n=0.00 e=0.00)  Nobody is playing an instrument.
+  [OK ] expected contradiction got contradiction (c=1.00 n=0.00 e=0.00)  Berlin is the capital of France.
+  [OK ] expected entailment    got entailment    (c=0.00 n=0.00 e=1.00)  Summarize the following document. I cannot summarize because
+  [OK ] expected entailment    got entailment    (c=0.00 n=0.00 e=1.00)  Who wrote Hamlet? William Shakespeare is the author of Hamle
+
+  5/5 as expected
+==================================================================
+Finished:   Mon Oct 26 11:19:16 PM IST 2026
+==================================================================

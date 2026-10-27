@@ -1,0 +1,19 @@
+{
+  "experiment": "B4-semantic-entropy",
+  "n_samples": 15,
+  "include_main": false,
+  "nli_model": "/users/staff/pranith/LLM_Hallucinations/models/deberta-v2-xlarge-mnli",
+  "llm": "/users/staff/pranith/LLM_Hallucinations/models/Qwen2.5-0.5B-Instruct",
+  "condition_on_question": true,
+  "budgets": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "subsets": null,
+  "limit": null,
+  "n_examples": 24652,
+  "git_commit_sha": "6debefbd705a2692ca35366d36f3c92a71744d9c",
+  "elapsed_seconds": 27429.6
+}

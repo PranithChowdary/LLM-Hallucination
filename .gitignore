@@ -33,3 +33,9 @@ Thumbs.db
 
 # Logs
 *.log
+
+# B4/B5 intermediates (large, regenerable)
+data/b5/states/
+data/b4/shards/
+data/extra15_shards/
+*.tmp

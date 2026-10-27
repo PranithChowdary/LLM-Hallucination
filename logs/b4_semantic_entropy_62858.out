@@ -1,0 +1,68 @@
+==================================================================
+Job:        b4_semantic_entropy (62858)
+Node:       mangala
+Started:    Sun Oct 25 10:47:24 PM IST 2026
+Project:    /users/staff/pranith/LLM_Hallucinations
+Git commit: 6debefb
+Python:     /users/staff/pranith/miniconda3/bin/python
+Limit:      none (full run)
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+==================================================================
+[INFO] Prompts with samples: 24,652
+[INFO] Already done: 0  remaining: 24,652
+[SUCCESS] Scores for 24,652 prompts -> /users/staff/pranith/LLM_Hallucinations/data/b4/scores.parquet
+
+Mean clusters / discrete SE per subset:
+               n_clusters  discrete_semantic_entropy
+subset                                              
+dialogue        13.405625                   2.520313
+qa              13.932250                   2.588510
+summarization    8.826457                   1.952778
+truthfulqa      13.183486                   2.495999
+subset                                  score     n  frac_hallucinated    auroc  auroc_ci_low  auroc_ci_high    auprc    aurac
+   all           discrete_semantic_entropy_n1 16907           0.887975 0.500000      0.500000       0.500000 0.887975 0.058793
+   all                          n_clusters_n1 16907           0.887975 0.500000      0.500000       0.500000 0.887975 0.058793
+   all                    semantic_entropy_n1 16907           0.887975 0.500000      0.500000       0.500000 0.887975 0.058793
+   all                       naive_entropy_n1 16907           0.887975 0.562335      0.548307       0.575104 0.911312 0.120337
+   all           discrete_semantic_entropy_n2 16907           0.887975 0.502071      0.496960       0.506902 0.888388 0.070356
+   all                          n_clusters_n2 16907           0.887975 0.502071      0.497279       0.506978 0.888388 0.070356
+   all                    semantic_entropy_n2 16907           0.887975 0.474573      0.460789       0.487719 0.882913 0.103079
+   all                       naive_entropy_n2 16907           0.887975 0.570620      0.558156       0.583794 0.914398 0.125123
+   all           discrete_semantic_entropy_n4 16907           0.887975 0.498160      0.489020       0.507567 0.887575 0.083219
+   all                          n_clusters_n4 16907           0.887975 0.498166      0.489719       0.507747 0.887570 0.083003
+   all                    semantic_entropy_n4 16907           0.887975 0.461027      0.446915       0.475071 0.876773 0.103836
+   all                       naive_entropy_n4 16907           0.887975 0.574224      0.561016       0.585449 0.916036 0.125692
+   all           discrete_semantic_entropy_n8 16907           0.887975 0.493753      0.481962       0.504996 0.886456 0.095110
+   all                          n_clusters_n8 16907           0.887975 0.493445      0.481290       0.505716 0.886438 0.093830
+   all                    semantic_entropy_n8 16907           0.887975 0.465027      0.449823       0.478640 0.870916 0.104756
+   all                       naive_entropy_n8 16907           0.887975 0.578609      0.566220       0.591137 0.917811 0.127092
+   all              discrete_semantic_entropy 16907           0.887975 0.484038      0.469625       0.498385 0.883344 0.101660
+   all                             n_clusters 16907           0.887975 0.484738      0.471433       0.498140 0.883600 0.100611
+   all                       semantic_entropy 16907           0.887975 0.465360      0.450829       0.479765 0.869636 0.104598
+   all                          naive_entropy 16907           0.887975 0.582540      0.569786       0.595471 0.918841 0.127340
+   all discrete_semantic_entropy_nonstrict_n1 16907           0.887975 0.500000      0.500000       0.500000 0.887975 0.058793
+   all                n_clusters_nonstrict_n1 16907           0.887975 0.500000      0.500000       0.500000 0.887975 0.058793
+   all          semantic_entropy_nonstrict_n1 16907           0.887975 0.500000      0.500000       0.500000 0.887975 0.058793
+   all discrete_semantic_entropy_nonstrict_n2 16907           0.887975 0.504555      0.495691       0.513331 0.888883 0.080808
+   all                n_clusters_nonstrict_n2 16907           0.887975 0.504555      0.495629       0.514027 0.888883 0.080808
+   all          semantic_entropy_nonstrict_n2 16907           0.887975 0.484398      0.470229       0.498619 0.884070 0.100803
+   all discrete_semantic_entropy_nonstrict_n4 16907           0.887975 0.493080      0.481389       0.504697 0.886485 0.093626
+   all                n_clusters_nonstrict_n4 16907           0.887975 0.493276      0.480539       0.505339 0.886529 0.093148
+   all          semantic_entropy_nonstrict_n4 16907           0.887975 0.474032      0.459639       0.488973 0.878998 0.104460
+   all discrete_semantic_entropy_nonstrict_n8 16907           0.887975 0.491077      0.477460       0.504938 0.885050 0.104827
+   all                n_clusters_nonstrict_n8 16907           0.887975 0.491817      0.477641       0.505276 0.885308 0.103133
+   all          semantic_entropy_nonstrict_n8 16907           0.887975 0.482687      0.467575       0.497001 0.880021 0.107744
+   all    discrete_semantic_entropy_nonstrict 16907           0.887975 0.491794      0.478385       0.505626 0.886026 0.109408
+   all                   n_clusters_nonstrict 16907           0.887975 0.493283      0.480311       0.507911 0.886480 0.108139
+   all             semantic_entropy_nonstrict 16907           0.887975 0.484115      0.470853       0.498208 0.881750 0.108774
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b4/figures/auroc_by_subset.png
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b4/figures/aurac_by_subset.png
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b4/figures/roc_pr.png
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b4/figures/rejection_accuracy.png
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b4/figures/budget_sweep.png
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b4/figures/n_clusters_hist.png
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b4/figures/score_by_label.png
+==================================================================
+Finished:   Mon Oct 26 06:24:38 AM IST 2026
+==================================================================

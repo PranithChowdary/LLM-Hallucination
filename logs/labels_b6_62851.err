@@ -1,0 +1,5 @@
+[transformers] The tokenizer you are loading from '/users/staff/pranith/LLM_Hallucinations/models/deberta-v2-xlarge-mnli' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 67087.29it/s]
+srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
+slurmstepd-mangala: error: *** JOB 62851 ON mangala CANCELLED AT 2026-10-25T22:35:10 ***
+slurmstepd-mangala: error: *** STEP 62851.0 ON mangala CANCELLED AT 2026-10-25T22:35:10 ***
