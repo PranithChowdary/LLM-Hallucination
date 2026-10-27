@@ -1,0 +1,21 @@
+==================================================================
+Job:        labels (62841)
+Node:       mangala
+Started:    Sun Oct 25 09:31:25 PM IST 2026
+Project:    /users/staff/pranith/LLM_Hallucinations
+Git commit: 6debefb
+Python:     /users/staff/pranith/miniconda3/bin/python
+Limit:      50
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+==================================================================
+                n  refusal_rate  hallucination_rate  labeled
+subset                                                      
+dialogue       13      0.000000            0.923077       13
+qa             13      0.076923            0.833333       12
+summarization  13      0.461538            1.000000        7
+truthfulqa     13      0.230769            0.600000       10
+[SUCCESS] Labels -> /users/staff/pranith/LLM_Hallucinations/data/processed/generation_labels.parquet
+==================================================================
+Finished:   Sun Oct 25 09:32:12 PM IST 2026
+==================================================================

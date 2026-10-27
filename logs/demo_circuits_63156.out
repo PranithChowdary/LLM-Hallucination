@@ -1,0 +1,35 @@
+==================================================================
+Job:        demo_circuits (63156)
+Node:       anandi
+Started:    Tue Oct 27 12:35:53 PM IST 2026
+Project:    /users/staff/pranith/LLM_Hallucinations
+Git commit: 6debefb
+Python:     /users/staff/pranith/miniconda3/bin/python
+Limit:      none (full run)
+NVIDIA L40S, 46068 MiB
+==================================================================
+[INFO] 10 examples: ['halueval-qa-00070', 'halueval-qa-07808', 'halueval-qa-09088', 'halueval-qa-02398', 'halueval-qa-03664', 'halueval-qa-05072', 'halueval-dialogue-07364', 'halueval-dialogue-06583', 'halueval-dialogue-06018', 'halueval-dialogue-02699']
+[INFO] halueval-qa-00070 (detected hallucination)
+       attribution reconstruction error: 1.74e-05 logits
+[INFO] halueval-qa-07808 (detected hallucination)
+       attribution reconstruction error: 4.12e-06 logits
+[INFO] halueval-qa-09088 (detected hallucination)
+       attribution reconstruction error: 1.91e-05 logits
+[INFO] halueval-qa-02398 (correct and confident)
+       attribution reconstruction error: 1.23e-05 logits
+[INFO] halueval-qa-03664 (correct and confident)
+       attribution reconstruction error: 9.71e-06 logits
+[INFO] halueval-qa-05072 (confident hallucination (missed))
+       attribution reconstruction error: 4.19e-06 logits
+[INFO] halueval-dialogue-07364 (detected hallucination)
+       attribution reconstruction error: 1.18e-05 logits
+[INFO] halueval-dialogue-06583 (detected hallucination)
+       attribution reconstruction error: 1.21e-05 logits
+[INFO] halueval-dialogue-06018 (correct and confident)
+       attribution reconstruction error: 2.78e-05 logits
+[INFO] halueval-dialogue-02699 (confident hallucination (missed))
+       attribution reconstruction error: 1.77e-05 logits
+[SUCCESS] /users/staff/pranith/LLM_Hallucinations/demo/circuit_examples.json (1.0 MB) in 91s
+==================================================================
+Finished:   Tue Oct 27 12:37:48 PM IST 2026
+==================================================================

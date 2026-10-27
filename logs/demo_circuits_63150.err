@@ -1,0 +1,18 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  89%|████████▉ | 258/290 [00:00<00:00, 2579.53it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2743.98it/s]
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 4284.36it/s]
+Traceback (most recent call last):
+  File "/users/staff/pranith/LLM_Hallucinations/demo/build_circuit_examples.py", line 542, in <module>
+    main()
+    ~~~~^^
+  File "/users/staff/pranith/LLM_Hallucinations/demo/build_circuit_examples.py", line 516, in main
+    examples.append(build_example(rows.loc[uid], category, samples.get(uid, []), tm, nli, youden))
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/staff/pranith/LLM_Hallucinations/demo/build_circuit_examples.py", line 441, in build_example
+    graphs = [attribution_graph(tm, cap, ids, P, i) for i in sorted(targets)]
+              ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/users/staff/pranith/LLM_Hallucinations/demo/build_circuit_examples.py", line 300, in attribution_graph
+    emb_val = float(cap["emb"][q] @ u)
+                    ~~~~~~~~~~~~~~^~~
+RuntimeError: Inference tensors cannot be saved for backward. Please do not use Tensors created in inference mode in computation tracked by autograd. To work around this, you can make a clone to get a normal tensor and use it in autograd, or use `torch.no_grad()` instead of `torch.inference_mode()`.
+srun: error: mangala: task 0: Exited with exit code 1
+srun: Terminating StepId=63150.0

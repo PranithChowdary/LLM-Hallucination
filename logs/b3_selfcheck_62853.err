@@ -1,0 +1,134 @@
+[NbConvertApp] Converting notebook notebooks/b3_selfcheckgpt.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+Traceback (most recent call last):
+  File "/users/staff/pranith/miniconda3/bin/jupyter-nbconvert", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/jupyter_core/application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/traitlets/config/application.py", line 1080, in launch_instance
+    app.start()
+    ~~~~~~~~~^^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/nbconvert/nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/nbconvert/nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/nbconvert/nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        notebook_filename, resources, input_buffer=input_buffer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/nbconvert/nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        notebook_filename, resources=resources
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/nbconvert/exporters/exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/nbconvert/exporters/exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        nbformat.read(file_stream, as_version=4), resources=resources, **kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/nbconvert/exporters/notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/nbconvert/exporters/exporter.py", line 154, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/nbconvert/exporters/exporter.py", line 353, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+                ~~~~~~~~~~~~^^^^^^^^^^^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/nbconvert/preprocessors/execute.py", line 103, in preprocess
+    self.preprocess_cell(cell, resources, index)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/nbconvert/preprocessors/execute.py", line 124, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+nli = NLIModel(NLI_MODEL, DEVICE, batch_size=NLI_BATCH_SIZE) if "nli" in VARIANTS else None
+bert = BERTScoreScorer(DEVICE, batch_size=BERTSCORE_BATCH_SIZE, model_path=BERTSCORE_MODEL) if "bertscore" in VARIANTS else None
+prompter = PromptScorer(PROMPT_MODEL, DEVICE, batch_size=PROMPT_BATCH_SIZE) if "prompt" in VARIANTS else None
+
+per_sample = {"nli": {}, "bertscore": {}, "prompt": {}, "prompt_pno": {}}
+seconds = {v: 0.0 for v in VARIANTS}
+rows = list(responses[["uid", "sentences", "samples"]].itertuples(index=False))
+
+for start in tqdm(range(0, len(rows), PROMPTS_PER_BATCH), desc="SelfCheckGPT", mininterval=30):
+    batch = rows[start : start + PROMPTS_PER_BATCH]
+    items = [(list(r.sentences), list(r.samples)) for r in batch]
+
+    if nli is not None:
+        t0 = time.time()
+        for r, m in zip(batch, selfcheck_nli_batch(nli, items)):
+            per_sample["nli"][r.uid] = m
+        seconds["nli"] += time.time() - t0
+
+    if bert is not None:
+        t0 = time.time()
+        for r, m in zip(batch, bert.score_batch(items)):
+            per_sample["bertscore"][r.uid] = m
+        seconds["bertscore"] += time.time() - t0
+
+    if prompter is not None:
+        t0 = time.time()
+        for r, (d, q) in zip(batch, prompter.score_batch(items)):
+            per_sample["prompt"][r.uid] = d
+            per_sample["prompt_pno"][r.uid] = q
+        seconds["prompt"] += time.time() - t0
+
+print({k: f"{v / 60:.1f} min" for k, v in seconds.items()})
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mValueError[39m                                Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[5][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m nli = NLIModel(NLI_MODEL, DEVICE, batch_size=NLI_BATCH_SIZE) [38;5;28;01mif[39;00m [33m"nli"[39m [38;5;28;01min[39;00m VARIANTS [38;5;28;01melse[39;00m [38;5;28;01mNone[39;00m
+[32m      2[39m bert = BERTScoreScorer(DEVICE, batch_size=BERTSCORE_BATCH_SIZE, model_path=BERTSCORE_MODEL) [38;5;28;01mif[39;00m [33m"bertscore"[39m [38;5;28;01min[39;00m VARIANTS [38;5;28;01melse[39;00m [38;5;28;01mNone[39;00m
+[32m      3[39m prompter = PromptScorer(PROMPT_MODEL, DEVICE, batch_size=PROMPT_BATCH_SIZE) [38;5;28;01mif[39;00m [33m"prompt"[39m [38;5;28;01min[39;00m VARIANTS [38;5;28;01melse[39;00m [38;5;28;01mNone[39;00m
+[32m      4[39m 
+
+[36mFile [39m[32m~/LLM_Hallucinations/src/signals/common.py:269[39m, in [36mNLIModel.__init__[39m[34m(self, model_name_or_path, device, max_length, batch_size)[39m
+[32m    263[39m [38;5;28mself[39m.model.eval()
+[32m    265[39m id2label = {
+[32m    266[39m     [38;5;28mint[39m(i): [38;5;28mstr[39m(name).lower()
+[32m    267[39m     [38;5;28;01mfor[39;00m i, name [38;5;129;01min[39;00m [38;5;28mself[39m.model.config.id2label.items()
+[32m    268[39m }
+[32m--> [39m[32m269[39m [38;5;28mself[39m.entail_idx = [30;43m_find_label[39;49m[30;43m([39;49m[30;43mid2label[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m"[39;49m[30;43mentail[39;49m[30;43m"[39;49m[30;43m)[39;49m
+[32m    270[39m [38;5;28mself[39m.contra_idx = _find_label(id2label, [33m"[39m[33mcontra[39m[33m"[39m)
+[32m    271[39m [38;5;28mself[39m.neutral_idx = _find_label(id2label, [33m"[39m[33mneutral[39m[33m"[39m, required=[38;5;28;01mFalse[39;00m)
+
+[36mFile [39m[32m~/LLM_Hallucinations/src/signals/common.py:321[39m, in [36m_find_label[39m[34m(id2label, key, required)[39m
+[32m    319[39m         [38;5;28;01mreturn[39;00m index
+[32m    320[39m [38;5;28;01mif[39;00m required:
+[32m--> [39m[32m321[39m     [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m([33mf[39m[33m"[39m[33mNLI model has no [39m[33m'[39m[38;5;132;01m{[39;00mkey[38;5;132;01m}[39;00m[33m'[39m[33m label: [39m[38;5;132;01m{[39;00mid2label[38;5;132;01m}[39;00m[33m"[39m)
+[32m    322[39m [38;5;28;01mreturn[39;00m [38;5;28;01mNone[39;00m
+
+[31mValueError[39m: NLI model has no 'entail' label: {0: 'label_0', 1: 'label_1'}
+
+srun: error: mangala: task 0: Exited with exit code 1
+srun: Terminating StepId=62853.0

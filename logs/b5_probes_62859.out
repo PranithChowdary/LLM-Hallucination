@@ -1,0 +1,34 @@
+==================================================================
+Job:        b5_probes (62859)
+Node:       mangala
+Started:    Mon Oct 26 06:24:45 AM IST 2026
+Project:    /users/staff/pranith/LLM_Hallucinations
+Git commit: 6debefb
+Python:     /users/staff/pranith/miniconda3/bin/python
+Limit:      none (full run)
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+==================================================================
+== B5 extract started at Mon Oct 26 06:24:45 AM IST 2026
+[INFO] Already extracted: 0  remaining: 24,652
+[SUCCESS] States saved to /users/staff/pranith/LLM_Hallucinations/data/b5/states  (layers incl. embeddings: 25)
+== B5 train started at Mon Oct 26 06:26:05 AM IST 2026
+[INFO] Examples with SE targets: 24,652
+[INFO] gamma* = 2.2082  ->  64.3% high-SE
+[RESULT] SEP tbg: best layer 19  AUROC(high SE) = 0.915  AUROC(hallucination) = 0.434
+[RESULT] SEP slt: best layer 11  AUROC(high SE) = 0.897  AUROC(hallucination) = 0.443
+subset                 score     n  frac_hallucinated    auroc  auroc_ci_low  auroc_ci_high    auprc    aurac
+   all             SEP (TBG) 16907           0.887975 0.433815      0.419760       0.447944 0.867953 0.096359
+   all             SEP (SLT) 16907           0.887975 0.443468      0.428290       0.458637 0.862179 0.104772
+   all  Accuracy probe (TBG) 16907           0.887975 0.834340      0.823295       0.843866 0.971213 0.261816
+   all  Accuracy probe (SLT) 16907           0.887975 0.762941      0.750988       0.774462 0.953947 0.221547
+   all Semantic entropy (B4) 16907           0.887975 0.465360      0.451820       0.479575 0.869636 0.104598
+   all    Naive entropy (B4) 16907           0.887975 0.582540      0.570125       0.594981 0.918841 0.127340
+   all   Naive log-prob (B6) 16907           0.887975 0.580959      0.568919       0.593150 0.917488 0.130899
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b5/figures/per_layer_auroc.png
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b5/figures/comparison_auroc.png
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b5/figures/roc_pr.png
+[FIGURE] /users/staff/pranith/LLM_Hallucinations/data/b5/figures/rejection_accuracy.png
+[RESULT] semantic_entropy itself: AUROC(hallucination) = 0.465
+==================================================================
+Finished:   Mon Oct 26 07:16:25 AM IST 2026
+==================================================================

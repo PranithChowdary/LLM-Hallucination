@@ -1,0 +1,6 @@
+[transformers] The tokenizer you are loading from '/users/staff/pranith/LLM_Hallucinations/models/deberta-v2-xlarge-mnli' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 79666.55it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  84%|████████▍ | 243/290 [00:00<00:00, 2388.20it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2571.36it/s]
+srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
+slurmstepd-mangala: error: *** JOB 62854 ON mangala CANCELLED AT 2026-10-25T22:38:25 ***
+B4 semantic entropy:   0%|          | 0/7 [00:00<?, ?it/s]B4 semantic entropy:  14%|█▍        | 1/7 [00:27<02:47, 27.84s/it]B4 semantic entropy:  29%|██▊       | 2/7 [00:40<01:33, 18.63s/it]B4 semantic entropy:  43%|████▎     | 3/7 [00:47<00:54, 13.69s/it]slurmstepd-mangala: error: *** STEP 62854.0 ON mangala CANCELLED AT 2026-10-25T22:38:25 ***

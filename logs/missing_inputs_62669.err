@@ -1,0 +1,3 @@
+/users/staff/pranith/miniconda3/bin/python: can't open file '/users/staff/pranith/LLM_Hallucinations/scripts/b1_features.py': [Errno 2] No such file or directory
+srun: error: mangala: task 0: Exited with exit code 2
+srun: Terminating StepId=62669.0

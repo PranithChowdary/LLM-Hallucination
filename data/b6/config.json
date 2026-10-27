@@ -1,0 +1,15 @@
+{
+  "experiment": "B6-naive-logprob-threshold",
+  "b1_features": "/users/staff/pranith/LLM_Hallucinations/data/processed/b1_answer_features.parquet",
+  "headline_score": "logprob_neg_mean",
+  "n_folds": 5,
+  "seed": 42,
+  "target_recalls": [
+    0.9,
+    0.95
+  ],
+  "n_examples": 24652,
+  "git_commit_sha": "6debefbd705a2692ca35366d36f3c92a71744d9c",
+  "n_labeled": 16907,
+  "elapsed_seconds": 16.6
+}
