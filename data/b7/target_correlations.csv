@@ -1,0 +1,17 @@
+,correlation_with_provisional_label
+ling_repetition_rate,-0.14653883154478817
+ling_assertion_sentence_count_approx,-0.13841856712313128
+ling_repeated_word_count,-0.09982778004152859
+ling_assertion_density_approx,-0.09542438197162241
+b1_average_token_entropy,0.09349389965931944
+ling_entity_numeral_density_approx,-0.08060568422844137
+ling_entity_mention_count_approx,-0.07533553017013438
+b1_low_confidence_token_fraction,0.07340769042638051
+b1_mean_token_log_probability,-0.07162174488149069
+ling_numeral_count,-0.06930107494479489
+b1_output_token_length,-0.04728823157616163
+b1_variance_token_log_probability,0.02612930117995563
+ling_word_count,-0.018358955951781806
+ling_hedge_count,0.01678573142351285
+ling_hedge_rate,0.01220008434235875
+b1_min_token_log_probability,-0.0014215072893369433

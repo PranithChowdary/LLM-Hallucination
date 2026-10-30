@@ -1,0 +1,33 @@
+{
+  "seed": 42,
+  "splitter": "StratifiedGroupKFold",
+  "validation_fold": 0,
+  "training_rows": 13525,
+  "validation_rows": 3382,
+  "training_groups": 13525,
+  "validation_groups": 3382,
+  "train_validation_group_overlap": 0,
+  "feature_count": 16,
+  "features": [
+    "b1_mean_token_log_probability",
+    "b1_min_token_log_probability",
+    "b1_variance_token_log_probability",
+    "b1_average_token_entropy",
+    "b1_low_confidence_token_fraction",
+    "b1_output_token_length",
+    "ling_word_count",
+    "ling_hedge_count",
+    "ling_hedge_rate",
+    "ling_entity_mention_count_approx",
+    "ling_numeral_count",
+    "ling_entity_numeral_density_approx",
+    "ling_assertion_sentence_count_approx",
+    "ling_assertion_density_approx",
+    "ling_repeated_word_count",
+    "ling_repetition_rate"
+  ],
+  "label_method": "provisional-nli-v1",
+  "labels_are_verified_ground_truth": false,
+  "held_out_test_used": false,
+  "baseline_threshold_metrics_reported": false
+}

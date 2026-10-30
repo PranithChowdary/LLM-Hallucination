@@ -1,0 +1,49 @@
+{
+  "logistic_regression": {
+    "n": 3382,
+    "positive_fraction": 0.8879361324659965,
+    "auroc": 0.6973325706834941,
+    "auprc": 0.9441771053768447,
+    "accuracy_at_0_5": 0.6685393258426966,
+    "precision_at_0_5": 0.9250225835591689,
+    "recall_at_0_5": 0.681984681984682,
+    "f1_at_0_5": 0.7851255510829979,
+    "confusion_matrix_labels_0_1": [
+      [
+        213,
+        166
+      ],
+      [
+        955,
+        2048
+      ]
+    ]
+  },
+  "gradient_boosting": {
+    "n": 3382,
+    "positive_fraction": 0.8879361324659965,
+    "auroc": 0.7092854375176275,
+    "auprc": 0.9469462195659425,
+    "accuracy_at_0_5": 0.6641040804257835,
+    "precision_at_0_5": 0.9299861814831875,
+    "recall_at_0_5": 0.6723276723276723,
+    "f1_at_0_5": 0.7804406648627754,
+    "confusion_matrix_labels_0_1": [
+      [
+        227,
+        152
+      ],
+      [
+        984,
+        2019
+      ]
+    ]
+  },
+  "b6_logprob_neg_mean": {
+    "n": 3382,
+    "positive_fraction": 0.8879361324659965,
+    "auroc": 0.5874881494934265,
+    "auprc": 0.9197829560670499,
+    "threshold_metrics": "Not calculated: B6 scores are not calibrated probabilities."
+  }
+}
