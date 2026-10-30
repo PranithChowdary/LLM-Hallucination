@@ -1,2 +1,8 @@
-study/learning.svg filter=lfs diff=lfs merge=lfs -text
-*.parquet filter=lfs diff=lfs merge=lfs -text
+﻿study/learning.svg filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+data/calibration.parquet filter=lfs diff=lfs merge=lfs -text
+data/generation_qwen_calibration.parquet filter=lfs diff=lfs merge=lfs -text
+data/removed_duplicate_rows.parquet filter=lfs diff=lfs merge=lfs -text
+data/test.parquet filter=lfs diff=lfs merge=lfs -text
+data/unified_dataset.parquet filter=lfs diff=lfs merge=lfs -text
+data/generation_qwen_calibration_extra15.parquet filter=lfs diff=lfs merge=lfs -text
