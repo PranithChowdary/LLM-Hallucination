@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM Learning Map</title>
+<style>
+  :root{
+    --bg:#f6f6f3; --ink:#1a1a1a; --line:#d8d6cd; --accent:#2b5d7c;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);}
+  #bar{
+    position:fixed;top:0;left:0;right:0;height:48px;z-index:10;
+    display:flex;align-items:center;gap:14px;padding:0 16px;
+    background:rgba(246,246,243,.94);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  #bar h1{font-size:15px;margin:0;font-weight:600;}
+  #bar .sp{flex:1;}
+  button{
+    border:1px solid var(--line);background:#fff;color:var(--ink);
+    padding:6px 12px;border-radius:5px;cursor:pointer;font-size:13px;
+  }
+  button:hover{background:#eceae3;}
+  #hint{font-size:12px;color:#6b6b63;}
+  #stage{position:absolute;inset:48px 0 0 0;overflow:hidden;cursor:grab;}
+  #stage.drag{cursor:grabbing;}
+  #canvas{transform-origin:0 0;will-change:transform;}
+  #canvas img{display:block;max-width:none;user-select:none;-webkit-user-drag:none;}
+  #loading{
+    position:absolute;inset:48px 0 0 0;display:flex;align-items:center;justify-content:center;
+    font-size:14px;color:#6b6b63;background:var(--bg);z-index:5;
+  }
+  @media (max-width:640px){ #hint{display:none;} }
+</style>
+</head>
+<body>
+
+<div id="bar">
+  <h1>LLM Learning Map</h1>
+  <span id="hint">drag to pan · scroll or pinch to zoom · double-click to zoom in</span>
+  <span class="sp"></span>
+  <button id="out">−</button>
+  <button id="in">+</button>
+  <button id="fit">Fit</button>
+  <button id="full">Fullscreen</button>
+</div>
+
+<div id="loading">Loading map…</div>
+<div id="stage">
+  <div id="canvas">
+    <img id="map" src="learning-map.svg" alt="LLM learning map">
+  </div>
+</div>
+
+<script>
+const stage=document.getElementById('stage');
+const canvas=document.getElementById('canvas');
+const img=document.getElementById('map');
+let scale=1,tx=0,ty=0,natW=0,natH=0;
+
+function apply(){canvas.style.transform=`translate(${tx}px,${ty}px) scale(${scale})`;}
+
+function fit(){
+  const r=stage.getBoundingClientRect();
+  if(!natW||!natH) return;
+  scale=Math.min(r.width/natW,r.height/natH)*0.98;
+  tx=(r.width-natW*scale)/2;
+  ty=(r.height-natH*scale)/2;
+  apply();
+}
+
+img.addEventListener('load',()=>{
+  natW=img.naturalWidth||img.width;
+  natH=img.naturalHeight||img.height;
+  document.getElementById('loading').style.display='none';
+  fit();
+});
+img.addEventListener('error',()=>{
+  document.getElementById('loading').textContent='Could not load learning-map.svg — check it sits next to this page.';
+});
+
+function zoomAt(cx,cy,factor){
+  const next=Math.min(Math.max(scale*factor,0.02),40);
+  const k=next/scale;
+  tx=cx-(cx-tx)*k;
+  ty=cy-(cy-ty)*k;
+  scale=next;apply();
+}
+
+stage.addEventListener('wheel',e=>{
+  e.preventDefault();
+  const r=stage.getBoundingClientRect();
+  zoomAt(e.clientX-r.left,e.clientY-r.top, e.deltaY<0?1.15:1/1.15);
+},{passive:false});
+
+let dragging=false,lx=0,ly=0;
+stage.addEventListener('pointerdown',e=>{
+  dragging=true;lx=e.clientX;ly=e.clientY;
+  stage.classList.add('drag');stage.setPointerCapture(e.pointerId);
+});
+stage.addEventListener('pointermove',e=>{
+  if(!dragging)return;
+  tx+=e.clientX-lx;ty+=e.clientY-ly;lx=e.clientX;ly=e.clientY;apply();
+});
+stage.addEventListener('pointerup',e=>{
+  dragging=false;stage.classList.remove('drag');
+  try{stage.releasePointerCapture(e.pointerId);}catch(_){}
+});
+stage.addEventListener('dblclick',e=>{
+  const r=stage.getBoundingClientRect();
+  zoomAt(e.clientX-r.left,e.clientY-r.top,1.8);
+});
+
+// pinch
+let pts=new Map(),pd=0;
+stage.addEventListener('pointerdown',e=>pts.set(e.pointerId,e));
+stage.addEventListener('pointermove',e=>{
+  if(!pts.has(e.pointerId))return;
+  pts.set(e.pointerId,e);
+  if(pts.size===2){
+    const [a,b]=[...pts.values()];
+    const d=Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY);
+    if(pd){
+      const r=stage.getBoundingClientRect();
+      zoomAt((a.clientX+b.clientX)/2-r.left,(a.clientY+b.clientY)/2-r.top,d/pd);
+    }
+    pd=d;dragging=false;
+  }
+});
+['pointerup','pointercancel','pointerleave'].forEach(ev=>
+  stage.addEventListener(ev,e=>{pts.delete(e.pointerId);if(pts.size<2)pd=0;}));
+
+document.getElementById('in').onclick=()=>{const r=stage.getBoundingClientRect();zoomAt(r.width/2,r.height/2,1.4);};
+document.getElementById('out').onclick=()=>{const r=stage.getBoundingClientRect();zoomAt(r.width/2,r.height/2,1/1.4);};
+document.getElementById('fit').onclick=fit;
+document.getElementById('full').onclick=()=>{
+  if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();
+  else document.exitFullscreen?.();
+};
+window.addEventListener('resize',()=>{if(scale<=0.05)fit();});
+document.addEventListener('keydown',e=>{
+  if(e.key==='0')fit();
+  if(e.key==='+'||e.key==='=')document.getElementById('in').click();
+  if(e.key==='-')document.getElementById('out').click();
+});
+</script>
+</body>
+</html>

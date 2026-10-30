@@ -1,0 +1,44 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:05<24:36,  5.11s/it]Loading weights:  34%|███▍      | 99/290 [00:05<00:07, 25.42it/s]Loading weights:  41%|████      | 118/290 [00:05<00:05, 28.93it/s]Loading weights:  45%|████▌     | 131/290 [00:06<00:05, 30.50it/s]Loading weights:  49%|████▊     | 141/290 [00:06<00:04, 31.21it/s]Loading weights:  51%|█████▏    | 149/290 [00:06<00:04, 29.53it/s]Loading weights:  54%|█████▍    | 156/290 [00:06<00:04, 32.46it/s]Loading weights:  56%|█████▌    | 162/290 [00:07<00:04, 30.04it/s]Loading weights:  59%|█████▉    | 172/290 [00:07<00:03, 31.87it/s]Loading weights:  62%|██████▏   | 181/290 [00:07<00:02, 38.35it/s]Loading weights:  64%|██████▍   | 187/290 [00:07<00:02, 35.49it/s]Loading weights:  67%|██████▋   | 195/290 [00:07<00:02, 41.73it/s]Loading weights:  69%|██████▉   | 201/290 [00:07<00:02, 38.17it/s]Loading weights:  71%|███████▏  | 207/290 [00:08<00:02, 31.86it/s]Loading weights:  76%|███████▌  | 219/290 [00:08<00:02, 34.55it/s]Loading weights:  80%|███████▉  | 231/290 [00:08<00:01, 36.76it/s]Loading weights:  84%|████████▍ | 243/290 [00:08<00:01, 45.42it/s]Loading weights:  86%|████████▌ | 249/290 [00:09<00:00, 42.30it/s]Loading weights:  88%|████████▊ | 254/290 [00:09<00:00, 42.78it/s]Loading weights:  89%|████████▉ | 259/290 [00:09<00:00, 37.74it/s]Loading weights:  92%|█████████▏| 267/290 [00:09<00:00, 30.79it/s]Loading weights:  96%|█████████▌| 278/290 [00:09<00:00, 40.61it/s]Loading weights:  98%|█████████▊| 283/290 [00:10<00:00, 38.09it/s]Loading weights: 100%|██████████| 290/290 [00:10<00:00, 28.55it/s]
+Traceback (most recent call last):
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/transformers/tokenization_utils_base.py", line 287, in __getattr__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'shape'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/users/staff/pranith/LLM_Hallucinations/src/extract_features/extract_token_features.py", line 584, in <module>
+    main()
+    ~~~~^^
+  File "/users/staff/pranith/LLM_Hallucinations/src/extract_features/extract_token_features.py", line 492, in main
+    feature_rows, summary = extract_one_example(
+                            ~~~~~~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<4 lines>...
+        device=device,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/users/staff/pranith/LLM_Hallucinations/src/extract_features/extract_token_features.py", line 249, in extract_one_example
+    prompt_length = prompt_ids.shape[1]
+                    ^^^^^^^^^^^^^^^^
+  File "/users/staff/pranith/miniconda3/lib/python3.14/site-packages/transformers/tokenization_utils_base.py", line 289, in __getattr__
+    raise AttributeError
+AttributeError
+srun: error: mangala: task 0: Exited with exit code 1
+srun: Terminating StepId=59732.0
+Traceback (most recent call last):
+  File "/users/staff/pranith/LLM_Hallucinations/scripts/finalize_a3.py", line 384, in <module>
+    main()
+    ~~~~^^
+  File "/users/staff/pranith/LLM_Hallucinations/scripts/finalize_a3.py", line 76, in main
+    fail_if(not shard_paths, "No token-feature Parquet shards were found.")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/staff/pranith/LLM_Hallucinations/scripts/finalize_a3.py", line 53, in fail_if
+    raise ValueError(message)
+ValueError: No token-feature Parquet shards were found.
+srun: error: mangala: task 0: Exited with exit code 1
+srun: Terminating StepId=59732.1

@@ -1,0 +1,14 @@
+{
+  "experiment": "B5-semantic-entropy-probes",
+  "states": "full",
+  "target": "semantic_entropy",
+  "gamma_all": 2.208243348897919,
+  "frac_high_se": 0.6430309914002921,
+  "n_folds": 5,
+  "seed": 42,
+  "c": 1.0,
+  "n_examples": 24652,
+  "n_labeled": 16907,
+  "git_commit_sha": "6debefbd705a2692ca35366d36f3c92a71744d9c",
+  "elapsed_seconds": 3018.3
+}

@@ -1,0 +1,50 @@
+Job Started at: Sun Oct 25 07:31:03 PM IST 2026   node: mangala
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+
+[INFO] Device: cuda  batch size: 512
+[INFO] GPU: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition
+[INFO] Calibration prompts: 24,652
+[INFO] Already generated:   54,600
+[INFO] Remaining:           315,180
+[CHECKPOINT] 10,240/315,180  145.8 answers/s  elapsed 1.2 min  ETA 34.9 min
+[CHECKPOINT] 20,480/315,180  152.7 answers/s  elapsed 2.2 min  ETA 32.2 min
+[CHECKPOINT] 30,720/315,180  152.7 answers/s  elapsed 3.4 min  ETA 31.1 min
+[CHECKPOINT] 40,960/315,180  154.1 answers/s  elapsed 4.4 min  ETA 29.7 min
+[CHECKPOINT] 51,200/315,180  154.8 answers/s  elapsed 5.5 min  ETA 28.4 min
+[CHECKPOINT] 61,440/315,180  154.9 answers/s  elapsed 6.6 min  ETA 27.3 min
+[CHECKPOINT] 71,680/315,180  155.4 answers/s  elapsed 7.7 min  ETA 26.1 min
+[CHECKPOINT] 81,920/315,180  155.8 answers/s  elapsed 8.8 min  ETA 25.0 min
+[CHECKPOINT] 92,160/315,180  156.2 answers/s  elapsed 9.8 min  ETA 23.8 min
+[CHECKPOINT] 102,400/315,180  156.1 answers/s  elapsed 10.9 min  ETA 22.7 min
+[CHECKPOINT] 112,640/315,180  156.1 answers/s  elapsed 12.0 min  ETA 21.6 min
+[CHECKPOINT] 122,880/315,180  155.6 answers/s  elapsed 13.2 min  ETA 20.6 min
+[CHECKPOINT] 133,120/315,180  151.0 answers/s  elapsed 14.7 min  ETA 20.1 min
+[CHECKPOINT] 143,360/315,180  147.2 answers/s  elapsed 16.2 min  ETA 19.5 min
+[CHECKPOINT] 153,600/315,180  143.9 answers/s  elapsed 17.8 min  ETA 18.7 min
+[CHECKPOINT] 163,840/315,180  141.0 answers/s  elapsed 19.4 min  ETA 17.9 min
+[CHECKPOINT] 174,080/315,180  138.5 answers/s  elapsed 21.0 min  ETA 17.0 min
+[CHECKPOINT] 184,320/315,180  136.1 answers/s  elapsed 22.6 min  ETA 16.0 min
+[CHECKPOINT] 194,560/315,180  133.8 answers/s  elapsed 24.2 min  ETA 15.0 min
+[CHECKPOINT] 204,800/315,180  131.6 answers/s  elapsed 25.9 min  ETA 14.0 min
+[CHECKPOINT] 215,040/315,180  129.5 answers/s  elapsed 27.7 min  ETA 12.9 min
+[CHECKPOINT] 225,280/315,180  127.6 answers/s  elapsed 29.4 min  ETA 11.7 min
+[CHECKPOINT] 235,520/315,180  125.7 answers/s  elapsed 31.2 min  ETA 10.6 min
+[CHECKPOINT] 245,760/315,180  124.0 answers/s  elapsed 33.0 min  ETA 9.3 min
+[CHECKPOINT] 256,000/315,180  122.3 answers/s  elapsed 34.9 min  ETA 8.1 min
+[CHECKPOINT] 266,240/315,180  120.7 answers/s  elapsed 36.8 min  ETA 6.8 min
+[CHECKPOINT] 276,480/315,180  119.2 answers/s  elapsed 38.7 min  ETA 5.4 min
+[CHECKPOINT] 286,720/315,180  117.6 answers/s  elapsed 40.6 min  ETA 4.0 min
+[CHECKPOINT] 296,960/315,180  116.1 answers/s  elapsed 42.6 min  ETA 2.6 min
+[CHECKPOINT] 307,200/315,180  114.6 answers/s  elapsed 44.7 min  ETA 1.2 min
+[CHECKPOINT] 315,180/315,180  113.1 answers/s  elapsed 46.4 min  ETA 0.0 min
+[INFO] Final file: 369,780 / 369,780 rows -> /users/staff/pranith/LLM_Hallucinations/data/generation_qwen_calibration_extra15.parquet
+[SUCCESS] All responses present; shards merged and removed.
+
+extra rows:          369,780 / 369,780
+prompts with all 15: 24,652 / 24,652
+duplicate pairs:     0
+batched rows:        315,180
+VALIDATION PASSED
+
+Job Ended at: Sun Oct 25 08:18:05 PM IST 2026

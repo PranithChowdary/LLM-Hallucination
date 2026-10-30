@@ -1,0 +1,6 @@
+
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2954.29it/s]
+srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
+slurmstepd-mangala: error: *** STEP 59735.0 ON mangala CANCELLED AT 2026-10-10T 01:41:08 DUE TO TIME LIMIT ***
+slurmstepd-mangala: error: *** JOB 59735 ON mangala CANCELLED AT 2026-10-10T 01:41:08 DUE TO TIME LIMIT ***

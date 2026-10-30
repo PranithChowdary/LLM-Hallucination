@@ -1,5 +1,6 @@
-﻿study/learning.svg filter=lfs diff=lfs merge=lfs -text
+study/learning.svg filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
+data/a3/*.zip filter=lfs diff=lfs merge=lfs -text
 data/calibration.parquet filter=lfs diff=lfs merge=lfs -text
 data/generation_qwen_calibration.parquet filter=lfs diff=lfs merge=lfs -text
 data/removed_duplicate_rows.parquet filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,12 @@
+Job Started at: Fri Oct  9 09:10:40 PM IST 2026
+
+Generation examples: 24,652
+Calibration examples: 24,652
+UID coverage and prompt alignment: PASSED
+Already checkpointed: 0
+Remaining examples: 24,652
+Using GPU: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition
+Loading tokenizer from models/Qwen2.5-0.5B-Instruct
+Loading model from models/Qwen2.5-0.5B-Instruct
+
+Job Ended at: Fri Oct  9 09:11:13 PM IST 2026

@@ -5,8 +5,9 @@ streamlit
 numpy
 pandas
 matplotlib
+plotly
 torch
-ipykernal
+ipykernel
 seaborn
 scipy
 scikit-learn

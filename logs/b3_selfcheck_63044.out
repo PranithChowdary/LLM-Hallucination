@@ -1,0 +1,14 @@
+==================================================================
+Job:        b3_selfcheck (63044)
+Node:       mangala
+Started:    Mon Oct 26 11:19:18 PM IST 2026
+Project:    /users/staff/pranith/LLM_Hallucinations
+Git commit: 6debefb
+Python:     /users/staff/pranith/miniconda3/bin/python
+Limit:      none (full run)
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB
+==================================================================
+==================================================================
+Finished:   Tue Oct 27 12:39:33 AM IST 2026
+==================================================================
