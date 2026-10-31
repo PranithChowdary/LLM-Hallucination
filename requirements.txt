@@ -1,28 +1,32 @@
-pandas>=2.2,<3.0
+# use python=3.14
+
+# Core data processing
 numpy>=1.26,<3.0
-datasets>=3.0,<5.0
-scikit-learn>=1.5,<2.0
-pytest>=8.0,<9.0
+pandas>=2.2,<3.0
+scipy
 pyarrow
 tqdm
-
-pandas>=2.2,<3.0
-numpy>=1.26,<3.0
-datasets>=3.0,<5.0
+# Machine learning
 scikit-learn>=1.5,<2.0
-pytest>=8.0,<9.0
-pyarrow
-tqdm
-
-# A2: LLM generation
+# LLM generation and inference
 transformers>=4.46,<6.0
+torch
 accelerate>=1.0,<2.0
 safetensors>=0.4
 sentencepiece>=0.2
+# Dataset loading
+datasets>=3.0,<5.0
+# Development and testing
+pytest>=8.0,<9.0
+ipykernel
+# Visualization and application
+matplotlib
+seaborn
+streamlit
+# A2: LLM generation
 # B3-B6: detectors, figures, notebook execution
 matplotlib>=3.8
 bert-score>=0.3.13
 protobuf          # DeBERTa-v3 tokenizer conversion
 jupyter
 nbconvert
-ipykernel

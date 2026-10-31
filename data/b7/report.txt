@@ -1,0 +1,42 @@
+B7 FEATURE CORRELATION ANALYSIS
+========================================
+Feature rows: 24652
+Numeric features: 16
+Correlation method: Pearson
+High-correlation threshold: absolute r >= 0.80
+Labels: provisional-nli-v1; not verified ground truth
+
+HIGHLY CORRELATED FEATURE PAIRS
+----------------------------------------
+                        feature_1                          feature_2  correlation  absolute_correlation
+           b1_output_token_length                    ling_word_count     0.974438              0.974438
+    b1_mean_token_log_probability   b1_low_confidence_token_fraction    -0.956110              0.956110
+    b1_mean_token_log_probability           b1_average_token_entropy    -0.930425              0.930425
+         ling_repeated_word_count               ling_repetition_rate     0.906554              0.906554
+                  ling_word_count           ling_repeated_word_count     0.900152              0.900152
+                 ling_hedge_count                    ling_hedge_rate     0.896938              0.896938
+    b1_mean_token_log_probability  b1_variance_token_log_probability    -0.896380              0.896380
+         b1_average_token_entropy   b1_low_confidence_token_fraction     0.895699              0.895699
+           b1_output_token_length           ling_repeated_word_count     0.892721              0.892721
+     b1_min_token_log_probability  b1_variance_token_log_probability    -0.865816              0.865816
+ ling_entity_mention_count_approx ling_entity_numeral_density_approx     0.836472              0.836472
+b1_variance_token_log_probability           b1_average_token_entropy     0.820115              0.820115
+
+FEATURE CORRELATION WITH PROVISIONAL LABEL
+----------------------------------------
+ling_repetition_rate                   -0.146539
+ling_assertion_sentence_count_approx   -0.138419
+ling_repeated_word_count               -0.099828
+ling_assertion_density_approx          -0.095424
+b1_average_token_entropy                0.093494
+ling_entity_numeral_density_approx     -0.080606
+ling_entity_mention_count_approx       -0.075336
+b1_low_confidence_token_fraction        0.073408
+b1_mean_token_log_probability          -0.071622
+ling_numeral_count                     -0.069301
+b1_output_token_length                 -0.047288
+b1_variance_token_log_probability       0.026129
+ling_word_count                        -0.018359
+ling_hedge_count                        0.016786
+ling_hedge_rate                         0.012200
+b1_min_token_log_probability           -0.001422
