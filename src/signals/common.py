@@ -28,10 +28,7 @@ import numpy as np
 import pandas as pd
 
 
-# -------------------------------------------------------------------
-# 1. Paths
-# -------------------------------------------------------------------
-
+# Paths
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 MODELS_DIR = PROJECT_ROOT / "models"
@@ -71,10 +68,7 @@ def pick_device() -> str:
     return "cpu"
 
 
-# -------------------------------------------------------------------
-# 2. Loading main answers + samples
-# -------------------------------------------------------------------
-
+# Loading main answers + samples
 def load_prompts() -> pd.DataFrame:
     """Calibration prompts with references, indexed by uid."""
     prompts = pd.read_parquet(CALIBRATION_PATH)
@@ -176,10 +170,7 @@ def chat_messages(prompt: str) -> list[dict]:
     return [{"role": "user", "content": prompt}]
 
 
-# -------------------------------------------------------------------
-# 3. Sentence splitting
-# -------------------------------------------------------------------
-
+# Sentence splitting
 _SENTENCE_END = re.compile(r"(?<=[.!?])\s+(?=[\"'(\[]?[A-Z0-9])")
 
 
@@ -223,10 +214,7 @@ def _spacy_pipeline():
     return _SPACY or None
 
 
-# -------------------------------------------------------------------
-# 4. NLI wrapper
-# -------------------------------------------------------------------
-
+# NLI wrapper
 class NLIModel:
     """
     Batched premise/hypothesis classifier for any MNLI checkpoint.
@@ -256,7 +244,8 @@ class NLIModel:
         self.max_length = max_length
         self.batch_size = batch_size
 
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name_or_path)
+        # [transformers] The tokenizer you are loading from '/users/staff/pranith/LLM_Hallucinations/models/deberta-v2-xlarge-mnli' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, fix_mistral_regex=True)
         dtype = torch.float16 if self.device == "cuda" else torch.float32
         self.model = AutoModelForSequenceClassification.from_pretrained(
             model_name_or_path, dtype=dtype
@@ -344,10 +333,7 @@ def _find_label(id2label: dict[int, str], key: str, required: bool = True):
     return None
 
 
-# -------------------------------------------------------------------
-# 5. Sharded, resumable output (same pattern as A3)
-# -------------------------------------------------------------------
-
+# Sharded, resumable output (same pattern as A3)
 class ShardWriter:
     """
     Write results in numbered parquet shards so an interrupted SLURM job
@@ -381,10 +367,7 @@ class ShardWriter:
         return pd.concat([pd.read_parquet(p) for p in paths], ignore_index=True)
 
 
-# -------------------------------------------------------------------
-# 6. Hallucination labels
-# -------------------------------------------------------------------
-
+# Hallucination labels
 def load_labels(path: Path = LABELS_PATH) -> pd.DataFrame | None:
     """
     Labels for the MAIN answer: columns uid, hallucinated (0/1).

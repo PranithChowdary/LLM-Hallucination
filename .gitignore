@@ -26,6 +26,7 @@ data/a3/token_features/
 # IDE
 .vscode/
 .idea/
+code_refactor_notes.md
 
 # OS
 .DS_Store
@@ -43,3 +44,4 @@ data/b5/states/
 data/b4/shards/
 data/extra15_shards/
 *.tmp
+data/b9/shards/

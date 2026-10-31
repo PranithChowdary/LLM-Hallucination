@@ -1,0 +1,25 @@
+{
+  "experiment": "B9-incremental-semantic-entropy-budget-sweep",
+  "source_b4_scores": "/users/staff/pranith/LLM_Hallucinations/data/b4/scores.parquet",
+  "n_prompts": 24652,
+  "budgets": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "answer_order": [
+    "A2 main answer",
+    "15 saved extra samples in response_index order"
+  ],
+  "nli_checkpoint": "/users/staff/pranith/LLM_Hallucinations/models/deberta-v2-xlarge-mnli",
+  "llm_checkpoint": "/users/staff/pranith/LLM_Hallucinations/models/Qwen2.5-0.5B-Instruct",
+  "nli_reused_pairs_per_prompt": 225,
+  "nli_new_directed_pairs_per_prompt": 30,
+  "loglik_reused_answers_per_prompt": 15,
+  "loglik_new_answers_per_prompt": 1,
+  "condition_on_question": true,
+  "label_caveat": "Labels are provisional; metrics are exploratory calibration results, not held-out test performance.",
+  "elapsed_seconds_this_run": 7138.47
+}
