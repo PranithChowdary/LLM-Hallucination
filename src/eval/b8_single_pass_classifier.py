@@ -1,4 +1,3 @@
-
 from pathlib import Path
 import json
 
@@ -24,10 +23,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.utils.class_weight import compute_sample_weight
 
 
-# --------------------------------------------------
-# 1. Paths and configuration
-# --------------------------------------------------
-
+# Paths and configuration
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "data" / "b8"
 OUT.mkdir(parents=True, exist_ok=True)
@@ -40,10 +36,7 @@ SCORES_PATH = ROOT / "data" / "b6" / "scores.parquet"
 SEED = 42
 
 
-# --------------------------------------------------
-# 2. Data validation helpers
-# --------------------------------------------------
-
+# Data validation helpers
 def require_unique_uid(df, name):
     if "uid" not in df.columns:
         raise ValueError(f"{name} is missing the uid column")
@@ -88,10 +81,7 @@ def calculate_baseline_metrics(y_true, scores):
     }
 
 
-# --------------------------------------------------
-# 3. Load data
-# --------------------------------------------------
-
+# Load data
 def main():
     for path in [
         FEATURES_PATH,
@@ -132,10 +122,7 @@ def main():
     if not feature_columns:
         raise ValueError("No numerical feature columns were found.")
 
-    # --------------------------------------------------
-    # 4. Join data safely by UID
-    # --------------------------------------------------
-
+    # Join data safely by UID
     data = features.merge(
         labels,
         on="uid",
@@ -189,10 +176,7 @@ def main():
     y = data["hallucinated"].to_numpy()
     groups = data["group_key"].astype(str).to_numpy()
 
-    # --------------------------------------------------
-    # 5. Group-aware train/validation split
-    # --------------------------------------------------
-
+    # Group-aware train/validation split
     splitter = StratifiedGroupKFold(
         n_splits=5,
         shuffle=True,
@@ -225,10 +209,7 @@ def main():
     if len(np.unique(y_val)) != 2:
         raise ValueError("Validation split must contain both labels.")
 
-    # --------------------------------------------------
-    # 6. Logistic Regression pipeline
-    # --------------------------------------------------
-
+    # Logistic Regression pipeline
     logistic = Pipeline([
         ("imputer", SimpleImputer(strategy="median")),
         ("scaler", StandardScaler()),
@@ -242,10 +223,7 @@ def main():
         ),
     ])
 
-    # --------------------------------------------------
-    # 7. Gradient Boosting pipeline
-    # --------------------------------------------------
-
+    # Gradient Boosting pipeline
     boosted = Pipeline([
         ("imputer", SimpleImputer(strategy="median")),
         (
@@ -271,10 +249,7 @@ def main():
         model__sample_weight=train_weights,
     )
 
-    # --------------------------------------------------
-    # 8. Generate validation predictions
-    # --------------------------------------------------
-
+    # Generate validation predictions
     probabilities = {
         "logistic_regression": logistic.predict_proba(X_val)[:, 1],
         "gradient_boosting": boosted.predict_proba(X_val)[:, 1],
@@ -301,10 +276,7 @@ def main():
             f"{model_name}_prediction_at_0_5"
         ] = predictions
 
-    # --------------------------------------------------
-    # 9. Compare with the B6 log-probability baseline
-    # --------------------------------------------------
-
+    # Compare with the B6 log-probability baseline
     baseline_scores = pd.to_numeric(
         data.iloc[val_idx]["logprob_neg_mean"],
         errors="coerce",
@@ -330,10 +302,7 @@ def main():
             )
         }
 
-    # --------------------------------------------------
-    # 10. Save metrics and validation predictions
-    # --------------------------------------------------
-
+    # Save metrics and validation predictions
     with open(
         OUT / "metrics.json",
         "w",
@@ -346,10 +315,7 @@ def main():
         index=False,
     )
 
-    # --------------------------------------------------
-    # 11. Save fitted models
-    # --------------------------------------------------
-
+    # Save fitted models
     joblib.dump(
         logistic,
         OUT / "logistic_regression.joblib",
@@ -360,10 +326,7 @@ def main():
         OUT / "gradient_boosting.joblib",
     )
 
-    # --------------------------------------------------
-    # 12. Save feature diagnostics
-    # --------------------------------------------------
-
+    # Save feature diagnostics
     logistic_coefficients = (
         logistic.named_steps["model"].coef_[0]
     )
@@ -418,10 +381,7 @@ def main():
     ) as file:
         json.dump(split_info, file, indent=2, allow_nan=False)
 
-    # --------------------------------------------------
-    # 13. Print summary
-    # --------------------------------------------------
-
+    # Print summary
     print("B8 completed successfully.")
     print(f"Usable labelled rows: {len(data)}")
     print(f"Training rows: {len(train_idx)}")
