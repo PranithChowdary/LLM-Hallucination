@@ -36,17 +36,27 @@ from src.data.loaders import normalize_text
 from src.signals.common import NLIModel, split_sentences
 
 
-LABEL_METHOD = "provisional-nli-v1"
+LABEL_METHOD = "provisional-nli-v2"
 
 # Refusals are not hallucinations and not correct answers. They are
 # excluded (label NaN) unless the caller asks otherwise.
 _REFUSAL = re.compile(
     r"^\s*(i'?m sorry|i am sorry|sorry,|i cannot|i can'?t|i'?m unable|"
-    r"i am unable|as an ai[^.]{0,60}(cannot|can'?t|don'?t|do not))",
+    r"i am unable|as an ai[^.]{0,60}(cannot|can'?t|don'?t|do not)|"
+    # "I apologize" alone is not a refusal: "I apologize for the confusion
+    # earlier. X was directed by Y." still makes a claim. It counts only
+    # when the same sentence says the model cannot answer.
+    r"i apologi[sz]e[^.!?]{0,80}(i (do not|don'?t) have|i need more|"
+    r"i'?m (not able|unable)|i am (not able|unable)|i cannot|i can'?t|"
+    r"as an ai|you (have not|haven'?t) provided|discussing political))",
     flags=re.IGNORECASE,
 )
 
 ENTAIL_THRESHOLD = 0.5
+
+# NLI truncates at 512 tokens, about 300 words of premise plus a sentence.
+WINDOW_WORDS = 300
+WINDOW_OVERLAP = 50
 
 
 def is_refusal(answer: str) -> bool:
@@ -59,6 +69,19 @@ def _as_list(value) -> list[str]:
     if isinstance(value, float) and np.isnan(value):
         return []
     return [str(v) for v in list(value) if str(v).strip()]
+
+
+def document_windows(
+    context: str, size: int = WINDOW_WORDS, overlap: int = WINDOW_OVERLAP
+) -> list[str]:
+    """Overlapping word windows, so NLI sees all of a long document."""
+    words = context.split()
+    if len(words) <= size:
+        return [context]
+    step = size - overlap
+    last_start = max(len(words) - size, 0)
+    starts = list(range(0, last_start, step)) + [last_start]
+    return [" ".join(words[start : start + size]) for start in starts]
 
 
 def label_reference_task(
@@ -104,13 +127,20 @@ def label_grounded_task(nli: NLIModel, context: str, answer: str) -> dict:
     """
     Dialogue / summarization: is each answer sentence entailed by the
     provided knowledge/document? Hallucinated if more than half of the
-    sentences are not entailed.
+    sentences are not entailed. A sentence counts as entailed if any
+    window of the document entails it.
 
-    Caveat: A2 did NOT put `context` into the prompt, so the model never
-    saw the knowledge it is being judged against.
+    Caveat: dialogue prompts do not include `context`, so the model never
+    saw the knowledge it is being judged against. Summarization prompts
+    do (see model_prompt).
     """
     sentences = split_sentences(answer)
-    probs = nli.probs([context] * len(sentences), sentences)[:, 2]
+    windows = document_windows(context)
+    premises = [w for w in windows for _ in sentences]
+    hypotheses = sentences * len(windows)
+    probs = nli.probs(premises, hypotheses)[:, 2]
+    if sentences:
+        probs = probs.reshape(len(windows), len(sentences)).max(axis=0)
     unsupported = float((probs < ENTAIL_THRESHOLD).mean())
     return {
         "correct_score": np.nan,

@@ -274,7 +274,7 @@ def main():
 
         matrices = nli_pair_matrices(
             nli,
-            [(row.prompt, answers) for row, answers in zip(batch.itertuples(index=False), answer_sets)],
+            [(row.question, answers) for row, answers in zip(batch.itertuples(index=False), answer_sets)],
             condition_on_question=not args.no_question,
         )
 

@@ -2,7 +2,9 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from src.signals.common import split_sentences
+from src.generation.regenerate_summarization import merge
+from src.signals.common import model_prompt, question_text, split_sentences
+from src.signals.labels import document_windows, is_refusal, label_grounded_task
 from src.signals.probes import best_split_threshold, cross_fit_probe, grouped_folds
 from src.signals.selfcheck import contradiction_score, selfcheck_unigram
 from src.signals.semantic_entropy import (
@@ -159,3 +161,99 @@ def test_cross_fit_probe_learns_linear_signal():
     assert np.isfinite(scores).all()
     acc = ((scores > 0.5) == (X[:, 0] > 0)).mean()
     assert acc > 0.9
+
+
+# ---------------------------------------------------------------------------
+# Summarization prompts, refusals and long premises
+# ---------------------------------------------------------------------------
+
+def test_model_prompt_adds_the_document_only_for_summarization():
+    summary = model_prompt("Summarize the following document.", "The document.", "summarization")
+    assert summary == "Summarize the following document.\n\nThe document."
+    assert model_prompt("Who wrote it?", "Hidden knowledge.", "qa") == "Who wrote it?"
+    assert model_prompt("Who wrote it?", None, "truthfulqa") == "Who wrote it?"
+
+
+def test_question_text_drops_the_document():
+    prompt = model_prompt("Summarize the following document.", "Part 1.\n\nPart 2.", "summarization")
+    assert question_text(prompt, "summarization") == "Summarize the following document."
+    assert question_text("First line.\n\nSecond line.", "dialogue") == "First line.\n\nSecond line."
+
+
+@pytest.mark.parametrize("answer", [
+    "I'm sorry, but I cannot help.",
+    "I apologize, but I don't have specific information about this film.",
+    "I apologize for any inconvenience caused, but I'm unable to engage in politics.",
+    "I apologize for any confusion, but as an AI language model, I have no preferences.",
+    "I apologize, but you haven't provided any document to summarize.",
+    "I apologize, but I need more information about what to summarize.",
+])
+def test_is_refusal_catches_refusals(answer):
+    assert is_refusal(answer)
+
+
+@pytest.mark.parametrize("answer", [
+    'I apologize for any confusion earlier. "Cloud Atlas" is a film by Quentin Tarantino.',
+    "I apologize for any confusion, but Kurt Wimmer did not direct that film.",
+    "Paris is the capital of France.",
+])
+def test_is_refusal_keeps_answers_that_make_claims(answer):
+    assert not is_refusal(answer)
+
+
+def test_document_windows_cover_a_long_document():
+    words = [f"w{i}" for i in range(1000)]
+    windows = document_windows(" ".join(words), size=300, overlap=50)
+    assert all(len(w.split()) <= 300 for w in windows)
+    assert set(" ".join(windows).split()) == set(words)
+    assert document_windows("short text", size=300, overlap=50) == ["short text"]
+
+
+class WindowNLI:
+    """Entails a hypothesis only if the premise contains it."""
+
+    def probs(self, premises, hypotheses):
+        out = np.zeros((len(premises), 3), dtype=np.float32)
+        for k, (p, h) in enumerate(zip(premises, hypotheses)):
+            out[k] = [0.0, 0.0, 1.0] if h in p else [1.0, 0.0, 0.0]
+        return out
+
+
+def test_grounded_label_finds_support_late_in_a_long_document():
+    filler = " ".join(f"w{i}" for i in range(900))
+    context = f"{filler} Cats sleep a lot."
+    assert label_grounded_task(WindowNLI(), context, "Cats sleep a lot.")["hallucinated"] == 0
+    assert label_grounded_task(WindowNLI(), context, "Dogs fly at night.")["hallucinated"] == 1
+
+
+def test_grounded_label_handles_an_answer_with_no_sentences():
+    assert label_grounded_task(WindowNLI(), "Some document.", "")["hallucinated"] == 0
+
+
+def test_merge_replaces_only_the_regenerated_rows(tmp_path):
+    main = pd.DataFrame({
+        "uid": ["q1", "s1"], "prompt": ["Q", "old"], "generated_answer": ["keep", "old"],
+    })
+    extra = pd.DataFrame({
+        "uid": ["q1", "s1", "s1"], "response_index": [2, 2, 3],
+        "prompt": ["Q", "old", "old"], "generated_answer": ["keep", "old", "old"],
+    })
+    main_path, extra_path = tmp_path / "main.parquet", tmp_path / "extra.parquet"
+    main.to_parquet(main_path)
+    extra.to_parquet(extra_path)
+    regenerated = pd.DataFrame({
+        "uid": ["s1", "s1", "s1"], "response_index": [1, 2, 3],
+        "subset": ["summarization"] * 3, "prompt": ["Do it.\n\nDoc"] * 3,
+        "generated_answer": ["n1", "n2", "n3"], "seed": [7] * 3,
+    })
+
+    merge(regenerated, main_path, extra_path, tmp_path / "backup")
+    merge(regenerated, main_path, extra_path, tmp_path / "backup")  # safe to repeat
+
+    new_main = pd.read_parquet(main_path)
+    new_extra = pd.read_parquet(extra_path)
+    assert new_main["generated_answer"].tolist() == ["keep", "n1"]
+    assert new_main["prompt"].tolist() == ["Q", "Do it.\n\nDoc"]
+    assert new_extra["generated_answer"].tolist() == ["keep", "n2", "n3"]
+    assert new_extra["prompt"].tolist() == ["Q", "Do it.", "Do it."]
+    assert pd.read_parquet(tmp_path / "backup" / "main.parquet")["generated_answer"].tolist() == ["keep", "old"]

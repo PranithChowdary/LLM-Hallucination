@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 import random
+import sys
 
 import numpy as np
 import pandas as pd
@@ -10,6 +11,10 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # config...
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.signals.common import model_prompt  # noqa: E402
+
 MODEL_NAME = str(PROJECT_ROOT / "models" / "Qwen2.5-0.5B-Instruct")
 
 SEED = 42
@@ -47,6 +52,10 @@ def main():
     # Load calibration data
     print("[INFO] Loading calibration data...")
     df = pd.read_parquet(CALIBRATION_FILE)
+    df["prompt"] = [
+        model_prompt(p, c, s)
+        for p, c, s in zip(df["prompt"], df["context"], df["subset"])
+    ]
     print(f"[INFO] Total calibration prompts: {len(df)}")
 
     # Resume support

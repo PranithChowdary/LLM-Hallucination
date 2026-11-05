@@ -182,8 +182,8 @@ def main():
                 matrix[np.arange(16), np.arange(16), 2] = 1.0
                 matrices.append(matrix)
 
-                texts = [f"{row.prompt} {row.main_answer}"] + [
-                    f"{row.prompt} {answer}" for answer in samples
+                texts = [f"{row.question} {row.main_answer}"] + [
+                    f"{row.question} {answer}" for answer in samples
                 ]
                 for j in range(1, 16):
                     premises.extend([texts[0], texts[j]])

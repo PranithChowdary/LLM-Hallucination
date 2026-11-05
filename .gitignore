@@ -17,6 +17,8 @@ transformers_cache/
 models/
 data/a3/hidden_states/
 data/a3/token_features/
+data/summarization_regen/
+data/pre_regen/
 
 # Secrets
 .env

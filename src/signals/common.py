@@ -83,7 +83,10 @@ def load_responses(
 ) -> pd.DataFrame:
     """
     Return one row per prompt with:
-        uid, dataset, subset, prompt, main_answer, samples (list[str])
+        uid, dataset, subset, prompt, question, main_answer, samples (list[str])
+
+    `prompt` is what the LLM saw; `question` is the same text without a
+    summarization document (see question_text).
 
     `samples` holds response_index 2..(n_samples + 1), in index order, so
     the first k samples are always the same k answers (needed for the
@@ -116,6 +119,7 @@ def load_responses(
     out = main[["uid", "dataset", "subset", "prompt", "generated_answer"]]
     out = out.rename(columns={"generated_answer": "main_answer"})
     out = out.merge(samples.rename("samples"), left_on="uid", right_index=True)
+    out["question"] = [question_text(p, s) for p, s in zip(out["prompt"], out["subset"])]
 
     missing = set(main["uid"]) - set(out["uid"])
     if missing:
@@ -157,6 +161,30 @@ def take_limit(frame: pd.DataFrame, limit: int | None) -> pd.DataFrame:
     return out.sort_values("uid", kind="stable").reset_index(drop=True)
 
 
+def model_prompt(prompt: str, context: str | None, subset: str) -> str:
+    """
+    The text the LLM receives for one calibration row.
+
+    A1 stores a summarization prompt as a fixed instruction plus the
+    document in `context`, so the document has to be added here. QA and
+    dialogue stay closed-book: their `context` is never shown to the model.
+    """
+    if subset == "summarization":
+        return f"{prompt}\n\n{context}"
+    return prompt
+
+
+def question_text(prompt: str, subset: str) -> str:
+    """
+    A model prompt without the source document, for NLI conditioning.
+    Prepending a whole document to each answer would push the answer
+    past the NLI model's 512-token limit.
+    """
+    if subset == "summarization":
+        return prompt.split("\n\n", 1)[0]
+    return prompt
+
+
 def chat_messages(prompt: str) -> list[dict]:
     """
     The exact message list A2 (generate.py) and generate_extra.py used.
@@ -164,8 +192,8 @@ def chat_messages(prompt: str) -> list[dict]:
     Every detector that re-scores or re-reads an answer must render the
     prompt the same way, otherwise the hidden states / log-likelihoods
     belong to a different conditional distribution than the one that
-    produced the answer. If A2 is ever changed (e.g. to include the
-    `context` field), change it here and nowhere else.
+    produced the answer. If A2 is ever changed, change it here and
+    nowhere else. `prompt` is the output of model_prompt.
     """
     return [{"role": "user", "content": prompt}]
 
