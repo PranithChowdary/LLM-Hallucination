@@ -1,0 +1,13 @@
+score,all,dialogue,qa,summarization,truthfulqa
+SelfCheck-BERTScore,0.906,0.988,0.866,0.872,0.887
+SelfCheck-NLI,0.902,0.984,0.878,0.848,0.878
+SelfCheck-Prompt,0.862,0.979,0.841,0.851,0.863
+SelfCheck-Prompt P(No),0.864,0.979,0.844,0.856,0.872
+SelfCheck-Unigram (max),0.872,0.988,0.820,0.845,0.836
+SelfCheck-Unigram (avg),0.910,0.987,0.839,0.871,0.878
+Grey-box Avg(-logP),0.904,0.988,0.847,0.881,0.814
+Grey-box Max(-logP),0.880,0.986,0.856,0.842,0.832
+Grey-box Avg(H),0.915,0.987,0.857,0.884,0.830
+Grey-box Max(H),0.910,0.988,0.869,0.867,0.844
+Random,0.866,0.986,0.791,0.823,0.846
+(chance),0.866,0.985,0.792,0.824,0.824

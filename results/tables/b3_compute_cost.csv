@@ -1,0 +1,5 @@
+variant,total_minutes,ms_per_prompt,model_calls
+unigram,0.2,0.4,0
+nli,39.5,96.0,1724040
+bertscore,24.6,60.0,sentence x sample-sentence pairs
+prompt,38.3,93.1,1724040

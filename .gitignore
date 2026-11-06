@@ -6,6 +6,7 @@ env/
 # Python cache
 __pycache__/
 *.py[cod]
+.pytest_cache/
 
 # Jupyter
 .ipynb_checkpoints/
@@ -15,10 +16,6 @@ __pycache__/
 huggingface/
 transformers_cache/
 models/
-data/a3/hidden_states/
-data/a3/token_features/
-data/summarization_regen/
-data/pre_regen/
 
 # Secrets
 .env
@@ -41,9 +38,15 @@ Thumbs.db
 /logs/*.out
 /logs/*.err
 
-# B4/B5 intermediates (large, regenerable)
-data/b5/states/
+# Large, regenerable experiment outputs. results/ keeps what matters.
+data/a3/hidden_states/
+data/a3/token_features/
 data/b4/shards/
-data/extra15_shards/
-*.tmp
+data/b5/states/
 data/b9/shards/
+data/extra15_shards/
+data/summarization_regen/
+data/pre_regen/
+*.pt
+*.npz
+*.tmp
