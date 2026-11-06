@@ -107,10 +107,7 @@ SCORE_COLUMNS = {
 }
 
 
-# -------------------------------------------------------------------
 # Small helpers
-# -------------------------------------------------------------------
-
 def html_table(markup: str) -> pd.DataFrame:
     """A pandas-rendered HTML table, with its index-name row folded in."""
     rows = []
@@ -163,10 +160,7 @@ def last_commit_time(path: Path) -> int:
     return int(out) if out else 0
 
 
-# -------------------------------------------------------------------
 # Tables
-# -------------------------------------------------------------------
-
 def dataset_counts(labels: pd.DataFrame) -> pd.DataFrame:
     calibration = pd.read_parquet(CALIBRATION_PATH, columns=["subset"])["subset"].value_counts()
     test = pd.read_parquet(TEST_PATH, columns=["subset"])["subset"].value_counts()
@@ -324,10 +318,7 @@ def per_answer_scores(labels: pd.DataFrame) -> pd.DataFrame:
     return frame.merge(b8, on="uid", how="left").sort_values("uid", kind="stable")
 
 
-# -------------------------------------------------------------------
 # Figures
-# -------------------------------------------------------------------
-
 def copy_figures(out: Path) -> int:
     count = 0
     for block in ("b4", "b5", "b6"):
@@ -359,10 +350,7 @@ def notebook_figures(notebook: dict, out: Path) -> int:
     return count
 
 
-# -------------------------------------------------------------------
 # Checks
-# -------------------------------------------------------------------
-
 def run_checks(labels: pd.DataFrame, detectors: pd.DataFrame) -> list[tuple[str, str, str]]:
     """(PASS / WARN / FAIL, check, detail). All results must be one run."""
     checks = []
@@ -410,10 +398,7 @@ def run_checks(labels: pd.DataFrame, detectors: pd.DataFrame) -> list[tuple[str,
     return checks
 
 
-# -------------------------------------------------------------------
 # README
-# -------------------------------------------------------------------
-
 def auroc_summary(detectors: pd.DataFrame) -> pd.DataFrame:
     table = detectors.pivot_table(index=["block", "detector"], columns="subset", values="auroc", sort=False)
     table = table.reindex(columns=SUBSETS).sort_values("all", ascending=False)
@@ -480,10 +465,7 @@ def write_readme(out: Path, tables: dict, detectors: pd.DataFrame, checks: list,
     (out / "README.md").write_text("\n\n".join(sections) + "\n", encoding="utf-8")
 
 
-# -------------------------------------------------------------------
 # Main
-# -------------------------------------------------------------------
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-dir", type=Path, default=OUTPUT_DIR)
