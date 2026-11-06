@@ -19,10 +19,7 @@ from src.signals.semantic_entropy import (
 )
 
 
-# ---------------------------------------------------------------------------
 # Helpers
-# ---------------------------------------------------------------------------
-
 def matrix_from_labels(labels: list[list[int]]) -> np.ndarray:
     """One-hot (M, M, 3) NLI matrix from an argmax label grid."""
     labels = np.asarray(labels)
@@ -36,10 +33,7 @@ def matrix_from_labels(labels: list[list[int]]) -> np.ndarray:
 E, N, C = ENTAILMENT, NEUTRAL, CONTRADICTION
 
 
-# ---------------------------------------------------------------------------
 # B4: clustering and entropies
-# ---------------------------------------------------------------------------
-
 def test_cluster_ids_groups_bidirectional_entailment():
     # 0 <=> 1, 2 alone, 3 <=> 0
     m = matrix_from_labels([
@@ -101,10 +95,7 @@ def test_naive_entropy():
     assert naive_entropy(np.array([-1.0, -3.0])) == pytest.approx(2.0)
 
 
-# ---------------------------------------------------------------------------
 # B3: SelfCheckGPT pieces
-# ---------------------------------------------------------------------------
-
 def test_contradiction_score_ignores_neutral():
     probs = np.array([[0.2, 0.6, 0.2], [0.9, 0.0, 0.1]])
     assert contradiction_score(probs) == pytest.approx([0.5, 0.9])
@@ -126,10 +117,7 @@ def test_split_sentences():
     assert split_sentences("") == []
 
 
-# ---------------------------------------------------------------------------
 # B5: SEP pieces
-# ---------------------------------------------------------------------------
-
 def test_best_split_threshold_separates_two_modes():
     h = np.array([0.0, 0.1, 0.05, 2.0, 2.1, 1.9])
     gamma = best_split_threshold(h)
@@ -163,10 +151,7 @@ def test_cross_fit_probe_learns_linear_signal():
     assert acc > 0.9
 
 
-# ---------------------------------------------------------------------------
 # Summarization prompts, refusals and long premises
-# ---------------------------------------------------------------------------
-
 def test_model_prompt_adds_the_document_only_for_summarization():
     summary = model_prompt("Summarize the following document.", "The document.", "summarization")
     assert summary == "Summarize the following document.\n\nThe document."
