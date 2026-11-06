@@ -30,6 +30,7 @@ import argparse
 import hashlib
 import os
 import random
+import sys
 import time
 from pathlib import Path
 
@@ -40,6 +41,10 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.signals.common import model_prompt  # noqa: E402
+
 MODEL_PATH = PROJECT_ROOT / "models" / "Qwen2.5-0.5B-Instruct"
 
 INPUT_FILE = PROJECT_ROOT / "data" / "calibration.parquet"
@@ -142,6 +147,10 @@ def main():
     prompts["uid"] = prompts["uid"].astype(str)
     if prompts["uid"].duplicated().any():
         raise ValueError("Duplicate UIDs found in calibration.parquet")
+    prompts["prompt"] = [
+        model_prompt(p, c, s)
+        for p, c, s in zip(prompts["prompt"], prompts["context"], prompts["subset"])
+    ]
 
     existing = load_existing()
     completed = set(zip(existing["uid"].astype(str), existing["response_index"].astype(int)))

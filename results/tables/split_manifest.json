@@ -1,0 +1,20 @@
+{
+  "random_seed": 42,
+  "n_splits": 5,
+  "split_method": "StratifiedGroupKFold",
+  "stratification": "dataset + subset",
+  "group_column": "norm_key",
+  "original_rows": 30817,
+  "duplicate_rows_removed": 2,
+  "cleaned_rows": 30815,
+  "calibration_rows": 24652,
+  "test_rows": 6163,
+  "reference_conflict_rows": 2,
+  "files": {
+    "unified": "data/unified_dataset.parquet",
+    "calibration": "data/calibration.parquet",
+    "test": "data/test.parquet",
+    "removed_duplicates": "data/removed_duplicate_rows.parquet",
+    "duplicate_groups": "data/duplicate_groups.csv"
+  }
+}

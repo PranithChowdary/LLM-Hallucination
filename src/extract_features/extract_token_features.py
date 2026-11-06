@@ -19,12 +19,17 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import sys
 import time
 from pathlib import Path
 
 import pandas as pd
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
+from src.signals.common import model_prompt  # noqa: E402
 
 
 # -------------------------------------------------------------------
@@ -50,7 +55,7 @@ HIDDEN_DTYPE = torch.float16
 REQUIRED_GENERATION_COLUMNS = {
     "uid", "prompt", "generated_answer"
 }
-REQUIRED_CALIBRATION_COLUMNS = {"uid", "prompt"}
+REQUIRED_CALIBRATION_COLUMNS = {"uid", "prompt", "context", "subset"}
 
 
 # -------------------------------------------------------------------
@@ -152,7 +157,10 @@ def load_and_validate_inputs():
         )
 
     # Make sure each saved generation row still corresponds to its original prompt.
-    calibration_prompts = calibration.set_index("uid")["prompt"].to_dict()
+    calibration_prompts = {
+        row.uid: model_prompt(row.prompt, row.context, row.subset)
+        for row in calibration[["uid", "prompt", "context", "subset"]].itertuples(index=False)
+    }
 
     for row in generations[["uid", "prompt"]].itertuples(index=False):
         original_prompt = calibration_prompts[row.uid]

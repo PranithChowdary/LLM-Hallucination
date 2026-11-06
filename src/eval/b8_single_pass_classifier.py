@@ -368,7 +368,7 @@ def main():
         "train_validation_group_overlap": int(len(overlap)),
         "feature_count": int(len(feature_columns)),
         "features": feature_columns,
-        "label_method": "provisional-nli-v1",
+        "label_method": "provisional-nli-v2",
         "labels_are_verified_ground_truth": False,
         "held_out_test_used": False,
         "baseline_threshold_metrics_reported": False,

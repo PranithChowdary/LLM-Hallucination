@@ -134,7 +134,7 @@ with open(OUT / "report.txt", "w", encoding="utf-8") as f:
     f.write(f"Numeric features: {len(cols)}\n")
     f.write("Correlation method: Pearson\n")
     f.write("High-correlation threshold: absolute r >= 0.80\n")
-    f.write("Labels: provisional-nli-v1; not verified ground truth\n\n")
+    f.write("Labels: provisional-nli-v2; not verified ground truth\n\n")
 
     f.write("HIGHLY CORRELATED FEATURE PAIRS\n")
     f.write("-" * 40 + "\n")

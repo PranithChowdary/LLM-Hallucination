@@ -133,3 +133,30 @@ to `notebooks/` and `tmp_results/generation_labels.parquet` to `data/processed/`
 CONDA_ENV=myenv bash slurm/submit_all.sh
 ```
 - **Job ids** of every submission are saved in `logs/submitted_<timestamp>.txt`.
+
+## Rerun after the summarization prompt fix
+
+A2 sent "Summarize the following document." without the document. To replace
+those answers and everything built on them, run these from the repository root.
+
+Test on 48 prompts first. This changes no data file:
+
+```bash
+sbatch --export=ALL,LIMIT=48 slurm/regen_summarization.sh
+```
+
+The log should show real summaries and a refusal rate far below 69.3%. Then
+submit the 4-job rerun:
+
+```bash
+bash slurm/submit_regen.sh
+```
+
+When those jobs finish, submit the fifth job:
+
+```bash
+sbatch slurm/b7_b8_b9.sh
+```
+
+The original generation files and the old resumable folders are kept in
+`data/pre_regen/`.

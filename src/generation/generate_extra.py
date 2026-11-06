@@ -1,6 +1,7 @@
 from pathlib import Path
 import hashlib
 import random
+import sys
 
 import numpy as np
 import pandas as pd
@@ -21,6 +22,10 @@ LAST_RESPONSE_INDEX = 16
 SAVE_EVERY = 100
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.signals.common import model_prompt  # noqa: E402
+
 
 INPUT_FILE = PROJECT_ROOT / "data" / "calibration.parquet"
 OUTPUT_FILE = (
@@ -65,9 +70,13 @@ def main():
 
     print(f"[INFO] Calibration prompts: {len(prompts)}")
 
-    expected_columns = {"uid", "prompt"}
+    expected_columns = {"uid", "prompt", "context", "subset"}
     if not expected_columns.issubset(prompts.columns):
         raise ValueError(f"Input must contain: {expected_columns}")
+    prompts["prompt"] = [
+        model_prompt(p, c, s)
+        for p, c, s in zip(prompts["prompt"], prompts["context"], prompts["subset"])
+    ]
 
     # Load previous checkpoint, if available.
     if OUTPUT_FILE.exists():

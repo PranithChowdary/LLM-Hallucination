@@ -1,0 +1,4 @@
+score,all,dialogue,qa,summarization,truthfulqa
+SelfCheck-NLI,0.594,0.474,0.684,0.550,0.606
+NLI vs reference only,0.541,0.808,0.404,0.546,0.542
+NLI vs samples + reference,0.600,0.515,0.681,0.555,0.607
