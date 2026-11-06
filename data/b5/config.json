@@ -2,13 +2,13 @@
   "experiment": "B5-semantic-entropy-probes",
   "states": "full",
   "target": "semantic_entropy",
-  "gamma_all": 2.208243348897919,
-  "frac_high_se": 0.6430309914002921,
+  "gamma_all": 2.03178221566991,
+  "frac_high_se": 0.9120152523121856,
   "n_folds": 5,
   "seed": 42,
   "c": 1.0,
   "n_examples": 24652,
-  "n_labeled": 16907,
-  "git_commit_sha": "6debefbd705a2692ca35366d36f3c92a71744d9c",
-  "elapsed_seconds": 3018.3
+  "n_labeled": 21225,
+  "git_commit_sha": "635b3a53297d0527c73c50bd39daa07fb1ff5e6a",
+  "elapsed_seconds": 2386.5
 }

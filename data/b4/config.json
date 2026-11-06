@@ -14,6 +14,6 @@
   "subsets": null,
   "limit": null,
   "n_examples": 24652,
-  "git_commit_sha": "6debefbd705a2692ca35366d36f3c92a71744d9c",
-  "elapsed_seconds": 27429.6
+  "git_commit_sha": "635b3a53297d0527c73c50bd39daa07fb1ff5e6a",
+  "elapsed_seconds": 60398.2
 }
